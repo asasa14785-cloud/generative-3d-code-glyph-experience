@@ -1,0 +1,27 @@
+// Functional test: start, pause/resume accuracy, completion at 60 s, replay, console errors.
+import { chromium } from "playwright"; import path from "path";
+const browser = await chromium.launch({ args: ["--use-angle=swiftshader","--enable-unsafe-swiftshader","--ignore-gpu-blocklist","--autoplay-policy=no-user-gesture-required"] });
+const page = await browser.newPage({ viewport: { width: 1280, height: 720 } });
+const errs = []; page.on("console", m => { if (m.type()==="error") errs.push(m.text().slice(0,300)); }); page.on("pageerror", e => errs.push("pageerror "+e.message));
+await page.goto("file://"+path.resolve("dist/index.html")+"?q=0");
+await page.waitForFunction(() => window.__gardenReady === true, null, { timeout: 240000 });
+const st = () => page.evaluate(() => ({ t: window.__garden.t, phase: window.__garden.phase, audio: window.__garden.audio.state }));
+await page.getByText("BEGIN", { exact: true }).click();
+await page.waitForFunction(() => window.__garden.phase === "playing", null, { timeout: 30000 });
+console.log("started", await st());
+await page.waitForTimeout(3000);
+await page.click('button[aria-label="Pause"]');
+await page.waitForFunction(() => window.__garden.phase === "paused");
+const a = await st(); await page.waitForTimeout(2500); const b = await st();
+console.log("paused", a, b, "stable:", Math.abs(a.t-b.t) < 0.01);
+await page.click('button[aria-label="Resume"]');
+await page.waitForFunction(() => window.__garden.phase === "playing");
+const t0 = Date.now();
+await page.waitForFunction(() => window.__garden.phase === "ended", null, { timeout: 120000 });
+console.log("ended", await st(), "wall seconds since resume:", (Date.now()-t0)/1000);
+await page.click('button[aria-label="Replay"]');
+await page.waitForFunction(() => window.__garden.phase === "playing");
+await page.waitForTimeout(1500);
+console.log("replay", await st());
+console.log("console errors:", errs.length, errs.slice(0,5));
+await browser.close();

@@ -1,0 +1,66 @@
+# Build artifacts
+*.o
+/glif
+tests/test_*
+!tests/test_*.c
+
+# Debug symbols
+*.dSYM/
+
+# Tools
+tools/bench
+tools/gen_test_images
+tools/glif_codec_stats
+tools/glif_compare
+tools/glif_transcode
+tools/glif_verify
+
+# Test data
+images/
+videos/
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Output files
+*.ppm
+
+# Shared library
+libglif.so
+libglif.dylib
+
+# Node.js
+node_modules/
+bindings/node/build/
+
+# Python
+*.egg-info/
+__pycache__/
+*.pyc
+bindings/python/.pytest_cache/
+
+# WASM build output
+web/glif.js
+web/glif.wasm
+web/glif-encoder-wasm.js
+web/glif-encoder-wasm.wasm
+extension/wasm/
+
+# Vendored ffmpeg-wasm (fetched via scripts/fetch-ffmpeg.sh)
+web/vendor/ffmpeg/
+
+# Output files
+*.svg
+
+# Demo / generated artifacts
+*.mp4
+*.glif
+hk421*.html
+mk421*.html

@@ -1,0 +1,1584 @@
+[
+ {
+  "id": "US8468244B2",
+  "title": "Digital information infrastructure and method for security designated data and &hellip;",
+  "priority": "2007-01-05",
+  "assignee": "Digital Doors, Inc.",
+  "inventor": "Ron M. Redlich",
+  "snippet": "Distributed computer system processes data having select content (SC) represented by one or more predetermined words, characters, etc. The system has a plurality of SC data stores in a server cloud for respective security designated (Sec-D) data and granular d",
+  "query": "character shape matching image to text characters log-polar"
+ },
+ {
+  "id": "US9600069B2",
+  "title": "Systems and methods for discerning eye signals and continuous biometric &hellip;",
+  "priority": "2014-05-09",
+  "assignee": "Google Inc.",
+  "inventor": "Nelson George Publicover",
+  "snippet": "Apparatus, systems, and methods are provided for substantially continuous biometric identification (CBID) of an individual using eye signals in real time. The apparatus is included within a wearable computing device with identification of the device wearer bas",
+  "query": "character shape matching image to text characters log-polar"
+ },
+ {
+  "id": "US10424038B2",
+  "title": "Signal encoding outside of guard band region surrounding text characters, &hellip;",
+  "priority": "2015-03-20",
+  "assignee": "Digimarc Corporation",
+  "inventor": "Vojtech Holub",
+  "snippet": "The present disclosure relates to advanced image processing and encoded signal processing. One claim recites an image processing method comprising the acts: receiving a digital representation of product packaging artwork, comprised of pixels; defining a guard ",
+  "query": "character shape matching image to text characters log-polar"
+ },
+ {
+  "id": "US8805110B2",
+  "title": "Methods and systems for content processing",
+  "priority": "2008-08-19",
+  "assignee": "Digimarc Corporation",
+  "inventor": "Geoffrey B. Rhoads",
+  "snippet": "Mobile phones and other portable devices are equipped with a variety of technologies by which existing functionality can be improved, and new functionality can be provided. Some aspects relate to visual search capabilities, and determining appropriate actions ",
+  "query": "character shape matching image to text characters log-polar"
+ },
+ {
+  "id": "US9271133B2",
+  "title": "Methods and systems for image or audio recognition processing",
+  "priority": "2009-08-17",
+  "assignee": "Digimarc Corporation",
+  "inventor": "Tony F. Rodriguez",
+  "snippet": "Many of the detailed technologies are useful in enabling a smart phone to respond to a user&#39;s environment, e.g., so it can serve as an intuitive hearing and seeing device. A few of the detailed arrangements involve optimizing division of shared processing ",
+  "query": "character shape matching image to text characters log-polar"
+ },
+ {
+  "id": "US9565512B2",
+  "title": "Methods and systems for content processing",
+  "priority": "2008-09-12",
+  "assignee": "Digimarc Corporation",
+  "inventor": "Geoffrey B. Rhoads",
+  "snippet": "Mobile phones and other portable devices are equipped with a variety of technologies by which existing functionality can be improved, and new functionality can be provided. Some aspects relate to visual search capabilities, and determining appropriate actions ",
+  "query": "character shape matching image to text characters log-polar"
+ },
+ {
+  "id": "US8855712B2",
+  "title": "Mobile phone using dedicated and programmable processors for pipelined image &hellip;",
+  "priority": "2008-08-19",
+  "assignee": "Digimarc Corporation",
+  "inventor": "John D. Lord",
+  "snippet": "The invention claimed is: 1. A cell phone comprising: an image sensor portion that outputs frames of image data; a processing system coupled to the image sensor portion, the processing system including plural hardware processing units, including: a first proce",
+  "query": "log-polar shape descriptor image matching"
+ },
+ {
+  "id": "US10922957B2",
+  "title": "Methods and systems for content processing",
+  "priority": "2008-08-19",
+  "assignee": "Digimarc Corporation",
+  "inventor": "Geoffrey B. Rhoads",
+  "snippet": "Mobile phones and other portable devices are equipped with a variety of technologies by which existing functionality can be improved, and new functionality can be provided. Some aspects relate to visual search capabilities, and determining appropriate actions ",
+  "query": "log-polar shape descriptor image matching"
+ },
+ {
+  "id": "CN109299720B",
+  "title": "A Target Recognition Method Based on Spatial Relationship of Contour Segments",
+  "priority": "2018-07-13",
+  "assignee": "沈阳理工大学",
+  "inventor": "宋建辉",
+  "snippet": "A target recognition method based on the spatial relationship of contour fragments, the steps are as follows: (1) establishing a database of multi-type target images; (2) extracting the peripheral contour of the target and generating a contour point set; (3) a",
+  "query": "log-polar shape descriptor image matching"
+ },
+ {
+  "id": "CN107103323B",
+  "title": "Target identification method based on image contour features",
+  "priority": "2017-03-09",
+  "assignee": "广东顺德中山大学卡内基梅隆大学国际联合研究院",
+  "inventor": "邓秋君",
+  "snippet": "The invention discloses a target identification method based on image contour characteristics, which is characterized by preprocessing a template image and an object image to be detected to generate a binary image; establishing a feature library of the object ",
+  "query": "log-polar shape descriptor image matching"
+ },
+ {
+  "id": "US9922271B2",
+  "title": "Object detection and classification",
+  "priority": "2015-03-20",
+  "assignee": "Netra, Inc.",
+  "inventor": "Shashi Kant",
+  "snippet": "Object detection and across disparate fields of view are provided. A first image generated by a first recording device with a first field of view, and a second image generated by a second recording device with a second field of view can be obtained. An object ",
+  "query": "log-polar shape descriptor image matching"
+ },
+ {
+  "id": "US9317778B2",
+  "title": "Interactive content generation",
+  "priority": "2014-07-03",
+  "assignee": "Oim Squared Inc.",
+  "inventor": "Bertin Rudolph Cordova-Diba",
+  "snippet": "Generation of interactive content. In an embodiment, a representation of candidate object(s) in content of a digital media asset are received. For each of the candidate object(s), feature(s) of the candidate object are compared to corresponding feature(s) of a",
+  "query": "log-polar shape descriptor image matching"
+ },
+ {
+  "id": "JP5330972B2",
+  "title": "Image recording apparatus, halftone image data generating apparatus, and &hellip;",
+  "priority": "2009-11-27",
+  "assignee": "大日本スクリーン製造株式会社",
+  "inventor": "浩 浅井",
+  "snippet": "&lt;P&gt;PROBLEM TO BE SOLVED: To suppress the occurrence of granularity and streak non-uniformity in a halftone image. &lt;P&gt;SOLUTION: In an image recording apparatus, a plurality of thresholds are disposed in a threshold matrix in such a manner that a hal",
+  "query": "halftone character selection density dot pattern"
+ },
+ {
+  "id": "US8208176B2",
+  "title": "Reduction of uneven print density",
+  "priority": "2006-10-12",
+  "assignee": "Seiko Epson Corporation",
+  "inventor": "Toru Takahashi",
+  "snippet": "The invention provides a printing method of printing on a printing medium. The method includes: generating dot data that represents state of dot formation at each print pixel of a print image to be formed on the printing medium by performing a halftone process",
+  "query": "halftone character selection density dot pattern"
+ },
+ {
+  "id": "JP5278217B2",
+  "title": "Image processing program, image processing method, and image processing &hellip;",
+  "priority": "2009-07-15",
+  "assignee": "セイコーエプソン株式会社",
+  "inventor": "誠 小林",
+  "snippet": "The present invention relates to a copy-forgery-inhibited pattern image generation program and a copy-forgery-inhibited pattern image generation device, and more particularly to a program and device for generating copy-forgery-inhibited pattern image data for ",
+  "query": "halftone character selection density dot pattern"
+ },
+ {
+  "id": "JP2009017120A",
+  "title": "Background pattern image generation program and background pattern image &hellip;",
+  "priority": "2007-07-03",
+  "assignee": "Seiko Epson Corp",
+  "inventor": "Makoto Kobayashi",
+  "snippet": "An object of the present invention is to improve the concealability of an original latent image and the distinguishability of a latent image of a copy. In a tint block image generating apparatus for forming a tint block image including a latent image portion r",
+  "query": "halftone character selection density dot pattern"
+ },
+ {
+  "id": "JP2020035367A",
+  "title": "Image processing apparatus, image processing method, and program",
+  "priority": "2018-08-31",
+  "assignee": "キヤノン株式会社",
+  "inventor": "直也 武末",
+  "snippet": "To generate a dot pattern which effectively suppresses the change in the overlapping of ink droplets on a recording medium and with which it is difficult to visually recognize the degradation of the granular feeling due to the impact deviation, density unevenn",
+  "query": "halftone character selection density dot pattern"
+ },
+ {
+  "id": "JP2005252888A",
+  "title": "Method for generating threshold matrix and threshold matrix thereof, and &hellip;",
+  "priority": "2004-03-05",
+  "assignee": "Fuji Photo Film Co Ltd",
+  "inventor": "Yoshiaki Inoue",
+  "snippet": "&lt;P&gt;PROBLEM TO BE SOLVED: To provide a threshold matrix whereby an image with less dot gain can be produced wherein dots are surely set at a highlight side and roughness is decreased for a medium tone. &lt;P&gt;SOLUTION: A dot with a smaller variance in d",
+  "query": "halftone character selection density dot pattern"
+ },
+ {
+  "id": "EP4421486B1",
+  "title": "Ultrasound matrix inspection",
+  "priority": "2011-09-26",
+  "assignee": "Ontario Power Generation Inc.",
+  "inventor": "Raymond TEN GROTENHUIS",
+  "snippet": "A device for performing ultrasound scanning of a conduit (2), comprising: a cuff (106) adapted to fit around a circumference of the conduit: a carrier (102) mounted slidably on the cuff and adapted to traverse the circumference of the conduit an ultrasound pro",
+  "query": "variable radius morphological dilation erosion"
+ },
+ {
+  "id": "US12026868B2",
+  "title": "Quantitative imaging for detecting histopathologically defined plaque erosion &hellip;",
+  "priority": "2015-08-14",
+  "assignee": "Elucid Bioimaging Inc.",
+  "inventor": "Andrew J. Buckler",
+  "snippet": "Systems and methods for analyzing pathologies utilizing quantitative imaging are presented herein. Advantageously, the systems and methods of the present disclosure utilize a hierarchical analytics framework that identifies and quantify biological properties/a",
+  "query": "variable radius morphological dilation erosion"
+ },
+ {
+  "id": "US12380572B2",
+  "title": "Methods for the segmentation of lungs, lung vasculature and lung lobes from CT &hellip;",
+  "priority": "2018-04-12",
+  "assignee": "Veran Medical Technologies, Inc.",
+  "inventor": "Andrew Dougherty",
+  "snippet": "Method and processes for segmentation of lungs lobes from CT image data are disclosed. Lobe segmentation relies on other segmentations, including the lungs, the lung airways and vasculature. Segmentation methods and processes begin with the acquisition of 3-D ",
+  "query": "variable radius morphological dilation erosion"
+ },
+ {
+  "id": "US12638850B2",
+  "title": "Apparatus and method for agricultural data collection and agricultural &hellip;",
+  "priority": "2017-08-25",
+  "assignee": "The Board Of Trustees Of The University Of Illinois",
+  "inventor": "Girish Chowdhary",
+  "snippet": "Aspects of the subject disclosure may include, for example, obtaining video data from a single monocular camera, wherein the video data comprises a plurality of frames, wherein the camera is attached to a mobile robot that is travelling along a lane defined by",
+  "query": "variable radius morphological dilation erosion"
+ },
+ {
+  "id": "CN110082781B",
+  "title": "Fire source positioning method and system based on SLAM technology and image &hellip;",
+  "priority": "2019-05-20",
+  "assignee": "东北大学秦皇岛分校",
+  "inventor": "程龙",
+  "snippet": "The invention discloses a fire source location method and system based on SLAM technology and image recognition. It travels autonomously and captures images through the camera to identify and locate the fire source; when identifying and locating the fire sourc",
+  "query": "variable radius morphological dilation erosion"
+ },
+ {
+  "id": "US12249062B2",
+  "title": "Techniques for segmentation of lymph nodes, lung lesions and other solid or &hellip;",
+  "priority": "2012-04-11",
+  "assignee": "The Trustees Of Columbia University In The City Of New York",
+  "inventor": "Yongqiang Tan",
+  "snippet": "Techniques for segmentation include determining an edge of voxels in a range associated with a target object. A center voxel is determined. Target size is determined based on the center voxel. In some embodiments, edges near the center are suppressed, markers ",
+  "query": "variable radius morphological dilation erosion"
+ },
+ {
+  "id": "US8764651B2",
+  "title": "Fitness monitoring",
+  "priority": "2006-05-24",
+  "assignee": "Bao Tran",
+  "inventor": "Bao Tran",
+  "snippet": "A heart monitoring system for a user includes a body wearable appliance placed on or near the user skin and having one or more sensors to capture fitness data and a wireless transceiver to communicate fitness data; and a processor coupled to the wireless trans",
+  "query": "optical color averaging image cell sampling"
+ },
+ {
+  "id": "JP2022084796A",
+  "title": "Automated Assay Evaluation and Normalization for Image Processing",
+  "priority": "2017-08-04",
+  "assignee": "ベンタナ メディカル システムズ， インコーポレイテッド",
+  "inventor": "ニエ，ヤオ",
+  "snippet": "PROBLEM TO BE SOLVED: To provide a method of, an imaging system for, and a computer-readable medium for normalizing density (titer) in an image of a dyed biological sample. SOLUTION: The present invention is directed to a method of obtaining color and density ",
+  "query": "optical color averaging image cell sampling"
+ },
+ {
+  "id": "US11422503B2",
+  "title": "Device and method for iterative phase recovery based on pixel super-resolved on &hellip;",
+  "priority": "2014-08-01",
+  "assignee": "The Regents Of The University Of California",
+  "inventor": "Aydogan Ozcan",
+  "snippet": "A method for lens-free imaging of a sample or objects within the sample uses multi-height iterative phase retrieval and rotational field transformations to perform wide FOV imaging of pathology samples with clinically comparable image quality to a benchtop len",
+  "query": "optical color averaging image cell sampling"
+ },
+ {
+  "id": "US9823127B2",
+  "title": "Systems and methods for deep spectroscopic imaging of biological samples with &hellip;",
+  "priority": "2010-01-22",
+  "assignee": "Duke University",
+  "inventor": "Adam Wax",
+  "snippet": "Disclosed herein are systems and methods for deep spectroscopic imaging of a biological sample. In an aspect, a system includes a broad bandwidth light source configured to generate an illumination beam, an interferometer, and a spectrometer. The interferomete",
+  "query": "optical color averaging image cell sampling"
+ },
+ {
+  "id": "US10838192B2",
+  "title": "Method and device for high-resolution color imaging using merged images from &hellip;",
+  "priority": "2016-05-10",
+  "assignee": "The Regents Of The University Of California",
+  "inventor": "Aydogan Ozcan",
+  "snippet": "Methods and systems for generating a high-color-fidelity and high-resolution color image of a sample are disclosed; which fuses or merges a holographic image acquired at a single wavelength with a color-calibrated image taken by a low-magnification lens-based ",
+  "query": "optical color averaging image cell sampling"
+ },
+ {
+  "id": "US9028405B2",
+  "title": "Personal monitoring system",
+  "priority": "2006-05-16",
+  "assignee": "Bao Tran",
+  "inventor": "Bao Tran",
+  "snippet": "A system includes a processor; a cellular, WiFi, or Bluetooth transceiver coupled to the processor; an accelerometer or a motion sensor coupled to the processor; and a sensor coupled to the processor to sense mood, wherein text, image, sound, or video is rende",
+  "query": "optical color averaging image cell sampling"
+ },
+ {
+  "id": "WO2008015825A1",
+  "title": "Letter-writing font data, and letter outputting system",
+  "priority": "2006-08-01",
+  "assignee": "Kabushiki Kaisha Digimoji",
+  "inventor": "Hiromi Shiraishi",
+  "snippet": "Provided is letter-writing font data, which contains stroke information on a stroke corresponding to one touch at the time of writing each letter, and writing information on the writing of a letter at a stroke unit by using that stroke information, and which i",
+  "query": "character deformation warping glyph image"
+ },
+ {
+  "id": "US8842916B2",
+  "title": "Method and system for model-based signature profile extraction",
+  "priority": "2011-02-22",
+  "assignee": "Hewlett-Packard Development Company, L.P.",
+  "inventor": "Stephen Pollard",
+  "snippet": "A method for model-based signature profile extraction includes capturing an image of an authentic glyph. An outline model is fit to the image of the authentic glyph, and an authentic signature profile is extracted based on the outline model. A signature profil",
+  "query": "character deformation warping glyph image"
+ },
+ {
+  "id": "CN111587445B",
+  "title": "Safety Labels",
+  "priority": "2017-07-20",
+  "assignee": "拉瓦艾迪私人有限公司",
+  "inventor": "I.J.麦唐纳",
+  "snippet": "Systems and methods for decoding a security tag using an authentication server and a security tag reader are provided. The system may include at least one processor and at least one non-transitory memory. The memory may contain instructions that, when executed",
+  "query": "character deformation warping glyph image"
+ },
+ {
+  "id": "US10997463B2",
+  "title": "Training text recognition systems",
+  "priority": "2018-11-08",
+  "assignee": "Adobe Inc.",
+  "inventor": "Zhaowen Wang",
+  "snippet": "In implementations of recognizing text in images, text recognition systems are trained using noisy images that have nuisance factors applied, and corresponding clean images (e.g., without nuisance factors). Clean images serve as supervision at both feature and",
+  "query": "character deformation warping glyph image"
+ },
+ {
+  "id": "CN111263924B",
+  "title": "Device with integrated interface system",
+  "priority": "2017-03-29",
+  "assignee": "苹果公司",
+  "inventor": "C·A·莱顿伯格",
+  "snippet": "A portable computer is disclosed that includes a display portion having a display and a base portion pivotally coupled to the display portion. The base portion may include a bottom case and a top case formed of a dielectric material coupled to the bottom case.",
+  "query": "character deformation warping glyph image"
+ },
+ {
+  "id": "US9811671B1",
+  "title": "Authentication method and system",
+  "priority": "2000-05-24",
+  "assignee": "Copilot Ventures Fund Iii Llc",
+  "inventor": "David I. Durst",
+  "snippet": "The present invention provides a method and apparatus for the production and labeling of objects in a manner suitable for the prevention and detection of counterfeiting. Thus, the system incorporates a variety of features that make unauthorized reproduction di",
+  "query": "character deformation warping glyph image"
+ },
+ {
+  "id": "US7408555B2",
+  "title": "Adjusted Stroke Rendering",
+  "priority": "2004-03-31",
+  "assignee": "Adobe Systems Incorporated",
+  "inventor": "R. David Arnold",
+  "snippet": "Methods and apparatus implementing and using techniques for rendering a stroke (e.g., a line or glyph). An initial adjustment value can be calculated for the stroke, and an offset amount calculated based on the initial adjustment value, such that a minimum num",
+  "query": "text rendering image conversion glyph selection edge orientation"
+ },
+ {
+  "id": "US6101514A",
+  "title": "Anti-aliasing apparatus and method with automatic snap fit of horizontal and &hellip;",
+  "priority": "1993-06-10",
+  "assignee": "Apple Computer, Inc.",
+  "inventor": "Allen M. Chan",
+  "snippet": "The invention provides a method and apparatus for creating anti-aliasing effects in slanted or curved edge portions of a bit-mapped image while avoiding such effects at horizontal and vertical edge portions. A method in accordance with the invention comprises ",
+  "query": "text rendering image conversion glyph selection edge orientation"
+ },
+ {
+  "id": "RU2437152C2",
+  "title": "Device to process images, method and computer programme to process images",
+  "priority": "2007-06-29",
+  "assignee": "Кэнон Кабусики Кайся",
+  "inventor": "Макото ЕНОМОТО (JP)",
+  "snippet": "FIELD: information technologies. SUBSTANCE: device to process images comprises a unit of symbols recognition made as capable to perform processing of symbols recognition for multiple symbol images in a document image to produce codes of symbols corresponding t",
+  "query": "text rendering image conversion glyph selection edge orientation"
+ },
+ {
+  "id": "TW434493B",
+  "title": "Stroke-based glyph-outline font generation in low/high resolution space",
+  "priority": "1998-02-23",
+  "assignee": "Dynalab Inc",
+  "inventor": "Kuo-Young Cheng",
+  "snippet": "A method, computer system and computer-readable medium for generating an outline font of Asian language characters. The Asian language characters are defined by basic strokes. The basic strokes are identified by a plurality of key points and at least one width",
+  "query": "text rendering image conversion glyph selection edge orientation"
+ },
+ {
+  "id": "JP2001175807A",
+  "title": "Text area selection method",
+  "priority": "1999-11-12",
+  "assignee": "Xerox Corp",
+  "inventor": "Zeegaa Mauritius",
+  "snippet": "(57) [Summary] [PROBLEMS] To provide a method for selecting a text area from an image. A memory device accesses character and format information for each word in an image, determines an active area associated with each word in the image based on the character ",
+  "query": "text rendering image conversion glyph selection edge orientation"
+ },
+ {
+  "id": "JP2009146064A",
+  "title": "Image processing apparatus, image processing method, program thereof, and &hellip;",
+  "priority": "2007-12-12",
+  "assignee": "Canon Inc",
+  "inventor": "Makoto Enomoto",
+  "snippet": "In an electronic document based on a page image and a character drawing description, font data necessary for character drawing is stored in the electronic document, but the size of the electronic document is to be kept small. Also, we want to ensure visibility",
+  "query": "text rendering image conversion glyph selection edge orientation"
+ },
+ {
+  "id": "CN109145910A",
+  "title": "The image line feature extracting method of the reconstruction of hologram",
+  "priority": "2017-06-28",
+  "assignee": "上海盟云移软网络科技股份有限公司",
+  "inventor": "不公告发明人",
+  "snippet": "The image line feature extracting method of the reconstruction of hologram proposed by the present invention, is related to hologram image processing technology field, and 1, for bianry image after pretreatment, edge detection is done with Canny operator；2, th",
+  "query": "directional edge detection gradient orientation contour glyph"
+ },
+ {
+  "id": "CN108182705A",
+  "title": "A kind of three-dimensional coordinate localization method based on machine &hellip;",
+  "priority": "2016-12-08",
+  "assignee": "广州映博智能科技有限公司",
+  "inventor": "覃争鸣",
+  "snippet": "The invention discloses a kind of three-dimensional coordinate localization method based on machine vision, this method includes：S1 carries out Image Acquisition, pretreatment and the extraction of profile to workpiece；S2 carries out range normalization proces",
+  "query": "directional edge detection gradient orientation contour glyph"
+ },
+ {
+  "id": "CN111754461A",
+  "title": "Method and device for locating image character area of semiconductor chip",
+  "priority": "2020-05-28",
+  "assignee": "江苏理工学院",
+  "inventor": "巢渊",
+  "snippet": "The present invention provides a method and a device for locating an image character area of a semiconductor chip. Among them, the positioning method includes: collecting semiconductor chip images and preprocessing; rotating and correcting the semiconductor ch",
+  "query": "directional edge detection gradient orientation contour glyph"
+ },
+ {
+  "id": "CN111310760A",
+  "title": "Method for detecting onychomycosis characters by combining local prior &hellip;",
+  "priority": "2020-02-13",
+  "assignee": "辽宁师范大学",
+  "inventor": "宋传鸣",
+  "snippet": "The invention discloses an oracle bone inscription character detection method combining local prior features and depth convolution features, which belongs to the cross field of digital image processing and ancient text information processing. First, input the ",
+  "query": "directional edge detection gradient orientation contour glyph"
+ },
+ {
+  "id": "CN114494306A",
+  "title": "Oracle bone thesaurus character contour repairing method guided by edge &hellip;",
+  "priority": "2022-01-27",
+  "assignee": "辽宁师范大学",
+  "inventor": "宋传鸣",
+  "snippet": "The invention discloses an oracle bone thesaurus character outline restoration method guided by edge gradient covariance, which comprises the following steps of firstly, carrying out contrast enhancement, morphological operation and connected domain geometric ",
+  "query": "directional edge detection gradient orientation contour glyph"
+ },
+ {
+  "id": "US11681364B1",
+  "title": "Gaze prediction",
+  "priority": "2021-06-29",
+  "assignee": "Amazon Technologies, Inc.",
+  "inventor": "Xu Zhang",
+  "snippet": "An image processing system may receive image data from a camera of a user device and perform gaze prediction processing of the image data to predict one or more gaze patterns. The gaze prediction processing may include processing the image data using a neural ",
+  "query": "directional edge detection gradient orientation contour glyph"
+ },
+ {
+  "id": "US10517479B2",
+  "title": "Mesh network personal emergency response appliance",
+  "priority": "2006-06-30",
+  "assignee": "Koninklijke Philips N.V.",
+  "inventor": "Bao Tran",
+  "snippet": "A monitoring system using an activity sensor to determine patterns of activity based upon the user activity occurring over time.",
+  "query": "reaction diffusion biological pattern generation texture"
+ },
+ {
+  "id": "US10565329B2",
+  "title": "System and method for modelling system behaviour",
+  "priority": "2014-06-30",
+  "assignee": "Evolving Machine Intelligence Pty Ltd",
+  "inventor": "Nigel John Conrad Greenwood",
+  "snippet": "A method of modelling system behaviour of a physical system, the method including, in one or more electronic processing devices obtaining quantified system data measured for the physical system, the quantified system data being at least partially indicative of",
+  "query": "reaction diffusion biological pattern generation texture"
+ },
+ {
+  "id": "US8774885B2",
+  "title": "Device for generating a detectable signal based upon concentration of at least &hellip;",
+  "priority": "1996-09-04",
+  "assignee": "Geelux Holdings, Ltd.",
+  "inventor": "Marcio Marc Abreu",
+  "snippet": "Utilization of a contact device placed on the eye in order to detect physical and chemical parameters of the body as well as the non-invasive delivery of compounds according to these physical and chemical parameters, with signals being transmitted continuously",
+  "query": "reaction diffusion biological pattern generation texture"
+ },
+ {
+  "id": "US20240108286A1",
+  "title": "Wearable Appliance",
+  "priority": "2006-06-30",
+  "assignee": "Bt Wearables Llc",
+  "inventor": "Bao Tran",
+  "snippet": "What is disclosed is a wearable appliance that includes a housing adapted to fit in an ear of a user, an optical transmitter disposed in the housing, an optical receiver disposed in the housing, a wireless network communication device disposed in the housing, ",
+  "query": "reaction diffusion biological pattern generation texture"
+ },
+ {
+  "id": "US20230347347A1",
+  "title": "Microfluidic devices having isolation pens and methods of testing biological &hellip;",
+  "priority": "2013-10-22",
+  "assignee": "Berkeley Lights, Inc.",
+  "inventor": "Mark P. White",
+  "snippet": "A microfluidic device can comprise at least one swept region that is fluidically connected to unswept regions. The fluidic connections between the swept region and the unswept regions can enable diffusion but substantially no flow of media between the swept re",
+  "query": "reaction diffusion biological pattern generation texture"
+ },
+ {
+  "id": "CN108366753B",
+  "title": "For assessing the selective sampling with the structure space frequency of &hellip;",
+  "priority": "2015-10-07",
+  "assignee": "生物质子股份有限公司",
+  "inventor": "大卫·R·查斯",
+  "snippet": "Embodiment disclosed herein provides a kind of for down to the method for tens microns of resolution acquisition MR data, the variation that this method is applied to delicate tissues texture may be used as in-vivo diagnostic and the monitoring of the lesion o",
+  "query": "reaction diffusion biological pattern generation texture"
+ },
+ {
+  "id": "CN109285217B",
+  "title": "Reconstruction method of procedural plant model based on multi-view images",
+  "priority": "2018-09-10",
+  "assignee": "中国科学院自动化研究所",
+  "inventor": "郭建伟",
+  "snippet": "The invention belongs to the technical field of plant modeling and computer graphics processing, and in particular relates to a multi-view image-based procedural plant model reconstruction method, aiming at solving the problem of large errors and low precision",
+  "query": "L-system plant procedural generation branching"
+ },
+ {
+  "id": "JP7234313B2",
+  "title": "microwave energy delivery device",
+  "priority": "2010-05-03",
+  "assignee": "ニューウェーブ メディカル，インコーポレイテッド",
+  "inventor": "デル ヴァイデ，ダニエル ウォレン ヴァン",
+  "snippet": "A microwave energy delivery device comprising a proximal end and a distal end, comprising: The microwave energy delivery device comprises: an inner conductor having a proximal end and a distal end; an outer conductor having a proximal end and a distal end; a c",
+  "query": "L-system plant procedural generation branching"
+ },
+ {
+  "id": "WO2023043993A1",
+  "title": "Displaced micro-meshes for ray and path tracing",
+  "priority": "2021-09-16",
+  "assignee": "Nvidia Corporation",
+  "inventor": "John Burgess",
+  "snippet": "A Displaced Micro-mesh (DMM) primitive enables high complexity geometry for ray and path tracing while minimizing the associated builder costs and preserving high efficiency. A structured, hierarchical representation implicitly encodes vertex positions of a tr",
+  "query": "L-system plant procedural generation branching"
+ },
+ {
+  "id": "JP7743376B2",
+  "title": "Real-time, diagnostically useful results",
+  "priority": "2013-01-15",
+  "assignee": "キャスワークス・リミテッド",
+  "inventor": "イファト・ラビ",
+  "snippet": "A vascular evaluation device, a processor configured to be communicatively coupled to the medical imaging device; a memory that stores non-transitory computer-readable instructions; The memory, when executed, causes the processor to: receiving a medical image ",
+  "query": "L-system plant procedural generation branching"
+ },
+ {
+  "id": "EP3924008B1",
+  "title": "Vascularizing devices and methods for implanted diagnostics and therapeutics",
+  "priority": "2019-02-15",
+  "assignee": "William Marsh Rice University",
+  "inventor": "Omid Veiseh",
+  "snippet": "An implantable device comprising a degradable outer housing comprising a degradable polymer, and an inner non-degradable portion comprising a non-degradable polymer, wherein the degradable outer housing is patterned, and the patterned portion comprises blood v",
+  "query": "L-system plant procedural generation branching"
+ },
+ {
+  "id": "CN101887596B",
+  "title": "Three-dimensional model reconstruction method of tree point cloud data based on &hellip;",
+  "priority": "2010-06-01",
+  "assignee": "中国科学院自动化研究所",
+  "inventor": "张晓鹏",
+  "snippet": "The invention relates to a three-dimensional model reconstruction method based on segmentation and automatic growth of tree point cloud data. The skeleton of the main branch of the branch is used to guide the generation of the twigs of the branch from the skel",
+  "query": "fractal tree generation computer graphics foliage"
+ },
+ {
+  "id": "US11670564B2",
+  "title": "Multi-fractal heatsink system and method",
+  "priority": "2017-07-17",
+  "assignee": "Fractal Heatsink Technologies LLC",
+  "inventor": "Alexander Poltorak",
+  "snippet": "A heat sink comprising a heat exchange device having a large-scale morphology over a scale range and a small-scale texture over a scale range, wherein at least one of the large-scale morphology and the small scale texture has a fractal-like self-similarity ove",
+  "query": "fractal tree generation computer graphics foliage"
+ },
+ {
+  "id": "JP6657289B2",
+  "title": "Systems and methods for augmented and virtual reality",
+  "priority": "2011-10-28",
+  "assignee": "マジック リープ， インコーポレイテッドＭａｇｉｃ Ｌｅａｐ，Ｉｎｃ．",
+  "inventor": "エー． ミラー サミュエル",
+  "snippet": "A user display device, A housing frame attachable to the user&#39;s head, A first pair of cameras coupled to the housing frame to track eye movements of the user and estimate a depth of focus based on the tracked eye movements; A projection module having a lig",
+  "query": "fractal tree generation computer graphics foliage"
+ },
+ {
+  "id": "US10685064B2",
+  "title": "Executable graph framework for the management of complex systems",
+  "priority": "2014-04-09",
+  "assignee": "Introspective Systems LLC",
+  "inventor": "Caryl Erin Johnson",
+  "snippet": "The present invention addresses deficiencies of the art with respect to collaborative computer networks consisting of mixed data, control functions, analysis functions, and sensors in complex systems of systems. The method involves a database framework for rep",
+  "query": "fractal tree generation computer graphics foliage"
+ },
+ {
+  "id": "US12440767B2",
+  "title": "Scripting engine and implementations",
+  "priority": "2018-04-04",
+  "assignee": "UberGeekGames LLC",
+  "inventor": "Ian Nicolades",
+  "snippet": "A multi-user interactive virtual simulation is provided to a plurality of devices in a first state as a function of an input layer, a rendering layer, a simulation layer, and a scripting layer. The multi-user interactive virtual simulation is provided to each ",
+  "query": "fractal tree generation computer graphics foliage"
+ },
+ {
+  "id": "CN105336003B",
+  "title": "The method for drawing out three-dimensional terrain model with reference to &hellip;",
+  "priority": "2015-09-28",
+  "assignee": "中国人民解放军空军航空大学",
+  "inventor": "全吉成",
+  "snippet": "A kind of method that real-time smoothness of combination GPU technologies draws out three-dimensional terrain model, belongs to image processing technique field.The purpose of the present invention is using global digital elevation model as data source, Progr",
+  "query": "fractal tree generation computer graphics foliage"
+ },
+ {
+  "id": "ES2969893T3",
+  "title": "Systems for laser eye surgery and therapeutic treatments",
+  "priority": "2017-03-31",
+  "assignee": "Annmarie Hipsley",
+  "inventor": "Annmarie Hipsley",
+  "snippet": "Systems, devices, and methods for delivering microporation medical treatments to improve biomechanics are provided, wherein the system includes a laser for generating a beam of laser radiation in a treatment axis not aligned with the visual axis of the patient",
+  "query": "procedural flower petal geometry generation phyllotaxis"
+ },
+ {
+  "id": "US9317627B2",
+  "title": "Method and apparatus for creating timewise display of widely variable &hellip;",
+  "priority": "1999-05-10",
+  "assignee": "Genicap Beheer B.V.",
+  "inventor": "Johan Gielis",
+  "snippet": "Patterns (e.g., such as images, waveforms such as sounds, electromagnetic waves, or other signals, etc.) are synthesized, modulated and/or analyzed through the use of a computer programmed with a novel mathematical formula. The formula acts as a linear operato",
+  "query": "procedural flower petal geometry generation phyllotaxis"
+ },
+ {
+  "id": "JP2020512917A5",
+  "title": "Patent JP2020512917A5",
+  "assignee": "",
+  "inventor": "",
+  "snippet": "Systems and methods for eye laser surgery and therapeutic procedures Cross-reference of related applications [0001] This application is a provisional US entitled &#34;SYSTEMS AND METHODS FOR OCULAR LASER SURGERY AND THE RAPEUTIC TREATMENTS,&#34; filed March 31",
+  "query": "procedural flower petal geometry generation phyllotaxis"
+ },
+ {
+  "id": "KR102659978B1",
+  "title": "Ultrasensitive capacitive tactile sensor with heterostructure and manufacturing &hellip;",
+  "priority": "2022-06-14",
+  "assignee": "광운대학교 산학협력단",
+  "inventor": "김남영",
+  "snippet": "In the present invention, a simple and economical strategy is used to fabricate two Ag-PDMS layers with a hierarchically structured P(VDF-TrFE)-TiO 2 dielectric layer containing sea urchin-type TiO 2 particles in micropores and a hierarchical microcone structu",
+  "query": "procedural flower petal geometry generation phyllotaxis"
+ },
+ {
+  "id": "AU2016200537A1",
+  "title": "Glutamate decarboxylase (GAD) transgenic plants that exhibit altered plant &hellip;",
+  "priority": "2008-07-14",
+  "assignee": "Avesthagen Limited",
+  "inventor": "Villoo Morawala Patell",
+  "snippet": "The present invention relates to method for generating plants having altered architecture by introducing into plants, isolated nucleic acid molecules that can be used to produce transgenic plants characterized by altered plant architecture, carbon and nitrogen",
+  "query": "procedural flower petal geometry generation phyllotaxis"
+ },
+ {
+  "id": "CN115408862A",
+  "title": "Mine fire dynamic disaster scene construction and evolution system and method &hellip;",
+  "priority": "2022-08-31",
+  "assignee": "重庆科华安全设备有限责任公司",
+  "inventor": "魏晓",
+  "snippet": "The invention belongs to the technical field of coal mine disaster prevention, and in particular relates to a mine fire dynamic disaster scene construction and evolution system and method for VR. Firstly, the basic parameters of the mining area are collected t",
+  "query": "fluid flame simulation particle rendering fire"
+ },
+ {
+  "id": "CN105701322B",
+  "title": "A kind of oil-gas pipeline Failure Simulation system and method",
+  "priority": "2016-03-22",
+  "assignee": "中国特种设备检测研究院",
+  "inventor": "黄辉",
+  "snippet": "An oil and gas pipeline accident simulation system and method technical field The invention relates to the field of simulation, in particular to an oil and gas pipeline accident simulation system and method. Background technique There are many reasons for the ",
+  "query": "fluid flame simulation particle rendering fire"
+ },
+ {
+  "id": "CN101477708A",
+  "title": "Combustion process interactive virtual simulation process oriented to ceramic &hellip;",
+  "priority": "2009-01-23",
+  "assignee": "武汉理工大学",
+  "inventor": "魏志华",
+  "snippet": "The invention relates to an interactive virtual simulation method for the combustion process of a ceramic roller kiln. VC++ and OpenGL graphics library are the realization tools to complete the interactive virtual simulation of the combustion process of the ce",
+  "query": "fluid flame simulation particle rendering fire"
+ },
+ {
+  "id": "CN101477709A",
+  "title": "Combustion process interactive virtual simulation process oriented to ceramic &hellip;",
+  "priority": "2009-01-23",
+  "assignee": "武汉理工大学",
+  "inventor": "饶文碧",
+  "snippet": "The invention relates to an interactive virtual simulation method for the combustion process of a ceramic tunnel kiln. The method adopted is: taking ceramic tunnel kiln combustion modeling technology, visualization technology, virtual reality technology and nu",
+  "query": "fluid flame simulation particle rendering fire"
+ },
+ {
+  "id": "CN104463936A",
+  "title": "Indoor explosion simulation method based on virtual reality",
+  "priority": "2014-11-28",
+  "assignee": "北京交通大学",
+  "inventor": "李红辉",
+  "snippet": "The invention discloses a method for indoor explosion simulation based on virtual reality. The method comprises: constructing various solid models; The rigid body attribute is added to the model, and the motion of the rigid body is simulated according to the r",
+  "query": "fluid flame simulation particle rendering fire"
+ },
+ {
+  "id": "US12556606B2",
+  "title": "System and method for server based control",
+  "priority": "2012-01-09",
+  "assignee": "May Patents Ltd.",
+  "inventor": "Yehuda Binder",
+  "snippet": "A system and method in a building or vehicle for an actuator operation in response to a sensor according to a control logic, the system comprising a router or a gateway communicating with a device associated with the sensor and a device associated with the act",
+  "query": "fluid flame simulation particle rendering fire"
+ },
+ {
+  "id": "EP3425899B1",
+  "title": "System and methods for generating scene-stabilized metadata",
+  "priority": "2013-07-30",
+  "assignee": "Dolby Laboratories Licensing Corporation",
+  "inventor": "Robin Atkins",
+  "snippet": "A video processing system (100), comprising: - an encoder (127A) configured to generate an encoded video data stream; - a decoder (127B) configured to receive and decode the encoded video data stream; and - a display management module (104) configured to recei",
+  "query": "temporal smoothing flicker reduction video stabilization hysteresis"
+ },
+ {
+  "id": "US9237855B2",
+  "title": "Wearable heart rate monitor",
+  "priority": "2012-06-22",
+  "assignee": "Fitbit, Inc.",
+  "inventor": "Jung Ook Hong",
+  "snippet": "Some embodiments provide a wearable fitness monitoring device including a motion sensor and a photoplethysmographic (PPG) sensor. The PPG sensor includes (i) a periodic light source, (ii) a photo detector, and (iii) circuitry determining a user&#39;s heart rat",
+  "query": "temporal smoothing flicker reduction video stabilization hysteresis"
+ },
+ {
+  "id": "US9005129B2",
+  "title": "Wearable heart rate monitor",
+  "priority": "2012-06-22",
+  "assignee": "Fitbit, Inc.",
+  "inventor": "Subramaniam Venkatraman",
+  "snippet": "A biometric monitoring device is used to determine a user&#39;s heart rate by using a heartbeat waveform sensor and a motion detecting sensor. In some embodiments, the device collects collecting concurrent output data from the heartbeat waveform sensor and out",
+  "query": "temporal smoothing flicker reduction video stabilization hysteresis"
+ },
+ {
+  "id": "US10198629B2",
+  "title": "System and method for detecting objects in an image",
+  "priority": "2015-06-22",
+  "assignee": "Photomyne Ltd.",
+  "inventor": "Yair SEGALOVITZ",
+  "snippet": "A method for cropping photos images captured by a user from an image of a page of a photo album is described. Corners in the page image are detected using corner detection algorithm or by detecting intersections of line-segments (and their extensions) in the i",
+  "query": "temporal smoothing flicker reduction video stabilization hysteresis"
+ },
+ {
+  "id": "KR20240173185A",
+  "title": "Input recognition in 3d environments",
+  "priority": "2023-06-02",
+  "assignee": "애플 인크.",
+  "inventor": "줄리안 케이. 슈츠버그",
+  "snippet": "Various implementations disclosed herein include devices, systems, and methods for interpreting user activity as user interactions with user interface (ui) elements positioned within a three-dimensional (3d) space, such as an extended reality (xr) environment.",
+  "query": "temporal smoothing flicker reduction video stabilization hysteresis"
+ },
+ {
+  "id": "US10194836B2",
+  "title": "GPS accuracy refinement using external sensors",
+  "priority": "2012-06-22",
+  "assignee": "Fitbit, Inc.",
+  "inventor": "Subramaniam Venkatraman",
+  "snippet": "Biometric monitoring devices, including various technologies that may be implemented in such devices, are discussed herein. Additionally, techniques for enhancing GPS speed and distance measurements based on step counts measured by a biometric monitoring devic",
+  "query": "temporal smoothing flicker reduction video stabilization hysteresis"
+ },
+ {
+  "id": "AU2019202063B2",
+  "title": "Synthesizing new font glyphs from partial observations",
+  "priority": "2018-06-15",
+  "assignee": "Adobe Inc.",
+  "inventor": "Samaneh Azadi",
+  "snippet": "OF THE DISCLOSURE Techniques are disclosed for the synthesis of a full set of slotted content, based upon only partial observations of the slotted content. With respect to a font, the slots may comprise particular letters or symbols or glyphs in an alphabet. B",
+  "query": "texture synthesis from exemplar glyph"
+ },
+ {
+  "id": "CN106537290B",
+  "title": "Systems and methods of biomechanically based eye signals for interaction with &hellip;",
+  "priority": "2014-05-09",
+  "assignee": "谷歌有限责任公司",
+  "inventor": "纳尔逊·乔治·普布利科弗",
+  "snippet": "Systems and methods are provided for recognizing an intent of a device wearer based primarily on eye movement. The system can be included in unobtrusive headwear that performs eye tracking and controls screen display. The system can also utilize a remote eye-t",
+  "query": "texture synthesis from exemplar glyph"
+ },
+ {
+  "id": "US12694664B2",
+  "title": "Real-time gesture recognition method and apparatus",
+  "priority": "2018-02-12",
+  "assignee": "Avodah, Inc.",
+  "inventor": "Trevor Chandler",
+  "snippet": "Disclosed are methods, apparatus and systems for real-time gesture recognition. One exemplary method for the real-time identification of a gesture communicated by a subject includes receiving, by a first thread of the one or more multi-threaded processors, a f",
+  "query": "texture synthesis from exemplar glyph"
+ },
+ {
+  "id": "US10521928B2",
+  "title": "Real-time gesture recognition method and apparatus",
+  "priority": "2018-02-12",
+  "assignee": "Avodah Labs, Inc.",
+  "inventor": "Trevor Chandler",
+  "snippet": "Disclosed are methods, apparatus and systems for real-time gesture recognition. One exemplary method for the real-time identification of a gesture communicated by a subject includes receiving, by a first thread of the one or more multi-threaded processors, a f",
+  "query": "texture synthesis from exemplar glyph"
+ },
+ {
+  "id": "US11704765B2",
+  "title": "Artwork generated to convey digital messages, and methods/apparatuses for &hellip;",
+  "priority": "2017-12-08",
+  "assignee": "Digimarc Corporation",
+  "inventor": "Ajith M. Kamath",
+  "snippet": "Features from a style image are adapted to express a machine-readable code. For example, grains of rice depicted in a style image may be positioned to create a pattern mimicking that of a machine-readable code. The resulting output image can then be used as a ",
+  "query": "texture synthesis from exemplar glyph"
+ },
+ {
+  "id": "JP2021030730A5",
+  "title": "Patent JP2021030730A5",
+  "assignee": "",
+  "inventor": "",
+  "snippet": "A method of creating a security mark on a document, comprising: selecting a first pattern comprising one or more non-infrared absorbing colors; selecting a second pattern comprising one or more non-infrared absorbing colors, wherein the first pattern and the s",
+  "query": "typographic image mosaic characters rendering"
+ },
+ {
+  "id": "KR20080037064A",
+  "title": "Image Processing Apparatus, Printer, and Image Processing Method",
+  "priority": "2006-06-28",
+  "assignee": "가부시키가이샤 리코",
+  "inventor": "히데오 다나카",
+  "snippet": "An image processing portion configured to perform image processing to cause a printer to print document data, the printer having a nozzle head, the nozzle head having a first nozzle group and a second nozzle group, and the first nozzle group having a plurality",
+  "query": "typographic image mosaic characters rendering"
+ },
+ {
+  "id": "US20090167800A1",
+  "title": "Inkjet recording apparatus, image forming system, and computer-readable &hellip;",
+  "priority": "2007-12-27",
+  "assignee": "Shinichi Hatanaka",
+  "inventor": "Shinichi Hatanaka",
+  "snippet": "An inkjet recording apparatus is disclosed, including: a jaggy correction process part for recording a dot for the jaggy correction at a border portion of an image. A droplet amount of each of color inks forming the dot for the jaggy correction using the color",
+  "query": "typographic image mosaic characters rendering"
+ },
+ {
+  "id": "US20110063349A1",
+  "title": "Printing apparatus and printing method",
+  "priority": "2009-09-16",
+  "assignee": "Seiko Epson Corporation",
+  "inventor": "Takashi Koase",
+  "snippet": "A printing apparatus includes: a head unit that ejects ink; and a control unit that causes the head unit to eject ink. In the case where a first image and a second image that is adjacent to the first image are formed, the control unit forms a third image by ca",
+  "query": "typographic image mosaic characters rendering"
+ },
+ {
+  "id": "EP3296117A1",
+  "title": "Image formation method",
+  "priority": "2015-05-15",
+  "assignee": "FUJIFILM Corporation",
+  "inventor": "Tomohiro Mizuno",
+  "snippet": "An image forming method of the present invention is an image forming method of forming a halftone image on a corrugated fibreboard recording medium using an inkjet recording device that uses magenta ink and other inks with two or more colors other than the mag",
+  "query": "typographic image mosaic characters rendering"
+ },
+ {
+  "id": "US20100157376A1",
+  "title": "Method and system for increasing edge sharpness in color printed images",
+  "priority": "2008-12-22",
+  "assignee": "Pitney Bowes Inc.",
+  "inventor": "Walter J. Kulpa",
+  "snippet": "A device and method for enhancing edge sharpness and clarity of solid graphic shapes included in printed color images printed on low dot-per-inch color printers is presented. The improved printing is achieved by creating an additional image file, called a whit",
+  "query": "typographic image mosaic characters rendering"
+ },
+ {
+  "id": "JP5131090B2",
+  "title": "Image processing apparatus, image processing method, and image processing &hellip;",
+  "priority": "2007-11-16",
+  "assignee": "セイコーエプソン株式会社",
+  "inventor": "祐子 山本",
+  "snippet": "Comprising a plurality of recording materials having different chromatic colors, the printing device it represents black by composite black, an image processing apparatus for outputting the output data for printing, For each pixel constituting the image to be ",
+  "query": "character based image rendering font glyph density dithering"
+ },
+ {
+  "id": "US8427509B2",
+  "title": "Method for embedding messages into documents using distance fields",
+  "priority": "2008-12-31",
+  "assignee": "Mitsubishi Electric Research Laboratories, Inc.",
+  "inventor": "Shantanu Rane",
+  "snippet": "We claim: 1. A method for embedding symbols of a message into a document containing a set of glyphs, comprising: representing a glyph in a document as a distance field; representing a symbol in a message to be embedded in the document as a modification of a su",
+  "query": "character based image rendering font glyph density dithering"
+ },
+ {
+  "id": "US5579030A",
+  "title": "Method and apparatus for display of text on screens",
+  "priority": "1993-11-18",
+  "assignee": "Adobe Systems Incorporated",
+  "inventor": "Peter Karow",
+  "snippet": "Text and graphics are represented on video screens having a given raster of screen pixels in x- and y-directions and video refresh memories. The necessary glyphs are loaded in an outline format from a memory and get rastered alongside their contours (gridwalk)",
+  "query": "character based image rendering font glyph density dithering"
+ },
+ {
+  "id": "US6282327B1",
+  "title": "Maintaining advance widths of existing characters that have been resolution &hellip;",
+  "priority": "1999-07-30",
+  "assignee": "Microsoft Corporation",
+  "inventor": "Claude Betrisey",
+  "snippet": "The widths of characters, that have had (or that are having) resolution enhancement processing applied, are adjusted so that the widths of the characters are maintained. In this way, formatting of any file including such characters is maintained. Specifically,",
+  "query": "character based image rendering font glyph density dithering"
+ },
+ {
+  "id": "JP3133790B2",
+  "title": "Halftone font generator",
+  "priority": "1991-08-26",
+  "assignee": "大日本印刷株式会社",
+  "inventor": "雅 斉藤",
+  "snippet": "(57) [Claims] 1. A halftone font, which is used when displaying characters on a CRT screen and has a plurality of gradations in each mesh, is converted into a raster composed of two gradation dots finer than the halftone font. In a halftone font generation dev",
+  "query": "character based image rendering font glyph density dithering"
+ },
+ {
+  "id": "JP3133788B2",
+  "title": "Halftone font generator",
+  "priority": "1991-08-26",
+  "assignee": "大日本印刷株式会社",
+  "inventor": "雅 斉藤",
+  "snippet": "(57) [Claims] 1. A halftone font having a predetermined dot configuration and each dot having a multi-step gradation used for displaying a character on a CRT screen, etc. In a halftone font generation device that generates from a predetermined raster font comp",
+  "query": "character based image rendering font glyph density dithering"
+ },
+ {
+  "id": "CN110934563B",
+  "title": "Ophthalmic information processing device, ophthalmic device, and ophthalmic &hellip;",
+  "priority": "2018-09-25",
+  "assignee": "株式会社拓普康",
+  "inventor": "杂贺诚",
+  "snippet": "An ophthalmic information processing apparatus, an ophthalmic apparatus, and an ophthalmic information processing method, which can obtain the position and the like of an intraocular site with high accuracy from a corneal shape. The ophthalmic apparatus includ",
+  "query": "corneal reflection eye image environment map reconstruction"
+ },
+ {
+  "id": "US9364144B2",
+  "title": "Method and device for recording and displaying an OCT whole-eye scan",
+  "priority": "2010-09-24",
+  "assignee": "Carl Zeiss Meditec Ag",
+  "inventor": "Martin Hacker",
+  "snippet": "The eye is illuminated by a variable laser light source with a measurement range corresponding to the eye length, wherein the focus of the laser beam in the eye can be shifted laterally and/or axially by an adjustment mechanism, and the light fractions back-sc",
+  "query": "corneal reflection eye image environment map reconstruction"
+ },
+ {
+  "id": "US10008131B2",
+  "title": "Ophthalmic procedure simulation with artificial eye",
+  "priority": "2014-12-29",
+  "assignee": "Novartis Ag",
+  "inventor": "Jeremy Dong",
+  "snippet": "An artificial eye can include a body defining a cavity; a lens element disposed within the cavity; a cornea element positioned anteriorly of the lens element; and a liquid disposed within the cavity such that the liquid is positioned between the lens element a",
+  "query": "corneal reflection eye image environment map reconstruction"
+ },
+ {
+  "id": "US20210212601A1",
+  "title": "System and Methods for Dynamic Position Measurement of Ocular Structures",
+  "priority": "2020-01-09",
+  "assignee": "Daniel R. Neal",
+  "inventor": "Daniel R. Neal",
+  "snippet": "This invention, a Purkinjenator™ optical system, is an eye-tracker and methodology for tracking Purkinje reflection images from a human eye in real-time, which allows for the XYZ position and tip/tilt of structures inside the eye to be determined in real-time.",
+  "query": "corneal reflection eye image environment map reconstruction"
+ },
+ {
+  "id": "RU2344764C1",
+  "title": "Method of ciliary body and anterior ocular chamber angle examination and method &hellip;",
+  "priority": "2007-06-14",
+  "assignee": "Государственное образовательное учреждение высшего профессионального &hellip;",
+  "inventor": "Георгий Сергеевич Богданов (RU)",
+  "snippet": "FIELD: medicine. SUBSTANCE: optical coherent tomography is performed by contact method with scanning ray direction perpendicular to limb. Examination is performed in 12, 3, 6 and 9 hour directions at 1, 2, 3 and 4 mm from limb. During scanning at 1 mm distance",
+  "query": "corneal reflection eye image environment map reconstruction"
+ },
+ {
+  "id": "US10702145B2",
+  "title": "Ophthalmologic apparatus",
+  "priority": "2016-03-08",
+  "assignee": "Topcon Corporation",
+  "inventor": "Mariko Kobayashi",
+  "snippet": "An ophthalmologic apparatus according to an exemplary embodiment acquires data by OCT scanning of the anterior eye segment. The apparatus generates distribution information of a predetermined parameter in the anterior eye segment by analyzing the data. The app",
+  "query": "corneal reflection eye image environment map reconstruction"
+ },
+ {
+  "id": "US10203762B2",
+  "title": "Methods and systems for creating virtual and augmented reality",
+  "priority": "2014-03-11",
+  "assignee": "Magic Leap, Inc.",
+  "inventor": "Gary R. Bradski",
+  "snippet": "Configurations are disclosed for presenting virtual reality and augmented reality experiences to users. The system may comprise an image capturing device to capture one or more images, the one or more images corresponding to a field of the view of a user of a ",
+  "query": "iris pattern concentric radial structure rendering"
+ },
+ {
+  "id": "US9107586B2",
+  "title": "Fitness monitoring",
+  "priority": "2006-05-24",
+  "assignee": "Empire Ip Llc",
+  "inventor": "Bao Tran",
+  "snippet": "A mobile system for a user includes a telephone having one or more sensors to capture fitness data or vital sign data, the telephone having a wireless transceiver coupled to the processor to communicate fitness or vital sign data over a personal area network; ",
+  "query": "iris pattern concentric radial structure rendering"
+ },
+ {
+  "id": "AU2017254813B2",
+  "title": "Virtual and augmented reality systems and methods",
+  "priority": "2013-11-27",
+  "assignee": "Magic Leap, Inc.",
+  "inventor": "Brian Schowengerdt",
+  "snippet": "Configurations are disclosed for presenting virtual reality and augmented reality experiences to users. The system may comprise an image-generating source to provide one or more frames of imagedata in atime-sequential manner, a light modulator configured to tr",
+  "query": "iris pattern concentric radial structure rendering"
+ },
+ {
+  "id": "EP3155560B1",
+  "title": "Methods and systems for creating virtual and augmented reality",
+  "priority": "2014-06-14",
+  "assignee": "Magic Leap, Inc.",
+  "inventor": "Gary R. Bradski",
+  "snippet": "A method for determining user inputs in a virtual or augmented reality system (10), comprising: capturing one or more images corresponding to a field of view of a user through a virtual or augmented reality system (10), the one or more images comprising at lea",
+  "query": "iris pattern concentric radial structure rendering"
+ },
+ {
+  "id": "US10314702B2",
+  "title": "Transapical method of supplanting an implanted prosthetic heart valve",
+  "priority": "2005-11-16",
+  "assignee": "Edwards Lifesciences Corporation",
+  "inventor": "Mark M. Dehdashtian",
+  "snippet": "A method of delivering a prosthetic heart valve to the aortic valve annulus while a patient&#39;s heart is beating is disclosed. The method includes accessing the left ventricle through an intercostal incision and forming a puncture in the left ventricle. A gu",
+  "query": "iris pattern concentric radial structure rendering"
+ },
+ {
+  "id": "KR20240162070A",
+  "title": "Imaging sensors including plasmonic metasurface optical filters and optical &hellip;",
+  "priority": "2022-03-01",
+  "assignee": "메타헬리오스 리미티드",
+  "inventor": "샤 야쉬",
+  "snippet": "A plasmonic metasurface optical filter is described. The optical filter comprises a planar array of unit cells, each of which comprises a plurality of light-transmitting nanoholes having a substantially elliptical cross-section that is non-circular. Each of th",
+  "query": "metamaterial structural color light manipulation"
+ },
+ {
+  "id": "AU2025223888A1",
+  "title": "Interconnected lens materials arranged as lens sheets for improved camouflage",
+  "priority": "2018-07-04",
+  "assignee": "Hyperstealth Biotechnology Corporation",
+  "inventor": "Guy Cramer",
+  "snippet": "#$%^&amp;*AU2025223888A120250918.pdf##### Abstract The present invention relates to uses of ray-optical metamaterials configured as lens sheets for camouflaging applications. The lens sheets comprise arrays of elongate lenses such as lenticules, prism lenses, ",
+  "query": "metamaterial structural color light manipulation"
+ },
+ {
+  "id": "US20240282274A1",
+  "title": "Apparatus and method for creating highly-functional meta-materials from &hellip;",
+  "priority": "2019-04-11",
+  "assignee": "PixelDisplay, Inc.",
+  "inventor": "David Wyatt",
+  "snippet": "Presented herein are methods for creating nanoparticles, which exhibit desirable electro-luminescent and photo-luminescent capabilities, while retaining the robust inorganic nature. And incorporating the nanoparticles in micron and sub-micron scale structures,",
+  "query": "metamaterial structural color light manipulation"
+ },
+ {
+  "id": "US12052518B2",
+  "title": "Multi-modal computational imaging via metasurfaces",
+  "priority": "2020-07-23",
+  "assignee": "University Of Utah Research Foundation",
+  "inventor": "Rajesh Menon",
+  "snippet": "A multi-modal imaging device can include a sensor array, a metamaterial filter, and a memory unit. The sensor array can be any suitable sensor which detects incoming light and is capable of recording a received image. The metamaterial filter can be oriented ad",
+  "query": "metamaterial structural color light manipulation"
+ },
+ {
+  "id": "US11650403B2",
+  "title": "Optical elements for beam-shaping and illumination",
+  "priority": "2019-02-08",
+  "assignee": "Meta Platforms Technologies, Llc",
+  "inventor": "Robin Sharma",
+  "snippet": "An example device may include a light source, an optical element, and, optionally, an encapsulant layer. A light beam generated by the light source may be received by the optical element and redirected towards an illumination target, such as an eye of a user. ",
+  "query": "metamaterial structural color light manipulation"
+ },
+ {
+  "id": "JP6334403B2",
+  "title": "Filters created with metamaterials",
+  "priority": "2011-10-10",
+  "assignee": "ラムダ ガード テクノロジーズ リミテッド",
+  "inventor": "パリカラス、ジョージ",
+  "snippet": "A filter for filtering visible electromagnetic radiation, The filter comprises a first metamaterial configured to provide first filtering of visible electromagnetic radiation and a second metamaterial configured to provide second filtering of visible electroma",
+  "query": "metamaterial structural color light manipulation"
+ },
+ {
+  "id": "JP5752035B2",
+  "title": "Hydrophilic interpenetrating polymer network derived from hydrophobic polymer",
+  "priority": "2008-07-07",
+  "assignee": "バイオミメディカ インコーポレイテッド",
+  "inventor": "ディヴィッド ミュン",
+  "snippet": "A product comprising a prosthesis having a first surface and a second surface, The prosthesis comprises a composition (a) and a composition (b), wherein (a) is a covalently crosslinked polyacrylic acid network, (b) is polyurethane, The prosthesis comprises (a)",
+  "query": "biomimetic surface reconstruction organic shape"
+ },
+ {
+  "id": "US20240117158A1",
+  "title": "Compositions and methods for treating a disorder or defect in soft tissue",
+  "priority": "2009-11-09",
+  "assignee": "Drexel University",
+  "inventor": "Michele Marcolongo",
+  "snippet": "The present invention encompasses methods and compositions for generating a biomimetic proteoglycan. The invention includes methods of treating a disease, disorder, or condition of soft tissue using a biomimetic proteoglycan.",
+  "query": "biomimetic surface reconstruction organic shape"
+ },
+ {
+  "id": "CN110545754B",
+  "title": "Coated medical devices and use for the treatment or prevention of vascular &hellip;",
+  "priority": "2017-04-13",
+  "assignee": "祥丰医疗私人有限公司",
+  "inventor": "迈克尔·J·B·库特雷克",
+  "snippet": "The present disclosure provides a medical device or substrate coated with polydopamine, which is further linked to a ligand, such as an antibody and/or antibody fragment. The polydopamine coating and ligand can be linked by linkers such as organic polymers.",
+  "query": "biomimetic surface reconstruction organic shape"
+ },
+ {
+  "id": "US10265155B2",
+  "title": "Biomimmetic nanofiber scaffold for soft tissue and soft tissue-to-bone repair, &hellip;",
+  "priority": "2007-02-12",
+  "assignee": "The Trustees Of Columbia University In The City Of New York",
+  "inventor": "Helen H. Lu",
+  "snippet": "An implantable device is provided for soft-tissue or soft tissue-to-bone repair, fixation, augmentation, or replacement that includes a biomimetic and biodegradable nanofiber scaffold. Also provided is a fully synthetic implantable multiphased scaffold which i",
+  "query": "biomimetic surface reconstruction organic shape"
+ },
+ {
+  "id": "US9757339B2",
+  "title": "Artificial cell constructs for cellular manipulation",
+  "priority": "2009-07-10",
+  "assignee": "University of Pittsburgh—of the Commonwealth System of Higher Education",
+  "inventor": "Steven R. Little",
+  "snippet": "I claim: 1. A synthetic microparticle comprising at least one polymer and an internal structure, said internal structure comprising a plurality of compartments, wherein a soluble CCL22 chemokine is encapsulated within said plurality of compartments. 2. The syn",
+  "query": "biomimetic surface reconstruction organic shape"
+ },
+ {
+  "id": "JP7898726B2",
+  "title": "Microfluidic chips and biomimetic systems that use them",
+  "priority": "2020-04-22",
+  "assignee": "ザ ボード オブ トラスティーズ オブ ザ レランド スタンフォード ジュニア ユニバーシティー",
+  "inventor": "リー，ウォンジェ",
+  "snippet": "It is a biomimetic system, The biomimetic system comprises a microfluidic chip, and the microfluidic chip is plane; A first channel formed on the plane having a first volume defined by a first width, a first height, and a first length, wherein the first volume",
+  "query": "biomimetic surface reconstruction organic shape"
+ },
+ {
+  "id": "CN114677895A",
+  "title": "Method and system for making human body model of cardiac ultrasound &hellip;",
+  "priority": "2022-01-21",
+  "assignee": "深圳大学",
+  "inventor": "彭珏",
+  "snippet": "The invention discloses a manufacturing method and a human body model system of a pulsating heart ultrasound standardized human body model. The manufacturing method of the invention includes: collecting real human body shape, bone and blood vessel distribution",
+  "query": "heart model procedural cardiac surface parametric"
+ },
+ {
+  "id": "CN213346580U",
+  "title": "Heart and chest surgery preoperative observation platform with adjusting &hellip;",
+  "priority": "2020-05-23",
+  "assignee": "张军强",
+  "inventor": "张军强",
+  "snippet": "The utility model discloses a preoperative observation table for cardiothoracic surgery with an adjustment function, which comprises a fixed box frame, the bottom of the fixed box frame is fixedly installed with a supporting foot seat, and the top of the fixed",
+  "query": "heart model procedural cardiac surface parametric"
+ },
+ {
+  "id": "US8155739B2",
+  "title": "Cardiac resynchronization therapy optimization using mechanical dyssynchrony &hellip;",
+  "priority": "2008-06-20",
+  "assignee": "Pacesetter, Inc.",
+  "inventor": "Allen Keel",
+  "snippet": "Therapy optimization includes tracking electrode motion using an electroanatomic mapping system and generating, based on tracked electrode motion, one or more mechanical dyssynchrony metrics to thereby guide a clinician in therapy optimization (e.g., via optim",
+  "query": "heart model procedural cardiac surface parametric"
+ },
+ {
+  "id": "CN222723301U",
+  "title": "A postoperative rehabilitation exercise device with high comfort",
+  "priority": "2024-04-25",
+  "assignee": "南昌市第三医院(江西乳腺专科医院、南昌市妇幼保健院)",
+  "inventor": "孙红",
+  "snippet": "The utility model relates to the field of medical appliances and discloses a postoperative rehabilitation exercise device with high comfort, which comprises an exercise device body, wherein a first exercise mechanism is fixedly arranged at the upper end of the",
+  "query": "heart model procedural cardiac surface parametric"
+ },
+ {
+  "id": "CN212522379U",
+  "title": "Cushion for cardiovascular nursing",
+  "priority": "2020-02-22",
+  "assignee": "西安交通大学医学院第一附属医院",
+  "inventor": "吝利平",
+  "snippet": "The utility model discloses a cushion for cardiovascular nursing, including the supporting pad, place the hole, moving mechanism, actuating mechanism, the lithium cell, massage mechanism, the U-shaped handle, this cushion for cardiovascular nursing, at first m",
+  "query": "heart model procedural cardiac surface parametric"
+ },
+ {
+  "id": "US11219769B2",
+  "title": "Noninvasive methods and systems of determining the extent of tissue capture &hellip;",
+  "priority": "2016-02-26",
+  "assignee": "Medtronic, Inc.",
+  "inventor": "Subham Ghosh",
+  "snippet": "Methods and systems of evaluating cardiac pacing in candidate patients for cardiac resynchronization therapy and cardiac resynchronization therapy patients are disclosed. The methods and systems disclosed allow treatments to be personalized to patients by meas",
+  "query": "heart model procedural cardiac surface parametric"
+ },
+ {
+  "id": "US20260048317A1",
+  "title": "Systems and Methods for Portable Digital Scoreboards with LED Displays and &hellip;",
+  "priority": "2025-08-19",
+  "assignee": "Jeffrey Todd Brown",
+  "inventor": "Jeffrey Todd Brown",
+  "snippet": "A device may determine a layout of the reconfigurable modular display. A device may establish local wireless connectivity to accept concurrent connections from client devices without reliance on external networking infrastructure. A device may obtain game-stat",
+  "query": "GPU instanced glyph atlas text rendering signed distance field"
+ },
+ {
+  "id": "KR102705789B1",
+  "title": "Rendering computer-generated real-world text",
+  "priority": "2019-09-23",
+  "assignee": "애플 인크.",
+  "inventor": "시다르스 에스. 하즈라",
+  "snippet": "Various implementations disclosed herein include devices, systems, and methods for dynamically sizing regions used in foveated rendering of content that includes text. In some implementations, this involves adjusting the size of a first region, such as a fovea",
+  "query": "GPU instanced glyph atlas text rendering signed distance field"
+ },
+ {
+  "id": "US20190236820A1",
+  "title": "Method for rendering resolution-independent shapes directly from outline &hellip;",
+  "priority": "2018-02-01",
+  "assignee": "Terathon Software LLC",
+  "inventor": "Eric Lengyel",
+  "snippet": "A method for rendering a shape partially defined by quadratic Bézier curves computes the winding number with respect to one or more closed contours to determine whether a sample position is colored. Numerical robustness is achieved by classifying the controls ",
+  "query": "GPU instanced glyph atlas text rendering signed distance field"
+ },
+ {
+  "id": "EP2766874B1",
+  "title": "Caching coverage values for rendering text using anti-aliasing techniques",
+  "priority": "2011-10-11",
+  "assignee": "Microsoft Technology Licensing, LLC",
+  "inventor": "Megha JAIN",
+  "snippet": "A method of processing text that will be displayed in a graphical interface of a computing device, the method comprising: receiving, from an executing process, information regarding text to be displayed, including content of the text; creating (304) a mapping ",
+  "query": "GPU instanced glyph atlas text rendering signed distance field"
+ },
+ {
+  "id": "US12002132B1",
+  "title": "Rendering using analytic signed distance fields",
+  "priority": "2021-03-09",
+  "assignee": "Apple Inc.",
+  "inventor": "Tobias Eble",
+  "snippet": "Various implementations disclosed herein include devices, systems, and methods that use an analytic approach to determine signed distance field (SDF) representations that represent one or more curves (e.g., glyphs that represent text) and cache the SDF represe",
+  "query": "GPU instanced glyph atlas text rendering signed distance field"
+ },
+ {
+  "id": "CN120635275A",
+  "title": "Font rendering optimization method, device, equipment and medium",
+  "priority": "2025-05-30",
+  "assignee": "中国平安人寿保险股份有限公司",
+  "inventor": "杜金华",
+  "snippet": "The present invention relates to the field of UI design technology and can be applied to business scenarios such as financial technology and medical health. A font rendering optimization method, apparatus, device, and medium are disclosed, including: identifyi",
+  "query": "GPU instanced glyph atlas text rendering signed distance field"
+ },
+ {
+  "id": "CN116843845B",
+  "title": "A spatial data integration method and system for digital twin cities",
+  "priority": "2023-06-07",
+  "assignee": "山西光银信息技术有限公司",
+  "inventor": "李亚武",
+  "snippet": "The invention relates to the technical field of digital twin cities, in particular to a space data integration method and a system applied to digital cities, wherein the method comprises the following steps of acquiring digital twin city space data and digital",
+  "query": "multi-scale spatial sampling circular sampling regions shape vector"
+ },
+ {
+  "id": "US9002085B1",
+  "title": "Systems and methods for automatically generating descriptions of retinal images",
+  "priority": "2013-10-22",
+  "assignee": "Eyenuk, Inc.",
+  "inventor": "Kaushal Mohanlal Solanki",
+  "snippet": "Embodiments disclose systems and methods that aid in screening, diagnosis and/or monitoring of medical conditions. The systems and methods may allow, for example, for automated identification and localization of lesions and other anatomical structures from med",
+  "query": "multi-scale spatial sampling circular sampling regions shape vector"
+ },
+ {
+  "id": "US12073561B2",
+  "title": "Multiscale modeling to determine molecular profiles from radiology",
+  "priority": "2015-08-14",
+  "assignee": "Elucid Bioimaging Inc.",
+  "inventor": "Andrew J. Buckler",
+  "snippet": "Systems and methods for analyzing pathologies utilizing quantitative imaging are presented herein. Advantageously, the systems and methods of the present disclosure utilize a hierarchical analytics framework that identifies and quantify biological properties/a",
+  "query": "multi-scale spatial sampling circular sampling regions shape vector"
+ },
+ {
+  "id": "JP7542578B2",
+  "title": "Methods and systems for utilizing quantitative imaging - Patents.com",
+  "priority": "2018-05-27",
+  "assignee": "エルシド バイオイメージング インコーポレイテッド",
+  "inventor": "マーク エー． バックラー",
+  "snippet": "1. A method for computer-aided phenotyping or outcome prediction of a lesion using an augmented radiological dataset, the method comprising: receiving a non-invasively acquired radiology data set of a patient; augmenting the data set by performing analyte meas",
+  "query": "multi-scale spatial sampling circular sampling regions shape vector"
+ },
+ {
+  "id": "CN119887763B",
+  "title": "Intelligent detection method for defects of building outer facade",
+  "priority": "2025-03-26",
+  "assignee": "江苏省建筑工程质量检测中心有限公司",
+  "inventor": "钮慧娟",
+  "snippet": "The present invention discloses an intelligent detection method for building facade defects, including adaptive acquisition and preprocessing under multiple illumination conditions, geometric correction and registration of multi-view images, extraction and cha",
+  "query": "multi-scale spatial sampling circular sampling regions shape vector"
+ },
+ {
+  "id": "CN120125918B",
+  "title": "Crop full growth cycle recognition method and system based on deep learning",
+  "priority": "2025-05-13",
+  "assignee": "华云升达(北京)气象科技有限责任公司",
+  "inventor": "吕宝磊",
+  "snippet": "The present invention provides a method and system for identifying the full growth cycle of crops based on deep learning, the method comprising: obtaining a multispectral image sequence of a target crop in a continuous time period through an image acquisition ",
+  "query": "multi-scale spatial sampling circular sampling regions shape vector"
+ },
+ {
+  "id": "CN119903441B",
+  "title": "Grid identification and classification method of urban functional areas based &hellip;",
+  "priority": "2025-03-31",
+  "assignee": "新华融合媒体科技发展(北京)有限公司",
+  "inventor": "乔柯",
+  "snippet": "The present invention provides a grid-based identification and classification method for urban functional areas based on multi-source spatiotemporal data, which relates to the technical field of regional identification, including adopting an adaptive grid divi",
+  "query": "quadtree adaptive subdivision character cell size"
+ },
+ {
+  "id": "CN119068007B",
+  "title": "Efficient pixel point filling method and system for self-adaptive boundary &hellip;",
+  "priority": "2024-11-07",
+  "assignee": "中科南京人工智能创新研究院",
+  "inventor": "吴帅",
+  "snippet": "The invention discloses a high-efficiency pixel point filling method and a system of a self-adaptive boundary detection technology, wherein the method comprises the steps of obtaining original image data, preprocessing and initializing to obtain the processed ",
+  "query": "quadtree adaptive subdivision character cell size"
+ },
+ {
+  "id": "AU2020289841B2",
+  "title": "Quotidian scene reconstruction engine",
+  "priority": "2016-04-12",
+  "assignee": "Quidient, Llc",
+  "inventor": "David Scott Ackerson",
+  "snippet": "A stored volumetric scene model of a real scene is generated from data defining digital images of a light field in a real scene containing different types of media. The digital images have been formed by a camera from opposingly directed poses and each digital",
+  "query": "quadtree adaptive subdivision character cell size"
+ },
+ {
+  "id": "JP7084703B2",
+  "title": "Compression of signals that represent physical attributes",
+  "priority": "2016-09-13",
+  "assignee": "ダッソー システムズ",
+  "inventor": "トゥッフェル ジャン＝ジュリアン",
+  "snippet": "A method performed by a computer for compressing data representing a value of a physical attribute in a given space (S). Leaf cell (a N 1 a N 2 ... a N N ∈ C (L N (octree N (S))), a N n, n ∈ { of the hierarchical section (octree N (S)) of the predetermined spa",
+  "query": "quadtree adaptive subdivision character cell size"
+ },
+ {
+  "id": "CN119904592B",
+  "title": "News scene three-dimensional reconstruction and visualization method based on &hellip;",
+  "priority": "2025-04-01",
+  "assignee": "新华融合媒体科技发展(北京)有限公司",
+  "inventor": "乔柯",
+  "snippet": "The present invention provides a three-dimensional reconstruction and visualization method for news scenes based on multi-source remote sensing data, which relates to the technical field of three-dimensional reconstruction, including: extracting multi-modal da",
+  "query": "quadtree adaptive subdivision character cell size"
+ },
+ {
+  "id": "CN110999304B",
+  "title": "Image processing method and image encoding/decoding method and apparatus using &hellip;",
+  "priority": "2017-07-28",
+  "assignee": "韩国电子通信研究院",
+  "inventor": "李镇浩",
+  "snippet": "The present invention relates to an image encoding/decoding method and device. The image decoding method according to the present invention may include: acquiring transform coefficient distribution information of neighboring blocks from a bit stream; direction",
+  "query": "quadtree adaptive subdivision character cell size"
+ },
+ {
+  "id": "CN114219902A",
+  "title": "Volume rendering method and device for meteorological data and computer &hellip;",
+  "priority": "2021-07-22",
+  "assignee": "江苏及象生态环境研究院有限公司",
+  "inventor": "左瑞亭",
+  "snippet": "Volume rendering method and device for meteorological data and computer equipment Technical Field The invention relates to the technical field of computers, in particular to a meteorological data volume rendering method, a meteorological data volume rendering ",
+  "query": "depth map volumetric rendering layers transparent layered display"
+ },
+ {
+  "id": "CN104729519A",
+  "title": "Virtual three-dimensional instrument cluster with three-dimensional navigation &hellip;",
+  "priority": "2013-12-23",
+  "assignee": "哈曼国际工业有限公司",
+  "inventor": "D.迪森索",
+  "snippet": "System, method, and computer program product to perform an operation, the operation comprising generating a three-dimensional graphical output comprising: a three-dimensional representation of a vehicle instrument cluster comprising a plurality of instruments ",
+  "query": "depth map volumetric rendering layers transparent layered display"
+ },
+ {
+  "id": "CN112200900B",
+  "title": "Volume cloud rendering method and device, electronic equipment and storage &hellip;",
+  "priority": "2020-12-02",
+  "assignee": "成都完美时空网络技术有限公司",
+  "inventor": "申晨",
+  "snippet": "The application relates to a volume cloud rendering method, a volume cloud rendering device, electronic equipment and a storage medium, wherein the method comprises the following steps: drawing at least one layer of mesh model outwards from the original mesh m",
+  "query": "depth map volumetric rendering layers transparent layered display"
+ },
+ {
+  "id": "EP3111424B1",
+  "title": "A display interposing a physical object within a three-dimensional volumetric &hellip;",
+  "priority": "2014-02-27",
+  "assignee": "Aptiv Technologies Limited",
+  "inventor": "Gareth Paul Bell",
+  "snippet": "A visual display unit (1100A), comprising: a first screen (1110) in a first focal plane, wherein said first screen (1110) displays a first image; a second screen (1130) in a second focal plane distinct from said first focal plane, wherein said second screen (1",
+  "query": "depth map volumetric rendering layers transparent layered display"
+ },
+ {
+  "id": "US8976323B2",
+  "title": "Switching dual layer display with independent layer content and a dynamic mask",
+  "priority": "2013-01-04",
+  "assignee": "Disney Enterprises, Inc.",
+  "inventor": "Quinn Y. Smithwick",
+  "snippet": "A dual layer display system for generating dimensional imagery. The system includes a first display device and a second display device with a light source. The second display device is arranged to be spaced apart from the first display device and to project ou",
+  "query": "depth map volumetric rendering layers transparent layered display"
+ },
+ {
+  "id": "US10410402B2",
+  "title": "Display interposing physical object within a three-dimensional volumetric space",
+  "priority": "2001-10-11",
+  "assignee": "Pure Depth Limited",
+  "inventor": "Gareth Paul Bell",
+  "snippet": "A visual display unit creating a three-dimensional volumetric space. The display includes a first screen in a first focal plane, wherein the first screen displays a first image. The display includes a second screen in a second focal plane distinct from the fir",
+  "query": "depth map volumetric rendering layers transparent layered display"
+ },
+ {
+  "id": "CN101443790B",
+  "title": "Efficient processing of non-reflow content in a digital image",
+  "priority": "2006-03-28",
+  "assignee": "亚马逊科技公司",
+  "inventor": "R·L·古德温",
+  "snippet": "A computer system and method for efficiently processing a digital image into reflow content is presented. The method comprises each of the following as executed on a computer. A digital image is obtained for processing. The digital image includes at least some",
+  "query": "creating images from alphanumeric characters computer art"
+ },
+ {
+  "id": "US8413048B1",
+  "title": "Processing digital images including headers and footers into reflow content",
+  "priority": "2006-03-28",
+  "assignee": "Amazon Technologies, Inc.",
+  "inventor": "Robert L. Goodwin",
+  "snippet": "A computer system and method for processing a digital image into reflow content is presented. A computer system includes a processor and a memory. The computer system is configured to process a digital image by first obtaining the digital image, wherein the di",
+  "query": "creating images from alphanumeric characters computer art"
+ },
+ {
+  "id": "JPH05341761A",
+  "title": "Character generator",
+  "priority": "1992-06-05",
+  "assignee": "Seiko Epson Corp",
+  "inventor": "Fumio Nagasaka",
+  "snippet": "(57) [Abstract] [Purpose] Even if the number of pixels required for character expression is insufficient due to the complexity of the character shape, form a legible character shape that incorporates the design intent. .. [Structure] When the character generat",
+  "query": "creating images from alphanumeric characters computer art"
+ },
+ {
+  "id": "JP4987960B2",
+  "title": "Conversion of digital images containing strings into token-based files for &hellip;",
+  "priority": "2006-03-29",
+  "assignee": "アマゾン・テクノロジーズ・インコーポレイテツド",
+  "inventor": "コーチ，アダム・ブライアン",
+  "snippet": "A computer implemented method for processing an electronic image comprising: Identifying one or more tokens in the electronic image corresponding to the scanned image of the book using connection component analysis ; Classifying the identified tokens into a pl",
+  "query": "creating images from alphanumeric characters computer art"
+ },
+ {
+  "id": "US8606010B2",
+  "title": "Identifying text pixels in scanned images",
+  "priority": "2011-03-18",
+  "assignee": "Seiko Epson Corporation",
+  "inventor": "Jing Xiao",
+  "snippet": "A processor and method make use of multiple weak classifiers to construct a single strong classifier to identify regions that contain text within an input image document. The weak classifiers are grouped by their computing cost from low to median to high, and ",
+  "query": "creating images from alphanumeric characters computer art"
+ },
+ {
+  "id": "US20250094405A1",
+  "title": "Automated document processing for detecting, extractng, and analyzing tables &hellip;",
+  "priority": "2021-04-02",
+  "assignee": "Tungsten Automation Corporation",
+  "inventor": "Stephen M. Thompson",
+  "snippet": "According to one embodiment, a computer-implemented method for detecting and classifying columns of tables and/or tabular data arrangements within image data includes: detecting one or more tables and/or one or more tabular data arrangements within the image d",
+  "query": "creating images from alphanumeric characters computer art"
+ },
+ {
+  "id": "USRE48565E1",
+  "title": "Providing a subscriber specific solution in a computer network",
+  "priority": "1981-11-03",
+  "assignee": "Personalized Media Communications LLC",
+  "inventor": "John Christopher Harvey",
+  "snippet": "A unified system of programming communication. The system encompasses the prior art (television, radio, broadcast hardcopy, computer communications, etc.) and new user specific mass media. Within the unified system, parallel processing computer systems, each h",
+  "query": "ASCII art generation from image"
+ },
+ {
+  "id": "US20260197369A1",
+  "title": "System and method for server based control",
+  "priority": "2012-01-09",
+  "assignee": "May Patents Ltd.",
+  "inventor": "Yehuda Binder",
+  "snippet": "A system and method in a building or vehicle for an actuator operation in response to a sensor according to a control logic, the system comprising a router or a gateway communicating with a device associated with the sensor and a device associated with the act",
+  "query": "ASCII art generation from image"
+ },
+ {
+  "id": "US10729336B1",
+  "title": "Smart watch",
+  "priority": "2006-06-30",
+  "assignee": "Bao Tran",
+  "inventor": "Bao Tran",
+  "snippet": "Systems and methods include a cellular, WiFi, and Bluetooth transceiver coupled to a processor; an accelerometer or a motion sensor coupled to the processor; and a sensor coupled to the processor to sense mood or body vital sign; and a wearable device operatin",
+  "query": "ASCII art generation from image"
+ },
+ {
+  "id": "US11176589B2",
+  "title": "Dynamically generated machine learning models and visualization thereof",
+  "priority": "2018-04-10",
+  "assignee": "Ebay Inc.",
+  "inventor": "Vikram Pyati",
+  "snippet": "Systems and methods provide real-time machine learning modeling, evaluation, and visualization. A computing system can receive input values for attributes of a new item listing. Concurrently, the system can analyze previous related item listings. The system ca",
+  "query": "ASCII art generation from image"
+ },
+ {
+  "id": "US20250362980A1",
+  "title": "Systems and methods for censoring text inline",
+  "priority": "2018-07-06",
+  "assignee": "Capital One Services, Llc",
+  "inventor": "Austin Walters",
+  "snippet": "Systems and methods for censoring text-based data are provided. In some embodiments a censoring system may include at least one processor and at least one non-transitory memory storing application programming interface instructions. The censoring system may be",
+  "query": "ASCII art generation from image"
+ },
+ {
+  "id": "US11587432B2",
+  "title": "Methods and systems for content processing",
+  "priority": "2008-08-19",
+  "assignee": "Digimarc Corporation",
+  "inventor": "Geoffrey B. Rhoads",
+  "snippet": "Mobile phones and other portable devices are equipped with a variety of technologies by which existing functionality can be improved, and new functionality can be provided. Some aspects relate to visual search capabilities, and determining appropriate actions ",
+  "query": "ASCII art generation from image"
+ },
+ {
+  "id": "US8306610B2",
+  "title": "Method and apparatus for analysis of psychiatric and physical conditions",
+  "priority": "2006-04-18",
+  "assignee": "Susan Mirow",
+  "inventor": "Susan Mirow",
+  "snippet": "A method, apparatus and software for diagnosing the state or condition of a human, animal or other living thing, which always generates physiological modulating signals having temporal-spatial organization, the organization having dynamic patterns whose struct",
+  "query": "nonlinear dynamics strange attractor visualization pattern generation"
+ },
+ {
+  "id": "US20200397322A1",
+  "title": "Method and system to assess disease using dynamical analysis of biophysical &hellip;",
+  "priority": "2019-06-18",
+  "assignee": "Analytics For Life Inc.",
+  "inventor": "Mehdi Paak",
+  "snippet": "The exemplified methods and systems facilitate one or more dynamical analyses that can characterize and identify nonlinear dynamical properties (such as Lyapunov exponent (LE), correlation dimension, entropy (K2), or statistical and/or geometric properties der",
+  "query": "nonlinear dynamics strange attractor visualization pattern generation"
+ },
+ {
+  "id": "US10950352B1",
+  "title": "System, computer-readable storage medium and method of deep learning of texture &hellip;",
+  "priority": "2020-07-17",
+  "assignee": "Prince Mohammad Bin Fahd University",
+  "inventor": "Tuan Duc Pham",
+  "snippet": "A computer-readable storage medium storing program instructions to perform a method of classification of short time series in order to detect a neurodegenerative disorder. The method includes receiving a plurality of sensor data collected from subjects with an",
+  "query": "nonlinear dynamics strange attractor visualization pattern generation"
+ },
+ {
+  "id": "JP6270278B2",
+  "title": "Apparatus and method for transport and reaction by pressure driven plug",
+  "priority": "2002-05-09",
+  "assignee": "ザ・ユニバーシティ・オブ・シカゴＴｈｅ Ｕｎｉｖｅｒｓｉｔｙ Ｏｆ Ｃｈｉｃａｇｏ",
+  "inventor": "エフ． イスマジロブ ルステム",
+  "snippet": "The present invention provides microfabricated substrates and methods of conducting reactions within these substrates. The reactions occur in plugs transported in the flow of a carrier-fluid.",
+  "query": "nonlinear dynamics strange attractor visualization pattern generation"
+ },
+ {
+  "id": "US9808627B2",
+  "title": "Systems and methods for enhancing or affecting neural stimulation efficiency &hellip;",
+  "priority": "2004-07-15",
+  "assignee": "Advanced Neuromodulation Systems, Inc.",
+  "inventor": "Bradford Evan Gliner",
+  "snippet": "Systems and methods for enhancing or affecting neural stimulation efficiency and/or efficacy are disclosed. In one embodiment, a system and/or method may apply electromagnetic stimulation to a patient&#39;s nervous system over a first time domain according to ",
+  "query": "nonlinear dynamics strange attractor visualization pattern generation"
+ },
+ {
+  "id": "US10441216B2",
+  "title": "Method and system for characterizing cardiovascular systems from single channel &hellip;",
+  "priority": "2012-08-17",
+  "assignee": "Analytics For Life Inc.",
+  "inventor": "Timothy Burton",
+  "snippet": "Methods to identify and risk stratify disease states, cardiac structural defects, functional cardiac deficiencies induced by teratogens and other toxic agents, pathological substrates, conduction delays and defects, and ejection fraction using single channel b",
+  "query": "nonlinear dynamics strange attractor visualization pattern generation"
+ },
+ {
+  "id": "KR101917630B1",
+  "title": "System and method for augmented and virtual reality",
+  "priority": "2011-10-28",
+  "assignee": "매직 립, 인코포레이티드",
+  "inventor": "사무엘 에이. 밀러",
+  "snippet": "One embodiment is directed to a system for enabling two or more users to interact within a virtual world including virtual world data, the system comprising a computer network comprising one or more computing devices, Wherein the one or more computing devices ",
+  "query": "light shafts god rays atmospheric scattering rendering"
+ },
+ {
+  "id": "KR102782006B1",
+  "title": "Lidar systems and methods",
+  "priority": "2016-09-20",
+  "assignee": "이노비즈 테크놀로지스 엘티디",
+  "inventor": "줄리앙 블라이코",
+  "snippet": "The system and method utilize LIDAR technology to detect objects in an environment, for example. In one embodiment, the LIDAR system comprises at least one processor configured to perform the steps of controlling at least one light source in a manner capable o",
+  "query": "light shafts god rays atmospheric scattering rendering"
+ },
+ {
+  "id": "US10677981B2",
+  "title": "Large area light source and large area luminaire",
+  "priority": "2015-08-28",
+  "assignee": "Coelux S.R.L.",
+  "inventor": "Paolo Di Trapani",
+  "snippet": "A light source (25) for emitting collimated light (29) in particular for a large area luminaire (21) comprises a light guide unit (43) comprising a plurality of light guide strips (91) configured for guiding light received at the at least one lateral coupling ",
+  "query": "light shafts god rays atmospheric scattering rendering"
+ },
+ {
+  "id": "RU2671285C2",
+  "title": "Source of light and lighting system, imitating sunlight",
+  "priority": "2014-05-13",
+  "assignee": "Коэлюкс С.Р.Л.",
+  "inventor": "Паоло ДИ-ТРАПАНИ",
+  "snippet": "FIELD: lighting. SUBSTANCE: invention relates to lighting systems. Optical system (2A) for receiving and collimating light includes collimating unit (200) comprising at least one parabolic concentrator (CPC) (220, 230) forming inlet (212) and outlet (214) and ",
+  "query": "light shafts god rays atmospheric scattering rendering"
+ },
+ {
+  "id": "CN115755071B",
+  "title": "A Framework Design Method for Deep-Sea In-situ Fine Exploration Based on &hellip;",
+  "priority": "2022-11-15",
+  "assignee": "中国科学院上海技术物理研究所",
+  "inventor": "何林帮",
+  "snippet": "This invention discloses a design method for a deep-sea in-situ fine-scale detection framework based on acoustic-optical remote sensing and VR technology. The main steps include: (1) studying the structure of the photon-counting lidar scanning system and the d",
+  "query": "light shafts god rays atmospheric scattering rendering"
+ },
+ {
+  "id": "US20220413166A1",
+  "title": "Scattering fields in a medium to redirect wave energy onto surfaces in shadow",
+  "priority": "2021-05-18",
+  "assignee": "Luminated Glazings, Llc",
+  "inventor": "Robert Saccomanno",
+  "snippet": "Fluence non-uniformities across a surface portion of a target (organism or inanimate object) due to inherent non-uniformities in the irradiation beam and/or shadowed target surfaces, are known to limit the effectiveness of target kinetic processes responsive t",
+  "query": "light shafts god rays atmospheric scattering rendering"
+ }
+]

@@ -1,0 +1,256 @@
+#include "grid.h"
+#include <stdlib.h>
+#include <stdint.h>
+
+#if defined(__EMSCRIPTEN__) && defined(__wasm_simd128__)
+#include <wasm_simd128.h>
+#define USE_WASM_SIMD 1
+#endif
+
+int glif_grid_create(GlifGrid *grid, const GlifImage *img, int cell_w, int cell_h) {
+    if (cell_w <= 0 || cell_h <= 0) return -1;
+    grid->cell_w = cell_w;
+    grid->cell_h = cell_h;
+    grid->cols = img->width / cell_w;
+    grid->rows = img->height / cell_h;
+    if (grid->cols == 0 || grid->rows == 0) return -1;
+
+    grid->cells = calloc((size_t)grid->rows * (size_t)grid->cols,
+                         sizeof(GlifGridCell));
+    if (!grid->cells) return -1;
+
+    for (int r = 0; r < grid->rows; r++) {
+        for (int c = 0; c < grid->cols; c++) {
+            GlifGridCell *cell = &grid->cells[r * grid->cols + c];
+            cell->px = c * cell_w;
+            cell->py = r * cell_h;
+            cell->ch = ' ';
+        }
+    }
+    return 0;
+}
+
+void glif_grid_compute_vectors(GlifGrid *grid, const GlifLightnessMap *lm,
+                          const GlifSamplingConfig *sc) {
+    float cw = (float)grid->cell_w;
+    float ch = (float)grid->cell_h;
+
+    for (int r = 0; r < grid->rows; r++) {
+        for (int c = 0; c < grid->cols; c++) {
+            GlifGridCell *cell = &grid->cells[r * grid->cols + c];
+            float ox = (float)cell->px;
+            float oy = (float)cell->py;
+
+            /* Internal circles */
+            for (int i = 0; i < GLIF_NUM_INTERNAL; i++) {
+                float cx_px = ox + sc->internal[i].cx * cw;
+                float cy_px = oy + sc->internal[i].cy * ch;
+                float r_px  = sc->internal[i].r * cw;
+                cell->shape.v[i] = glif_sampling_circle_average(lm, cx_px, cy_px, r_px);
+            }
+
+            /* External circles */
+            for (int i = 0; i < GLIF_NUM_EXTERNAL; i++) {
+                float cx_px = ox + sc->external[i].cx * cw;
+                float cy_px = oy + sc->external[i].cy * ch;
+                float r_px  = sc->external[i].r * cw;
+                cell->external.v[i] = glif_sampling_circle_average(lm, cx_px, cy_px, r_px);
+            }
+        }
+    }
+}
+
+void glif_grid_compute_vectors_fast(GlifGrid *grid, const GlifLightnessMap *lm,
+                               const GlifPrecomputedMasks *pm) {
+    const float *data = lm->data;
+    int img_w = lm->width;
+    int img_h = lm->height;
+
+    /* Compute safe bounds: cells where ALL circle offsets are in-bounds */
+    int global_min_dx = 0, global_max_dx = 0;
+    int global_min_dy = 0, global_max_dy = 0;
+    for (int i = 0; i < GLIF_NUM_CIRCLES; i++) {
+        const GlifCircleMask *m = &pm->masks[i];
+        if (m->count == 0) continue;
+        if (m->min_dx < global_min_dx) global_min_dx = m->min_dx;
+        if (m->max_dx > global_max_dx) global_max_dx = m->max_dx;
+        if (m->min_dy < global_min_dy) global_min_dy = m->min_dy;
+        if (m->max_dy > global_max_dy) global_max_dy = m->max_dy;
+    }
+
+    /* Cell (px, py) is safe when:
+     *   px + global_min_dx >= 0  &&  px + global_max_dx < img_w
+     *   py + global_min_dy >= 0  &&  py + global_max_dy < img_h */
+    int safe_px_min = -global_min_dx;
+    int safe_px_max = img_w - 1 - global_max_dx;
+    int safe_py_min = -global_min_dy;
+    int safe_py_max = img_h - 1 - global_max_dy;
+
+    int ncells = grid->rows * grid->cols;
+    GlifGridCell *cells = grid->cells;
+    const GlifCircleMask *masks = pm->masks;
+
+#ifdef _OPENMP
+    #pragma omp parallel for schedule(static)
+#endif
+    for (int ci = 0; ci < ncells; ci++) {
+        GlifGridCell *cell = &cells[ci];
+        int px = cell->px;
+        int py = cell->py;
+        int base = py * img_w + px;
+
+        int safe = (px >= safe_px_min && px <= safe_px_max &&
+                    py >= safe_py_min && py <= safe_py_max);
+
+        if (safe) {
+            for (int i = 0; i < GLIF_NUM_INTERNAL; i++) {
+                const int *offs = masks[i].offsets;
+                int cnt = masks[i].count;
+                float sum = 0;
+#if USE_WASM_SIMD
+                v128_t vsum = wasm_f32x4_const(0, 0, 0, 0);
+                int k = 0, cnt4 = cnt & ~3;
+                for (; k < cnt4; k += 4) {
+                    v128_t v = wasm_f32x4_make(
+                        data[base + offs[k]], data[base + offs[k+1]],
+                        data[base + offs[k+2]], data[base + offs[k+3]]);
+                    vsum = wasm_f32x4_add(vsum, v);
+                }
+                float tmp[4]; wasm_v128_store(tmp, vsum);
+                sum = tmp[0] + tmp[1] + tmp[2] + tmp[3];
+                for (; k < cnt; k++) sum += data[base + offs[k]];
+#else
+  #ifdef _OPENMP
+                #pragma omp simd reduction(+:sum)
+  #endif
+                for (int k = 0; k < cnt; k++)
+                    sum += data[base + offs[k]];
+#endif
+                cell->shape.v[i] = sum * masks[i].inv_count;
+            }
+            for (int i = 0; i < GLIF_NUM_EXTERNAL; i++) {
+                const int *offs = masks[GLIF_NUM_INTERNAL + i].offsets;
+                int cnt = masks[GLIF_NUM_INTERNAL + i].count;
+                float sum = 0;
+#if USE_WASM_SIMD
+                v128_t vsum = wasm_f32x4_const(0, 0, 0, 0);
+                int k = 0, cnt4 = cnt & ~3;
+                for (; k < cnt4; k += 4) {
+                    v128_t v = wasm_f32x4_make(
+                        data[base + offs[k]], data[base + offs[k+1]],
+                        data[base + offs[k+2]], data[base + offs[k+3]]);
+                    vsum = wasm_f32x4_add(vsum, v);
+                }
+                float tmp[4]; wasm_v128_store(tmp, vsum);
+                sum = tmp[0] + tmp[1] + tmp[2] + tmp[3];
+                for (; k < cnt; k++) sum += data[base + offs[k]];
+#else
+  #ifdef _OPENMP
+                #pragma omp simd reduction(+:sum)
+  #endif
+                for (int k = 0; k < cnt; k++)
+                    sum += data[base + offs[k]];
+#endif
+                cell->external.v[i] = sum * masks[GLIF_NUM_INTERNAL + i].inv_count;
+            }
+        } else {
+            for (int i = 0; i < GLIF_NUM_INTERNAL; i++) {
+                const int *offs = masks[i].offsets;
+                int cnt = masks[i].count;
+                float sum = 0;
+                int valid = 0;
+                for (int k = 0; k < cnt; k++) {
+                    int idx = base + offs[k];
+                    int y = idx / img_w;
+                    int x = idx % img_w;
+                    if (idx >= 0 && y < img_h && x >= 0 && x < img_w) {
+                        sum += data[idx];
+                        valid++;
+                    }
+                }
+                cell->shape.v[i] = valid > 0 ? sum / (float)valid : 0.0f;
+            }
+            for (int i = 0; i < GLIF_NUM_EXTERNAL; i++) {
+                const int *offs = masks[GLIF_NUM_INTERNAL + i].offsets;
+                int cnt = masks[GLIF_NUM_INTERNAL + i].count;
+                float sum = 0;
+                int valid = 0;
+                for (int k = 0; k < cnt; k++) {
+                    int idx = base + offs[k];
+                    int y = idx / img_w;
+                    int x = idx % img_w;
+                    if (idx >= 0 && y < img_h && x >= 0 && x < img_w) {
+                        sum += data[idx];
+                        valid++;
+                    }
+                }
+                cell->external.v[i] = valid > 0 ? sum / (float)valid : 0.0f;
+            }
+        }
+    }
+}
+
+void glif_grid_compute_colors(GlifGrid *grid, const GlifImage *img) {
+    int ncells = grid->rows * grid->cols;
+
+#ifdef _OPENMP
+    #pragma omp parallel for schedule(static)
+#endif
+    for (int ci = 0; ci < ncells; ci++) {
+            GlifGridCell *cell = &grid->cells[ci];
+            int64_t rsum = 0, gsum = 0, bsum = 0; int count = 0;
+            int row_end = cell->py + grid->cell_h;
+            int col_end = cell->px + grid->cell_w;
+            if (row_end > img->height) row_end = img->height;
+            if (col_end > img->width) col_end = img->width;
+
+            for (int y = cell->py; y < row_end; y++) {
+                const uint8_t *row = img->pixels + (y * img->width + cell->px) * img->channels;
+                int row_pixels = col_end - cell->px;
+#if USE_WASM_SIMD
+                int channels = img->channels;
+                v128_t vr = wasm_i32x4_splat(0);
+                v128_t vg = wasm_i32x4_splat(0);
+                v128_t vb = wasm_i32x4_splat(0);
+                int x = 0, x4 = row_pixels & ~3;
+                for (; x < x4; x += 4) {
+                    const uint8_t *p0 = row + x * channels;
+                    const uint8_t *p1 = p0 + channels;
+                    const uint8_t *p2 = p1 + channels;
+                    const uint8_t *p3 = p2 + channels;
+                    vr = wasm_i32x4_add(vr, wasm_i32x4_make(p0[0], p1[0], p2[0], p3[0]));
+                    vg = wasm_i32x4_add(vg, wasm_i32x4_make(p0[1], p1[1], p2[1], p3[1]));
+                    vb = wasm_i32x4_add(vb, wasm_i32x4_make(p0[2], p1[2], p2[2], p3[2]));
+                }
+                int32_t tmp[4];
+                wasm_v128_store(tmp, vr); rsum += tmp[0] + tmp[1] + tmp[2] + tmp[3];
+                wasm_v128_store(tmp, vg); gsum += tmp[0] + tmp[1] + tmp[2] + tmp[3];
+                wasm_v128_store(tmp, vb); bsum += tmp[0] + tmp[1] + tmp[2] + tmp[3];
+                for (; x < row_pixels; x++) {
+                    const uint8_t *px = row + x * channels;
+                    rsum += px[0]; gsum += px[1]; bsum += px[2];
+                }
+                count += row_pixels;
+#else
+                for (int x = 0; x < row_pixels; x++) {
+                    const uint8_t *px = row + x * img->channels;
+                    rsum += px[0];
+                    gsum += px[1];
+                    bsum += px[2];
+                }
+                count += row_pixels;
+#endif
+            }
+            if (count > 0) {
+                cell->r = (uint8_t)(rsum / (int64_t)count);
+                cell->g = (uint8_t)(gsum / (int64_t)count);
+                cell->b = (uint8_t)(bsum / (int64_t)count);
+            }
+    }
+}
+
+void glif_grid_free(GlifGrid *grid) {
+    if (!grid) return;
+    free(grid->cells);
+    grid->cells = NULL;
+}

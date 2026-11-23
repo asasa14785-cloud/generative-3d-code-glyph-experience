@@ -1,0 +1,19 @@
+node_modules
+dist
+release
+test-results
+playwright-report
+.DS_Store
+*.log
+
+# agent / assistant tooling
+CLAUDE.md
+AGENTS.md
+GEMINI.md
+.claude/
+.cursor/
+.cursorrules
+.codex/
+.windsurf/
+.agents/
+.opencode/

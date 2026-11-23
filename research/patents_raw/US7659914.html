@@ -1,0 +1,3132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>US7659914B1 - Generation of an image from text 
+        - Google Patents</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="referrer" content="origin-when-crossorigin">
+    <link rel="canonical" href="https://patents.google.com/patent/US7659914B1/en">
+    <meta name="description" content="
+     This invention consists of processes that cause text that is placed on a surface to be selectively scaled, thickened or thinned to achieve the overall appearance of lightness or darkness, thereby forming the approximation of an image. A target image can be used whereby each character&#39;s modification in the text will be based on the grayscale value of the corresponding sections of the target image in order to best represent and approximate it. Multiple techniques for implementing this invention are described, including techniques for selectively modifying the text. Novel techniques are also explained for thickening or thinning graphical elements such as text to approximate a target image. 
+   
+   ">
+    <meta name="DC.type" content="patent">
+    <meta name="DC.title" content="Generation of an image from text 
+       ">
+    <meta name="DC.date" content="2006-06-12" scheme="dateSubmitted">
+    <meta name="DC.description" content="
+     This invention consists of processes that cause text that is placed on a surface to be selectively scaled, thickened or thinned to achieve the overall appearance of lightness or darkness, thereby forming the approximation of an image. A target image can be used whereby each character&#39;s modification in the text will be based on the grayscale value of the corresponding sections of the target image in order to best represent and approximate it. Multiple techniques for implementing this invention are described, including techniques for selectively modifying the text. Novel techniques are also explained for thickening or thinning graphical elements such as text to approximate a target image. 
+   
+   ">
+    <meta name="citation_patent_application_number" content="US:11/451,072">
+    <meta name="citation_pdf_url" content="https://patentimages.storage.googleapis.com/b1/05/f5/35065fbe8affbb/US7659914.pdf">
+    <meta name="citation_patent_number" content="US:7659914">
+    <meta name="DC.date" content="2010-02-09" scheme="issue">
+    <meta name="DC.contributor" content="Sylvia Tatevosian Rostami" scheme="inventor">
+    <meta name="DC.contributor" content="Individual" scheme="assignee">
+    <meta name="DC.relation" content="US:6298154" scheme="references">
+    <meta name="DC.relation" content="WO:2002056289:A1" scheme="references">
+    <meta name="DC.relation" content="US:20040145592:A1" scheme="references">
+    <meta name="DC.relation" content="US:7181081" scheme="references">
+    <meta name="DC.relation" content="US:20030106943:A1" scheme="references">
+    <meta name="DC.relation" content="US:6988665" scheme="references">
+    <meta name="DC.relation" content="US:7197162" scheme="references">
+    <meta name="citation_reference" content="Dippin&#39; Dots Inc. v. Mosey, 81 USPQ2d 1633 (Fed. Cir. 2007)." scheme="references">
+    <meta name="citation_reference" content="In re Abele and Marshall, 214 USPQ 682 (C.C.P.A. 1982)." scheme="references">
+    <meta name="citation_reference" content="In re Bilski, 88 USPQ2d 1385 (Fed. Cir. 2008)." scheme="references">
+    <meta name="citation_reference" content="In Re Comiskey [revised], (Fed. Cir. 2008), http://www.cafc.uscourts.gov/opinions/06-1286r.pdf." scheme="references">
+    <meta name="citation_reference" content="Internet Archive Wayback website printout on Feb. 10, 2009 for http://www.infinite-image.net/ at http://web.archive.org/web/*/http://www.infinite-image.net/, pp. 1-8." scheme="references">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Product+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700">
+
+    <style>
+      
+      #gb { position: absolute; top: 6px; left: auto; right: 0; width: auto; min-width: 135px !important; }   
+      body { transition: none; }
+    </style>
+    <script></script>
+
+    <script>
+      window.version = 'patent-search.search_20261106_RC00';
+
+      function sendFeedback() {
+        userfeedback.api.startFeedback({
+          'productId': '713680',
+          'bucket': 'patent-search-web',
+          'productVersion': window.version,
+        });
+      }
+
+      window.experiments = {};
+      window.experiments.patentCountries = "ae,ag,al,am,ao,ap,ar,at,au,aw,az,ba,bb,bd,be,bf,bg,bh,bj,bn,bo,br,bw,bx,by,bz,ca,cf,cg,ch,ci,cl,cm,cn,co,cr,cs,cu,cy,cz,dd,de,dj,dk,dm,do,dz,ea,ec,ee,eg,em,ep,es,fi,fr,ga,gb,gc,gd,ge,gh,gm,gn,gq,gr,gt,gw,hk,hn,hr,hu,ib,id,ie,il,in,ir,is,it,jo,jp,ke,kg,kh,km,kn,kp,kr,kw,kz,la,lc,li,lk,lr,ls,lt,lu,lv,ly,ma,mc,md,me,mg,mk,ml,mn,mo,mr,mt,mw,mx,my,mz,na,ne,ng,ni,nl,no,nz,oa,om,pa,pe,pg,ph,pl,pt,py,qa,ro,rs,ru,rw,sa,sc,sd,se,sg,si,sk,sl,sm,sn,st,su,sv,sy,sz,td,tg,th,tj,tm,tn,tr,tt,tw,tz,ua,ug,us,uy,uz,vc,ve,vn,wo,yu,za,zm,zw";
+      
+      
+      window.experiments.keywordWizard = true;
+      
+      
+      
+      window.experiments.definitions = true;
+      window.experiments.plogs = true;
+
+      window.Polymer = {
+        dom: 'shady',
+        lazyRegister: true,
+      };
+    </script>
+
+    <script src="//www.gstatic.com/patent-search/frontend/patent-search.search_20261106_RC00/scs/compiled_dir/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <link rel="import" href="//www.gstatic.com/patent-search/frontend/patent-search.search_20261106_RC00/scs/compiled_dir/search-app-vulcanized.html">
+  </head>
+  <body unresolved>
+    
+    
+    <script></script>
+    <script src="//www.gstatic.com/patent-search/frontend/patent-search.search_20261106_RC00/scs/compiled_dir/search-app-vulcanized.js"></script>
+    <search-app>
+      
+      
+
+      <article class="result" itemscope itemtype="http://schema.org/ScholarlyArticle">
+  <h1 itemprop="pageTitle">US7659914B1 - Generation of an image from text 
+        - Google Patents</h1>
+  <span itemprop="title">Generation of an image from text 
+       </span>
+
+  <meta itemprop="type" content="patent">
+  <a href="https://patentimages.storage.googleapis.com/b1/05/f5/35065fbe8affbb/US7659914.pdf" itemprop="pdfLink">Download PDF</a>
+  <h2>Info</h2>
+
+  <dl>
+    <dt>Publication number</dt>
+    <dd itemprop="publicationNumber">US7659914B1</dd>
+    <meta itemprop="numberWithoutCodes" content="7659914">
+    <meta itemprop="kindCode" content="B1">
+    <meta itemprop="publicationDescription" content="Patent ( no pre-grant publication)">
+    <span>US7659914B1</span>
+    <span>US11/451,072</span>
+    <span>US45107206A</span>
+    <span>US7659914B1</span>
+    <span>US 7659914 B1</span>
+    <span>US7659914 B1</span>
+    <span>US 7659914B1</span>
+    <span>  </span>
+    <span> </span>
+    <span> </span>
+    <span>US 45107206 A</span>
+    <span>US45107206 A</span>
+    <span>US 45107206A</span>
+    <span>US 7659914 B1</span>
+    <span>US7659914 B1</span>
+    <span>US 7659914B1</span>
+
+    <dt>Authority</dt>
+    <dd itemprop="countryCode">US</dd>
+    <dd itemprop="countryName">United States</dd>
+
+    <dt>Prior art keywords</dt>
+    <dd itemprop="priorArtKeywords" repeat>target image</dd>
+    <dd itemprop="priorArtKeywords" repeat>graphical elements</dd>
+    <dd itemprop="priorArtKeywords" repeat>elements work</dd>
+    <dd itemprop="priorArtKeywords" repeat>radius</dd>
+    <dd itemprop="priorArtKeywords" repeat>image</dd>
+
+    <dt>Prior art date</dt>
+    <dd><time itemprop="priorArtDate" datetime="2005-06-14">2005-06-14</time></dd>
+
+    <dt>Legal status (The legal status is an assumption and is not a legal conclusion. Google has not performed a legal analysis and makes no representation as to the accuracy of the status listed.)</dt>
+    <dd itemprop="legalStatusIfi" itemscope>
+      <span itemprop="status">Expired - Fee Related</span>, expires <time itemprop="expiration" datetime="2027-05-06">2027-05-06</time>
+    </dd>
+  </dl>
+
+  <dt>Application number</dt>
+  <dd itemprop="applicationNumber">US11/451,072</dd>
+
+  
+
+  
+
+  <dt>Inventor</dt>
+  <dd itemprop="inventor" repeat>Sylvia Tatevosian Rostami</dd>
+
+  <dt>Current Assignee (The listed assignees may be inaccurate. Google has not performed a legal analysis and makes no representation or warranty as to the accuracy of the list.)</dt>
+  <dd itemprop="assigneeCurrent" repeat>
+    Individual
+  </dd>
+
+  <dt>Original Assignee</dt>
+  <dd itemprop="assigneeOriginal" repeat>Individual</dd>
+
+  <dt>Priority date (The priority date is an assumption and is not a legal conclusion. Google has not performed a legal analysis and makes no representation as to the accuracy of the date listed.)</dt>
+  <dd><time itemprop="priorityDate" datetime="2005-06-14">2005-06-14</time></dd>
+
+  <dt>Filing date</dt>
+  <dd><time itemprop="filingDate" datetime="2006-06-12">2006-06-12</time></dd>
+
+  <dt>Publication date</dt>
+  <dd><time itemprop="publicationDate" datetime="2010-02-09">2010-02-09</time></dd>
+
+  
+  <dd itemprop="events" itemscope repeat>
+    <time itemprop="date" datetime="2006-06-12">2006-06-12</time>
+    <span itemprop="title">Application filed by Individual</span>
+    <span itemprop="type">filed</span>
+    <span itemprop="critical" content="true" bool>Critical</span>
+    
+    
+    
+    <span itemprop="assigneeSearch">Individual</span>
+  </dd>
+  <dd itemprop="events" itemscope repeat>
+    <time itemprop="date" datetime="2006-06-12">2006-06-12</time>
+    <span itemprop="title">Priority to US11/451,072</span>
+    <span itemprop="type">priority</span>
+    <span itemprop="critical" content="true" bool>Critical</span>
+    
+    
+    <span itemprop="documentId">patent/US7659914B1/en</span>
+    
+  </dd>
+  <dd itemprop="events" itemscope repeat>
+    <time itemprop="date" datetime="2010-02-09">2010-02-09</time>
+    <span itemprop="title">Application granted</span>
+    <span itemprop="type">granted</span>
+    <span itemprop="critical" content="true" bool>Critical</span>
+    
+    
+    
+    
+  </dd>
+  <dd itemprop="events" itemscope repeat>
+    <time itemprop="date" datetime="2010-02-09">2010-02-09</time>
+    <span itemprop="title">Publication of US7659914B1</span>
+    <span itemprop="type">publication</span>
+    <span itemprop="critical" content="true" bool>Critical</span>
+    
+    
+    <span itemprop="documentId">patent/US7659914B1/en</span>
+    
+  </dd>
+  <dd itemprop="events" itemscope repeat>
+    <time itemprop="date">Status</time>
+    <span itemprop="title">Expired - Fee Related</span>
+    <span itemprop="type">legal-status</span>
+    <span itemprop="critical" content="true" bool>Critical</span>
+    <span itemprop="current" content="true" bool>Current</span>
+    
+    
+    
+  </dd>
+  <dd itemprop="events" itemscope repeat>
+    <time itemprop="date" datetime="2027-05-06">2027-05-06</time>
+    <span itemprop="title">Adjusted expiration</span>
+    <span itemprop="type">legal-status</span>
+    <span itemprop="critical" content="true" bool>Critical</span>
+    
+    
+    
+    
+  </dd>
+
+  <h2>Links</h2>
+  <ul>
+    
+        <li itemprop="links" itemscope repeat>
+          <meta itemprop="id" content="usptoLink">
+          <a href="https://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&p=1&u=/netahtml/PTO/srchnum.html&r=1&f=G&l=50&d=PALL&s1=7659914.PN." itemprop="url" target="_blank"><span itemprop="text">USPTO</span></a>
+        </li>
+        <li itemprop="links" itemscope repeat>
+          <meta itemprop="id" content="usptoPatentCenterLink">
+          <a href="https://patentcenter.uspto.gov/applications/11451072" itemprop="url" target="_blank"><span itemprop="text">USPTO PatentCenter</span></a>
+        </li>
+        <li itemprop="links" itemscope repeat>
+          <meta itemprop="id" content="usptoAssignmentLink">
+          <a href="https://assignment.uspto.gov/patent/index.html#/patent/search/resultFilter?searchInput=7659914" itemprop="url" target="_blank"><span itemprop="text">USPTO Assignment</span></a>
+        </li>
+
+    <li itemprop="links" itemscope repeat>
+        <meta itemprop="id" content="espacenetLink">
+        <a href="https://worldwide.espacenet.com/publicationDetails/biblio?CC=US&amp;NR=7659914B1&amp;KC=B1&amp;FT=D" itemprop="url" target="_blank"><span itemprop="text">Espacenet</span></a>
+      </li>
+      
+
+    
+
+    <li itemprop="links" itemscope repeat>
+      <meta itemprop="id" content="globalDossierLink">
+      <a href="https://globaldossier.uspto.gov/result/application/US/11451072/1" itemprop="url" target="_blank"><span itemprop="text">Global Dossier</span></a>
+    </li>
+
+    
+
+      
+
+      
+
+      <li itemprop="links" itemscope repeat>
+        <meta itemprop="id" content="stackexchangeLink">
+        <a href="https://patents.stackexchange.com/questions/tagged/US7659914" itemprop="url"><span itemprop="text">Discuss</span></a>
+      </li>
+      
+  </ul>
+
+  
+
+  <section>
+    <h2>Images</h2>
+    <ul>
+      <li itemprop="images" itemscope repeat>
+        <img itemprop="thumbnail" src="https://patentimages.storage.googleapis.com/50/a5/e0/ef234b49418994/US07659914-20100209-D00000.png">
+        <meta itemprop="full" content="https://patentimages.storage.googleapis.com/1f/1f/87/cdf9f178f6ca50/US07659914-20100209-D00000.png">
+        <ul>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="0">
+            <meta itemprop="id" content="70">
+            <meta itemprop="label" content="computer">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="739">
+              <meta itemprop="top" content="201">
+              <meta itemprop="right" content="792">
+              <meta itemprop="bottom" content="240">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="0">
+            <meta itemprop="id" content="73">
+            <meta itemprop="label" content="maximum filter">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="118">
+              <meta itemprop="top" content="577">
+              <meta itemprop="right" content="174">
+              <meta itemprop="bottom" content="620">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="0">
+            <meta itemprop="id" content="74">
+            <meta itemprop="label" content="operator Radius range">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="461">
+              <meta itemprop="top" content="814">
+              <meta itemprop="right" content="520">
+              <meta itemprop="bottom" content="860">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="0">
+            <meta itemprop="id" content="77">
+            <meta itemprop="label" content="Work">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="417">
+              <meta itemprop="top" content="1429">
+              <meta itemprop="right" content="470">
+              <meta itemprop="bottom" content="1470">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="0">
+            <meta itemprop="id" content="78">
+            <meta itemprop="label" content="Radius">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="432">
+              <meta itemprop="top" content="1582">
+              <meta itemprop="right" content="487">
+              <meta itemprop="bottom" content="1626">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="0">
+            <meta itemprop="id" content="80">
+            <meta itemprop="label" content="original Work pixel">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="1997">
+              <meta itemprop="top" content="1869">
+              <meta itemprop="right" content="2060">
+              <meta itemprop="bottom" content="1909">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="0">
+            <meta itemprop="id" content="81">
+            <meta itemprop="label" content="original Work pixel">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="112">
+              <meta itemprop="top" content="1877">
+              <meta itemprop="right" content="159">
+              <meta itemprop="bottom" content="1918">
+            </span>
+          </li>
+        </ul>
+      </li>
+      <li itemprop="images" itemscope repeat>
+        <img itemprop="thumbnail" src="https://patentimages.storage.googleapis.com/d9/31/f8/597be6021f2221/US07659914-20100209-D00001.png">
+        <meta itemprop="full" content="https://patentimages.storage.googleapis.com/63/6b/b7/9a1025a9f0db29/US07659914-20100209-D00001.png">
+        <ul>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="1">
+            <meta itemprop="id" content="24">
+            <meta itemprop="label" content="Background Unit">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="1726">
+              <meta itemprop="top" content="1599">
+              <meta itemprop="right" content="1778">
+              <meta itemprop="bottom" content="1639">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="1">
+            <meta itemprop="id" content="25">
+            <meta itemprop="label" content="Character Unit">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="1464">
+              <meta itemprop="top" content="1889">
+              <meta itemprop="right" content="1517">
+              <meta itemprop="bottom" content="1924">
+            </span>
+          </li>
+        </ul>
+      </li>
+      <li itemprop="images" itemscope repeat>
+        <img itemprop="thumbnail" src="https://patentimages.storage.googleapis.com/72/97/1c/44f6de0bece865/US07659914-20100209-D00002.png">
+        <meta itemprop="full" content="https://patentimages.storage.googleapis.com/50/26/24/990dacf0f06db0/US07659914-20100209-D00002.png">
+        <ul>
+        </ul>
+      </li>
+      <li itemprop="images" itemscope repeat>
+        <img itemprop="thumbnail" src="https://patentimages.storage.googleapis.com/81/eb/cb/5da33bd9a1b4af/US07659914-20100209-D00003.png">
+        <meta itemprop="full" content="https://patentimages.storage.googleapis.com/25/20/ab/ba0f2c2926b11d/US07659914-20100209-D00003.png">
+        <ul>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="3">
+            <meta itemprop="id" content="29">
+            <meta itemprop="label" content="source Text">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="844">
+              <meta itemprop="top" content="464">
+              <meta itemprop="right" content="899">
+              <meta itemprop="bottom" content="518">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="3">
+            <meta itemprop="id" content="31">
+            <meta itemprop="label" content="line spacing">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="139">
+              <meta itemprop="top" content="833">
+              <meta itemprop="right" content="184">
+              <meta itemprop="bottom" content="885">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="3">
+            <meta itemprop="id" content="33">
+            <meta itemprop="label" content="Target Image subsection">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="332">
+              <meta itemprop="top" content="1196">
+              <meta itemprop="right" content="383">
+              <meta itemprop="bottom" content="1235">
+            </span>
+          </li>
+        </ul>
+      </li>
+      <li itemprop="images" itemscope repeat>
+        <img itemprop="thumbnail" src="https://patentimages.storage.googleapis.com/01/d9/0c/da10061c649f9d/US07659914-20100209-D00004.png">
+        <meta itemprop="full" content="https://patentimages.storage.googleapis.com/12/16/64/1e2bc720447e95/US07659914-20100209-D00004.png">
+        <ul>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="4">
+            <meta itemprop="id" content="35">
+            <meta itemprop="label" content="Character">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="120">
+              <meta itemprop="top" content="164">
+              <meta itemprop="right" content="173">
+              <meta itemprop="bottom" content="202">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="4">
+            <meta itemprop="id" content="36">
+            <meta itemprop="label" content="original Character">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="118">
+              <meta itemprop="top" content="809">
+              <meta itemprop="right" content="171">
+              <meta itemprop="bottom" content="848">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="4">
+            <meta itemprop="id" content="37">
+            <meta itemprop="label" content="simplified shape">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="124">
+              <meta itemprop="top" content="1447">
+              <meta itemprop="right" content="177">
+              <meta itemprop="bottom" content="1485">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="4">
+            <meta itemprop="id" content="39">
+            <meta itemprop="label" content="Target Image">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="1540">
+              <meta itemprop="top" content="889">
+              <meta itemprop="right" content="1592">
+              <meta itemprop="bottom" content="927">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="4">
+            <meta itemprop="id" content="40">
+            <meta itemprop="label" content="simple shape">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="1535">
+              <meta itemprop="top" content="1534">
+              <meta itemprop="right" content="1589">
+              <meta itemprop="bottom" content="1577">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="4">
+            <meta itemprop="id" content="41">
+            <meta itemprop="label" content="original Character">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="836">
+              <meta itemprop="top" content="163">
+              <meta itemprop="right" content="883">
+              <meta itemprop="bottom" content="203">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="4">
+            <meta itemprop="id" content="42">
+            <meta itemprop="label" content="simplified Character shape">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="818">
+              <meta itemprop="top" content="1443">
+              <meta itemprop="right" content="876">
+              <meta itemprop="bottom" content="1487">
+            </span>
+          </li>
+        </ul>
+      </li>
+      <li itemprop="images" itemscope repeat>
+        <img itemprop="thumbnail" src="https://patentimages.storage.googleapis.com/26/e9/a3/88d5797ed23c23/US07659914-20100209-D00005.png">
+        <meta itemprop="full" content="https://patentimages.storage.googleapis.com/59/ae/b1/649fc94d50d437/US07659914-20100209-D00005.png">
+        <ul>
+        </ul>
+      </li>
+      <li itemprop="images" itemscope repeat>
+        <img itemprop="thumbnail" src="https://patentimages.storage.googleapis.com/e0/b3/4c/6cb7b0c2ff5af5/US07659914-20100209-D00006.png">
+        <meta itemprop="full" content="https://patentimages.storage.googleapis.com/b7/37/a4/e91efc0c715a30/US07659914-20100209-D00006.png">
+        <ul>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="6">
+            <meta itemprop="id" content="47">
+            <meta itemprop="label" content="word wrap feature">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="454">
+              <meta itemprop="top" content="480">
+              <meta itemprop="right" content="507">
+              <meta itemprop="bottom" content="524">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="6">
+            <meta itemprop="id" content="48">
+            <meta itemprop="label" content="Text">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="177">
+              <meta itemprop="top" content="647">
+              <meta itemprop="right" content="227">
+              <meta itemprop="bottom" content="685">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="6">
+            <meta itemprop="id" content="49">
+            <meta itemprop="label" content="Image surface area">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="348">
+              <meta itemprop="top" content="831">
+              <meta itemprop="right" content="399">
+              <meta itemprop="bottom" content="870">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="6">
+            <meta itemprop="id" content="50">
+            <meta itemprop="label" content="Characters">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="472">
+              <meta itemprop="top" content="1017">
+              <meta itemprop="right" content="522">
+              <meta itemprop="bottom" content="1063">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="6">
+            <meta itemprop="id" content="51">
+            <meta itemprop="label" content="Character">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="279">
+              <meta itemprop="top" content="1198">
+              <meta itemprop="right" content="323">
+              <meta itemprop="bottom" content="1238">
+            </span>
+          </li>
+        </ul>
+      </li>
+      <li itemprop="images" itemscope repeat>
+        <img itemprop="thumbnail" src="https://patentimages.storage.googleapis.com/f9/bc/49/e39502e98b85a1/US07659914-20100209-D00007.png">
+        <meta itemprop="full" content="https://patentimages.storage.googleapis.com/74/70/a8/fd915a23966b05/US07659914-20100209-D00007.png">
+        <ul>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="7">
+            <meta itemprop="id" content="70">
+            <meta itemprop="label" content="computer">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="749">
+              <meta itemprop="top" content="216">
+              <meta itemprop="right" content="802">
+              <meta itemprop="bottom" content="258">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="7">
+            <meta itemprop="id" content="73">
+            <meta itemprop="label" content="maximum filter">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="129">
+              <meta itemprop="top" content="589">
+              <meta itemprop="right" content="181">
+              <meta itemprop="bottom" content="633">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="7">
+            <meta itemprop="id" content="77">
+            <meta itemprop="label" content="Work">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="427">
+              <meta itemprop="top" content="1443">
+              <meta itemprop="right" content="478">
+              <meta itemprop="bottom" content="1480">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="7">
+            <meta itemprop="id" content="78">
+            <meta itemprop="label" content="Radius">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="442">
+              <meta itemprop="top" content="1594">
+              <meta itemprop="right" content="498">
+              <meta itemprop="bottom" content="1639">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="7">
+            <meta itemprop="id" content="80">
+            <meta itemprop="label" content="original Work pixel">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="2007">
+              <meta itemprop="top" content="1883">
+              <meta itemprop="right" content="2067">
+              <meta itemprop="bottom" content="1923">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="7">
+            <meta itemprop="id" content="81">
+            <meta itemprop="label" content="original Work pixel">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="122">
+              <meta itemprop="top" content="1890">
+              <meta itemprop="right" content="167">
+              <meta itemprop="bottom" content="1931">
+            </span>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Classifications</h2>
+    <ul>
+      <li>
+        <ul itemprop="classifications" itemscope repeat>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">G</span>&mdash;<span itemprop="Description">PHYSICS</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">G06</span>&mdash;<span itemprop="Description">COMPUTING OR CALCULATING; COUNTING</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">G06T</span>&mdash;<span itemprop="Description">IMAGE DATA PROCESSING OR GENERATION, IN GENERAL</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">G06T11/00</span>&mdash;<span itemprop="Description">Two-dimensional [2D] image generation</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">G06T11/60</span>&mdash;<span itemprop="Description">Creating or editing images; Combining images with text</span>
+            <meta itemprop="Leaf" content="true"><meta itemprop="FirstCode" content="true"><meta itemprop="IsCPC" content="true">
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  
+
+  
+
+  <section>
+    <h2>Definitions</h2>
+    <ul>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">This invention</span>
+        <span itemprop="definition">consists of processes that cause text that is placed on a surface to be selectively scaled and thickened or thinned to achieve the overall appearance of lightness or darkness, thereby forming the approximation of an image or pattern.</span>
+        <meta itemprop="num_attr" content="p-0006">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">a target image</span>
+        <span itemprop="definition">can be used whereby each character&#39;s modification in the text will be based on the grayscale value of the corresponding sections of the target image in order to best represent and approximate the target image.</span>
+        <meta itemprop="num_attr" content="p-0006">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">a novel technique for thickening or thinning graphical elements like text</span>
+        <span itemprop="definition">is a variable radius min/max operator.</span>
+        <meta itemprop="num_attr" content="p-0007">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">This custom image-processing operator</span>
+        <span itemprop="definition">is an improvement upon any min/max filter. It works by using the grayscale values of the target image to determine the radius of a weighted min/max filter to be applied to the text.</span>
+        <meta itemprop="num_attr" content="p-0007">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">This invention</span>
+        <span itemprop="definition">also contains a more advanced technique for thickening or thinning graphical elements like text. By mathematically comparing each area in the surface containing the graphical elements with the target image, it enables an accurate radius to be calculated whereby the graphical elements will be thickened or thinned to approximate the target image.</span>
+        <meta itemprop="num_attr" content="p-0008">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">FIG. 1</span>
+        <span itemprop="definition">illustrates a sample image approximated via Text.</span>
+        <meta itemprop="num_attr" content="p-0010">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">FIG. 2</span>
+        <span itemprop="definition">illustrates a sample Target Image that Modified Text will be approximating.</span>
+        <meta itemprop="num_attr" content="p-0011">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">FIG. 3</span>
+        <span itemprop="definition">illustrates the definitions of Work, Text, Background, Character, Character Unit, and Background Unit.</span>
+        <meta itemprop="num_attr" content="p-0012">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">FIG. 4</span>
+        <span itemprop="definition">illustrates the approximation of FIG. 2 via scaling the Characters.</span>
+        <meta itemprop="num_attr" content="p-0013">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">FIG. 5</span>
+        <span itemprop="definition">illustrates the approximation of FIG. 2 via Thickening or Thinning the Characters.</span>
+        <meta itemprop="num_attr" content="p-0014">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">FIG. 6</span>
+        <span itemprop="definition">illustrates the approximation of FIG. 2 via the additional lightening or darkening of the Background.</span>
+        <meta itemprop="num_attr" content="p-0015">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">FIG. 7</span>
+        <span itemprop="definition">illustrates the approximation of FIG. 2 via the additional lightening or darkening of the Text.</span>
+        <meta itemprop="num_attr" content="p-0016">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">FIG. 8</span>
+        <span itemprop="definition">illustrates how a letter ‘E’ would be scaled, Thickened or Thinned to approximate Target Image subsections with different shades of gray.</span>
+        <meta itemprop="num_attr" content="p-0017">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">FIG. 9</span>
+        <span itemprop="definition">is a flowchart of a Text image generation system where there is unlimited or repeated Text, and the Text is made of a fixed-width font with no automatic word wrap.</span>
+        <meta itemprop="num_attr" content="p-0018">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">FIG. 10</span>
+        <span itemprop="definition">illustrates the creation of a Text image that is made from a Work that consists of fixed-width font and no automatic word wrap.</span>
+        <meta itemprop="num_attr" content="p-0019">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">FIG. 11</span>
+        <span itemprop="definition">is a flow diagram illustrating the effects of the steps involved in Thickening or Thinning a Graphical Element to accurately approximate the grayscale value of a Target Image subsection.</span>
+        <meta itemprop="num_attr" content="p-0020">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">FIG. 12</span>
+        <span itemprop="definition">illustrates how a radial max filter or increasing the stroke weight thickens a Character.</span>
+        <meta itemprop="num_attr" content="p-0021">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">FIG. 13</span>
+        <span itemprop="definition">illustrates an example of sub-Character Thickening and Thinning.</span>
+        <meta itemprop="num_attr" content="p-0022">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">FIG. 14</span>
+        <span itemprop="definition">is a flowchart of a Text image generation system where there is finite Text with proportional font and an automatic word wrap feature.</span>
+        <meta itemprop="num_attr" content="p-0023">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">FIG. 15</span>
+        <span itemprop="definition">illustrates a Text image that is created from a Work that consists of proportional font and automatic word wrap, and left and right margin justification.</span>
+        <meta itemprop="num_attr" content="p-0024">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">FIG. 16</span>
+        <span itemprop="definition">is a flowchart of the steps involved in Thickening or Thinning a Graphical Element via a variable radius min/max filter.</span>
+        <meta itemprop="num_attr" content="p-0025">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">This invention</span>
+        <span itemprop="definition">consists of processes that cause Text (see definition) that is in a Work (see definition) or multiple layers of Works to be selectively Modified (see definition) to achieve the overall appearance of lightness or darkness or color, thereby forming the approximation of an image or pattern (e.g. FIG. 1 ).</span>
+        <meta itemprop="num_attr" content="p-0026">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">a Target Image</span>
+        <span itemprop="definition">(see definition and FIG. 2 ) can be used whereby each Character&#39;s (see definition) Modification will be corresponding to the grayscale and/or coloration of the corresponding section of the Target Image in order to best represent and approximate it.</span>
+        <meta itemprop="num_attr" content="p-0026">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">Such Modification of the Text to approximate an image</span>
+        <span itemprop="definition">can either be done manually (e.g. via visual evaluation of a Target Image and then placement of Modified Text through movable type, manual writing, etc. Or it can be done through the use of a computer, software, or automation.</span>
+        <meta itemprop="num_attr" content="p-0026">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">Text</span>
+        <span itemprop="definition">means any kind of graphemes or words in any language&#39;s alphabet or writing technique, in any font or writing style ( FIG. 3 , 20 ). It can also be musical notations. Text can be in any media, including, but not limited to printing and writing on any surfaces or in computer software that is capable of representing such Text. For the purpose of this invention, Text excludes the Background around the Text. Thus, for instance, with black words on a white surface, Text refers only to the black words and not the Background white surface.</span>
+        <meta itemprop="num_attr" content="p-0028">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">a Work</span>
+        <span itemprop="definition">is any surface that contains Text ( FIG. 3 , 21 ). It can either be a physical surface where Text is placed, including, but not limited to paper, plastic, metal, wood, etc. Or it can be abstract, such as a graphical surface in computer graphics, including but not limited to an image file, a graphics file, a text file, a surface in a word processing or image processing software, or any other software—where Text is placed. For example, the face of a paper with writing on it, or an image file with Text on it are both Works.</span>
+        <meta itemprop="num_attr" content="p-0029">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the Text in a Work</span>
+        <span itemprop="definition">can either have an automatic word wrap features, where a word that cannot be completed before the end of the margin is carried to the next line, or not.</span>
+        <meta itemprop="num_attr" content="p-0029">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">each line</span>
+        <span itemprop="definition">can then be made to left and right justify to the margins via either spacing the Characters or words further apart, and/or via horizontally scaling each line.</span>
+        <meta itemprop="num_attr" content="p-0029">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the word</span>
+        <span itemprop="definition">will be cut off, and then its remainder, along with the rest of the Text, will be carried to the next line.</span>
+        <meta itemprop="num_attr" content="p-0029">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">either all or only parts of the Work</span>
+        <span itemprop="definition">can be covered with Text.</span>
+        <meta itemprop="num_attr" content="p-0029">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">a Background</span>
+        <span itemprop="definition">is the area of the Work that excludes the Text ( FIG. 3 , 22 ).</span>
+        <meta itemprop="num_attr" content="p-0030">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">a Character</span>
+        <span itemprop="definition">is one grapheme in any language&#39;s writing technique, in any font or writing style ( FIG. 3 , 23 ). It can also be a symbol in musical notation.</span>
+        <meta itemprop="num_attr" content="p-0031">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the above defined Text</span>
+        <span itemprop="definition">is comprised of multiple Characters.</span>
+        <meta itemprop="num_attr" content="p-0031">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">a Background Unit</span>
+        <span itemprop="definition">is the area in the immediate vicinity of one Character that excludes the Character ( FIG. 3 , 24 ).</span>
+        <meta itemprop="num_attr" content="p-0032">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the Background</span>
+        <span itemprop="definition">is comprised of multiple Background Units.</span>
+        <meta itemprop="num_attr" content="p-0032">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">a Character Unit</span>
+        <span itemprop="definition">consists of one Character and its Background Unit combined ( FIG. 3 , 25 ).</span>
+        <meta itemprop="num_attr" content="p-0033">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">a Work</span>
+        <span itemprop="definition">is comprised of multiple Character Units.</span>
+        <meta itemprop="num_attr" content="p-0033">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">Modification</span>
+        <span itemprop="definition">means scaling ( FIG. 4 , FIG. 8 , 27 ) and/or Thickening or Thinning (see definition and FIG. 5 , FIG. 8 , 26 ) of a Character or Characters.</span>
+        <meta itemprop="num_attr" content="p-0034">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">Scaling Text</span>
+        <span itemprop="definition">is a common word or image processing procedure.</span>
+        <meta itemprop="num_attr" content="p-0034">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">Modification</span>
+        <span itemprop="definition">can also include the additional lightening or darkening or changing the color of the Background ( FIG. 6 ), or the Text ( FIG. 7 ).</span>
+        <meta itemprop="num_attr" content="p-0034">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">Each Character</span>
+        <span itemprop="definition">can be Modified in one or multiple of the above stated techniques. Thus, Modification does not mean changing the actual Text content, but rather its scale, thickness, or coloration. Modification can mean causing such changes to occur to a Character, replacing the Character with a Modified version of the Character, or placing a Modified version of the Character Unit over the starting Character or Character Unit.</span>
+        <meta itemprop="num_attr" content="p-0034">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">Thickening or Thinning a Character</span>
+        <span itemprop="definition">causes it to become more boldfaced or thinner, thereby makes it become darker or lighter in appearance respectively ( FIG. 8 , 26 ).</span>
+        <meta itemprop="num_attr" content="p-0035">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">Thickening or Thinning a Character</span>
+        <span itemprop="definition">can be achieved a number of different ways. It can be accomplished by applying any min/max operator to the Character. It can also be accomplished by changing the stroke weight of the Character and, for the case of Thinning the Character, changing the stroke to have the same color as the Background. It can also be accomplished by displacing the splines that make up the Character so as to cause there to be more or less thickness and area inside the Character.</span>
+        <meta itemprop="num_attr" content="p-0035">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">a Graphical Element</span>
+        <span itemprop="definition">is any shape that can be placed on a surface and Modified.</span>
+        <meta itemprop="num_attr" content="p-0036">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">Examples of Graphical Elements</span>
+        <span itemprop="definition">include, but are not limited to dots, geometric shapes, lines, symbols, and Characters.</span>
+        <meta itemprop="num_attr" content="p-0036">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">a Graphical Elements Work</span>
+        <span itemprop="definition">is any surface that contains an array of multiple Graphical Element Units.</span>
+        <meta itemprop="num_attr" content="p-0037">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">a Graphical Elements Work</span>
+        <span itemprop="definition">can either be a physical surface or it can be abstract.</span>
+        <meta itemprop="num_attr" content="p-0037">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">a Graphical Element Unit</span>
+        <span itemprop="definition">consists of the Graphical Element and the area immediately around the Graphical Element.</span>
+        <meta itemprop="num_attr" content="p-0038">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">a Graphical Elements Work</span>
+        <span itemprop="definition">is comprised of multiple Graphical Element Units.</span>
+        <meta itemprop="num_attr" content="p-0038">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">a Target Image</span>
+        <span itemprop="definition">is the image or pattern ( FIG. 2 , FIG. 17 , 67 ) that a Modified Work or Modified Graphical Elements Work will be approximating.</span>
+        <meta itemprop="num_attr" content="p-0039">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the Target Image</span>
+        <span itemprop="definition">may be used to Modify on part of a Graphical Elements Work, or it may be that a Graphical Elements Work is approximating only part of a Target Image.</span>
+        <meta itemprop="num_attr" content="p-0039">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">a Target Image</span>
+        <span itemprop="definition">can either be an existing image or pattern, such as an image file, a photograph, drawing, etc., or it can be a conceptual image or pattern that one has in mind as the goal image to be approximated when Modifying a Work.</span>
+        <meta itemprop="num_attr" content="p-0039">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the Target Image</span>
+        <span itemprop="definition">can be blurred. Now it becomes clear that it is impossible to represent 100% pure white and 100% pure black via any Character, since the Character would have to be enlarged and Thickened to take up the entire surface of the Character Unit, or shrunk to non-existence, thereby becoming illegible. Thus, one finds that with legible Text, the gamut of gray that can be approximated is shorter. Instead of representing 0 to 100% values, one can, for example, only represent legibly values of gray from 10 to 60% ( FIG. 17 , 68 ). This means that the Target Image&#39;s gamut must be adjusted to fall within the Work&#39;s achievable range. Henceforth, in all discussions of this invention, it will be assumed that this is being performed on all Target Images before starting the Text image creation process, unless if the Target Image&#39;s gamut already falls within the legibility gamut of the Work.</span>
+        <meta itemprop="num_attr" content="p-0039">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">Radius in this invention</span>
+        <span itemprop="definition">will mean half the distance across any shape. Thus, when speaking of a Radius, unless explicitly stated, it will not imply a circular radius. Rather, the shape that the Radius refers to could include, but not be limited to a square, diamond, octagon, etc. The results of calculations however can only remain accurate if one does not switch from one shape to another while dealing with the same pixel.</span>
+        <meta itemprop="num_attr" content="p-0040">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">This invention</span>
+        <span itemprop="definition">is based on the principle that from a distance, each Character and its Background Unit optically blend together, and approximate a shade of gray. For instance, in the case of black Text over a white Background, if a Character is small and thin and there is a lot of Background Unit white space, then from a distance, that Character Unit will appear very light. On the other hand, if the Character is large and very thick, and there is little space between it and the Character next to it, then from a distance, that Character Unit will appear dark.</span>
+        <meta itemprop="num_attr" content="p-0041">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the shade of gray that the Character and its Background Unit optically blend to approximate</span>
+        <span itemprop="definition">is simply determined by measuring how much of the Character Unit&#39;s area the Character occupies. For instance, in FIG. 3 , if the Character “e” 23 is occupying 25% of the area of its Character Unit 25 , then from a distance, when the Character “e” and its Background Unit 24 optically blend together, it will approximate a shade of gray of 25%.</span>
+        <meta itemprop="num_attr" content="p-0041">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the percentage shade of gray that a Character is approximating</span>
+        <span itemprop="definition">can be determined a number of ways. In its crudest way, it can be visually approximated. Or, an adequate number of pixels can be sampled in each Character Unit, and the average of their grayscale values can be calculated. Or all of the grayscale values of the Character Unit can be recorded, and their average calculated. One way of obtaining such an average value would be by blurring the Work adequately enough so as to cause the Characters and their Background Units to blend together, and then recording the resulting blurred value. Lastly, the percentage can be determined by calculating the area inside each Character&#39;s vector boundaries, relative to the total area of the Character Unit.</span>
+        <meta itemprop="num_attr" content="p-0042">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">FIG. 9</span>
+        <span itemprop="definition">is a flow diagram of one embodiment of this Text image generation system.</span>
+        <meta itemprop="num_attr" content="p-0044">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the procedures that will now be outlined</span>
+        <span itemprop="definition">can be performed using a computer and software.</span>
+        <meta itemprop="num_attr" content="p-0044">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the procedure</span>
+        <span itemprop="definition">can also be automated via computer software.</span>
+        <meta itemprop="num_attr" content="p-0044">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">This embodiment</span>
+        <span itemprop="definition">entails having an unlimited or repeated source of Text that consists of fixed-width font Characters and no automatic word wrap FIG. 10 .</span>
+        <meta itemprop="num_attr" content="p-0044">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the Target Image</span>
+        <span itemprop="definition">is loaded 28 along with the source Text 29 .</span>
+        <meta itemprop="num_attr" content="p-0044">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the Character spacing, line spacing, font size range, and Thickness range</span>
+        <span itemprop="definition">are then specified 30 . Some consideration for these ranges should include:</span>
+        <meta itemprop="num_attr" content="p-0044">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the Target Image</span>
+        <span itemprop="definition">should be subdivided to correspond to the above determined Character and line spacing 31 .</span>
+        <meta itemprop="num_attr" content="p-0045">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">each subsection</span>
+        <span itemprop="definition">will correspond to one Character Unit. It is most effective that subsections be divided such that there remains no gaps in between them. In this embodiment, a grid achieves this goal ( FIG. 10 ).</span>
+        <meta itemprop="num_attr" content="p-0045">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the average grayscale in each subsection in the Target Image</span>
+        <span itemprop="definition">should be calculated and recorded 32 .</span>
+        <meta itemprop="num_attr" content="p-0046">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">This</span>
+        <span itemprop="definition">can be done numerous ways. Either the grayscale value of all the pixels in a subsection can be recorded and then averaged, or one or multiple point samples can be taken from each subsection, and in the case of the multiple samples, their average recorded. Adequately blurring the Target Image and observing the resulting grayscale value at the center of the corresponding Character Unit also achieves this goal. If one were performing this embodiment without a computer, one could even visually approximate the grayscale values of each Target Image subsection, although this would have a lower accuracy.</span>
+        <meta itemprop="num_attr" content="p-0046">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">each Character</span>
+        <span itemprop="definition">will be Modified based upon the average grayscale value measured in its corresponding Target Image subsection 33 .</span>
+        <meta itemprop="num_attr" content="p-0047">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the average grayscale value measured in its corresponding Target Image subsection 33</span>
+        <span itemprop="definition">For instance, to best approximate white in the case of black Text over a white Background, if it is decided that Modification will be performed only with enlargement of Characters, it will thus be determined that no enlargement of the Characters in the white regions will be performed.</span>
+        <meta itemprop="num_attr" content="p-0047">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">a maximum amount of enlargement</span>
+        <span itemprop="definition">say doubling, will be performed.</span>
+        <meta itemprop="num_attr" content="p-0047">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">an intermediate amount of enlargement</span>
+        <span itemprop="definition">will be performed.</span>
+        <meta itemprop="num_attr" content="p-0047">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the exact or approximate amount by which the scaling and Thickening or Thinning will be performed</span>
+        <span itemprop="definition">can be calculated a number of ways.</span>
+        <meta itemprop="num_attr" content="p-0048">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">a preferred method</span>
+        <span itemprop="definition">would be to mathematically calculate it.</span>
+        <meta itemprop="num_attr" content="p-0048">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the fraction of surface area that a Character occupies in its Character Unit</span>
+        <span itemprop="definition">determines the shade of gray that that Character Unit approximates.</span>
+        <meta itemprop="num_attr" content="p-0048">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">FIG. 11</span>
+        <span itemprop="definition">illustrates that, for each Character 35 , through different calculations, one can compute a simplified shape 37 that has the same area (i.e. number of pixels) as the original Character, and that, when blurred with its Background Unit, yields the same shade of gray as the original Character 36 .</span>
+        <meta itemprop="num_attr" content="p-0053">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the grayscale value</span>
+        <span itemprop="definition">will be represented as a fraction ranging from 0 to 1, where 0 is white and 1 is black.</span>
+        <meta itemprop="num_attr" content="p-0053">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the resulting figure (a C )</span>
+        <span itemprop="definition">would represent the area within the Character Unit (the Character Unit area being simulated by this blur Radius) that is comprised of the Character. This area could then again be represented as a simple shape such as a square 37 , circle, etc.</span>
+        <meta itemprop="num_attr" content="p-0055">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the simplified Character shape</span>
+        <span itemprop="definition">would be thickened. If the above Target Image Radius is less than the above simplified Character Radius, then the simplified Character shape would be thinned. However, the perimeter of the original Character is different (usually greater) than the perimeter of the simplified Character shape (in this circular example, it would simply be its circumference 2 ⁇ r C ). It thus becomes necessary to adjust the preliminary Radius by a multiplier in order to accurately simulate the target shade of gray.</span>
+        <meta itemprop="num_attr" content="p-0062">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">Such a Thickening or Thinning Radius</span>
+        <span itemprop="definition">can be applied uniformly to each Character via performing any min/max filter on the Character FIG. 12 , 44 , or it can be applied by giving the Character a stroke weight of this Radius FIG. 12 , 45 , as discussed above FIG. 11 .</span>
+        <meta itemprop="num_attr" content="p-0065">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">a different min/max Radius</span>
+        <span itemprop="definition">can be computed for each pixel in the Work. This can make it possible to approximate grayscale modulation that occurs within a Target Image subsection FIG. 13 . Thus, part of a Graphical Element will be Modified differently than another part.</span>
+        <meta itemprop="num_attr" content="p-0065">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">Preliminary Radius</span>
+        <span itemprop="definition"></span>
+        <meta itemprop="num_attr" content="p-0065">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">This Thickening and Thinning operator</span>
+        <span itemprop="definition">could be applied by itself to a Work, or in conjunction with other types of Modification like scaling. In the latter case, the Radius for Thickening or Thinning would logically be calculated off of the scaled Character.</span>
+        <meta itemprop="num_attr" content="p-0067">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the total area of a Character</span>
+        <span itemprop="definition">is the sum of the Character&#39;s scaled area and how much it is Thickened or Thinned. And so to calculate how much to scale a Character, or how much to Thicken or Thin it, one solves for S or the Final Radius in the formulae above.</span>
+        <meta itemprop="num_attr" content="p-0067">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">a maximum Radius for Thickening and a maximum Radius for Thinning</span>
+        <span itemprop="definition">can be determined, and multipliers used to keep all Thickening and Thinning that is performed within these Radii.</span>
+        <meta itemprop="num_attr" content="p-0069">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">a reduction in the Target Image&#39;s gamut</span>
+        <span itemprop="definition">can be performed to similarly limit the amount of Thickening and Thinning.</span>
+        <meta itemprop="num_attr" content="p-0069">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">Target Image</span>
+        <span itemprop="definition">When there is color in the Target Image, and one wishes to simulate that color via the Character Units, the following are some preferred techniques.</span>
+        <meta itemprop="num_attr" content="p-0070">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the Target Image</span>
+        <span itemprop="definition">can be converted into black and white and the same invention can be applied to the Text.</span>
+        <meta itemprop="num_attr" content="p-0070">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the Text image</span>
+        <span itemprop="definition">When the Text image is generated, all areas of the Target Image that have color in them can cause the corresponding Text and/or Background regions to be tinted accordingly.</span>
+        <meta itemprop="num_attr" content="p-0070">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the resulting Text image</span>
+        <span itemprop="definition">can be stored in a computer storage medium saved into an image file ( FIG. 9 , 34 ) or printed.</span>
+        <meta itemprop="num_attr" content="p-0071">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">FIG. 14</span>
+        <span itemprop="definition">presents an alternative Text image generation system where there is finite Text with proportional font and an automatic word wrap feature. This refers to the fact that, with most modern fonts, the space that each Character takes up is variable. Thus, for example, a capital Character “W” is taking up a wider area of space than a period “.” This has an important consequence on the Text image generation process. It means that unlike the fixed-width embodiment FIG. 9 , the Target Image cannot be subdivided into a simple grid to create Character Units for each Character, since the Characters are not equidistant apart FIG. 15 . The ineffectiveness of a grid would also result if it were desirable that the carriage return should only occur at the end of words, or some other designated Character.</span>
+        <meta itemprop="num_attr" content="p-0072">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the Target Image</span>
+        <span itemprop="definition">is first loaded 46 .</span>
+        <meta itemprop="num_attr" content="p-0073">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the source Text</span>
+        <span itemprop="definition">is also loaded with an automated word wrap feature 47 .</span>
+        <meta itemprop="num_attr" content="p-0073">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the finite body of Text</span>
+        <span itemprop="definition">may overflow the surface area corresponding to the Target Image, or it may only fill a fraction of it.</span>
+        <meta itemprop="num_attr" content="p-0073">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">each line</span>
+        <span itemprop="definition">will be horizontally scaled to left and right justify the Target Image surface area 49 .</span>
+        <meta itemprop="num_attr" content="p-0073">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">Such Text scaling codes</span>
+        <span itemprop="definition">are also now found in most word processing software.</span>
+        <meta itemprop="num_attr" content="p-0073">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">One of many ways to do this</span>
+        <span itemprop="definition">is by creating a bounding box around each Character and having that Character Unit correspond to a subsection in the Target Image.</span>
+        <meta itemprop="num_attr" content="p-0074">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the left and right borders of the bounding box</span>
+        <span itemprop="definition">can be the midpoint between this Character and its adjacent Character.</span>
+        <meta itemprop="num_attr" content="p-0074">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the top border</span>
+        <span itemprop="definition">can be where the line above begins, and the bottom border can be where this line begins ( FIG. 15 ).</span>
+        <meta itemprop="num_attr" content="p-0074">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">FIG. 16</span>
+        <span itemprop="definition">demonstrates one novel but simpler technique of Thickening or Thinning Graphical Elements than was outlined earlier in FIG. 11 .</span>
+        <meta itemprop="num_attr" content="p-0076">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">This custom image processing operator</span>
+        <span itemprop="definition">is a variable Radius min/max filter. It works by using the grayscale values of the Target Image to determine the Radius of a weighted min/max filter to be applied to the Graphical Elements and the surface they are on. Thus, it differs from FIG. 11 in that it does not cause the Graphical Elements to achieve an accurate mathematical approximation of the Target Image subsection&#39;s grayscale value. However, when properly calibrated, it can come close to doing so, and it can significantly increase the gamut that the Graphical Elements can approximate. As before, for the purpose of simplicity in this explanation, we will assume that the Graphical Elements are Characters, although it should be noted that this invention applies to all other kinds of Graphical Elements.</span>
+        <meta itemprop="num_attr" content="p-0076">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the Target Image</span>
+        <span itemprop="definition">is loaded into the computer 70 . It is preferred in this embodiment that the Target Image be blurred as well 71 , roughly by the Radius of half a Character Unit&#39;s width. Then the Work is loaded into the computer and scaled 72 as was done in the earlier embodiment 48 - 50 . At this Text&#39;s scaling and layout, one then determines what shade of gray the Work is approximating. This can be done, as before, by simply averaging an adequate sampling of the Work&#39;s pixels. This shade of gray will serve as the threshold where one will switch from a minimum to a maximum filter 73 .</span>
+        <meta itemprop="num_attr" content="p-0077">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">any pixel in the Target Image with a shade of gray that is lighter than the threshold gray</span>
+        <span itemprop="definition">will invoke the corresponding pixel in the Work to undergo a max filter</span>
+        <meta itemprop="num_attr" content="p-0077">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">any pixel in the Target Image with a shade of gray that is darker than the threshold gray</span>
+        <span itemprop="definition">will invoke the corresponding pixel in the Work to undergo a min filter.</span>
+        <meta itemprop="num_attr" content="p-0077">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the min/max operator Radius range 74</span>
+        <span itemprop="definition">one indicates up to how many pixels the Characters are to be Thickened and up to how many pixels they are to be Thinned. For instance, in the case of black Text over a white Background, and if the Target Image&#39;s pixel value is completely black, then one can set the min filter&#39;s maximum kernel Radius to be five pixels to find the lowest shade of gray. This min filter&#39;s maximum Radius should be set such that it does not cause the Characters to become so thick that they become illegible blobs that overlap. If the Target Image&#39;s pixel value is the same shade of gray as the threshold, then the Radius will be zero, and that pixel in the source Work will not be altered.</span>
+        <meta itemprop="num_attr" content="p-0078">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the Target Image&#39;s pixel value</span>
+        <span itemprop="definition">is pure white, then one can set the maximum kernel Radius to be three pixels to find the highest shade of gray within that Radius. This max filter&#39;s maximum Radius should be set such that it does not cause the Characters to become so thin that they disappear. All other in-between shades of gray in the Target Image can be calculated to have the appropriate corresponding kernel Radiuses applied FIG. 8 , 26 .</span>
+        <meta itemprop="num_attr" content="p-0078">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">Weighted in this invention</span>
+        <span itemprop="definition">means that, when the edge of the sampling Radius falls across a pixel, then the value of that pixel will be multiplied by what percentage of the pixel fell inside the area sampled. Having a weighted sampling being taken ensures that a smooth anti-aliasing will result in the Thickened and Thinned Text.</span>
+        <meta itemprop="num_attr" content="p-0080">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">Target Image pixel value</span>
+        <span itemprop="definition">was greater than the threshold value, then the highest value found in the sorting will replace the original Work pixel 80 . If the Target Image pixel value was lower than the threshold value, then the lowest value found in the sorting will replace the original Work pixel 81 . When all the Work&#39;s pixels have thus undergone the min/max operation, the resulting file is then saved 82 .</span>
+        <meta itemprop="num_attr" content="p-0081">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">An alternative embodiment of this technique</span>
+        <span itemprop="definition">would involve only having a min filter being applied, or a max filter being applied, not both. In that case, there would be no need to calculate the threshold where to switch from a min to a max filter.</span>
+        <meta itemprop="num_attr" content="p-0082">
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Landscapes</h2>
+    <ul>
+      <li itemprop="landscapes" itemscope repeat>
+        <span itemprop="name">Physics &amp; Mathematics</span>
+        (<span itemprop="type">AREA</span>)
+      </li>
+      <li itemprop="landscapes" itemscope repeat>
+        <span itemprop="name">General Physics &amp; Mathematics</span>
+        (<span itemprop="type">AREA</span>)
+      </li>
+      <li itemprop="landscapes" itemscope repeat>
+        <span itemprop="name">Engineering &amp; Computer Science</span>
+        (<span itemprop="type">AREA</span>)
+      </li>
+      <li itemprop="landscapes" itemscope repeat>
+        <span itemprop="name">Theoretical Computer Science</span>
+        (<span itemprop="type">AREA</span>)
+      </li>
+      <li itemprop="landscapes" itemscope repeat>
+        <span itemprop="name">Image Processing</span>
+        (<span itemprop="type">AREA</span>)
+      </li>
+    </ul>
+  </section>
+
+
+  <section itemprop="abstract" itemscope>
+    <h2>Abstract</h2>
+    
+    <div itemprop="content" html><abstract mxw-id="PA73526979" lang="EN" load-source="patent-office">
+    <div num="p-0001" class="abstract">This invention consists of processes that cause text that is placed on a surface to be selectively scaled, thickened or thinned to achieve the overall appearance of lightness or darkness, thereby forming the approximation of an image. A target image can be used whereby each character&#39;s modification in the text will be based on the grayscale value of the corresponding sections of the target image in order to best represent and approximate it. Multiple techniques for implementing this invention are described, including techniques for selectively modifying the text. Novel techniques are also explained for thickening or thinning graphical elements such as text to approximate a target image.</div>
+  </abstract>
+  </div>
+  </section>
+
+  <section itemprop="description" itemscope>
+    <h2>Description</h2>
+    
+    <div itemprop="content" html><div mxw-id="PDES35549403" lang="EN" load-source="patent-office" class="description">
+    
+    <heading>CROSS REFERENCE TO RELATED APPLICATIONS</heading>
+    <div num="p-0002" class="description-paragraph">A claim of priority is made to U.S. Provisional Patent application Ser. No. 60/690,550, filed Jun. 14, 2005, entitled: The Generation Of An Image From Text.</div>
+    
+    
+    <heading>STATEMENT OF FEDERALLY SPONSORED RESEARCH OR DEVELOPMENT</heading>
+    <div num="p-0003" class="description-paragraph">Not applicable.</div>
+    <heading>REFERENCE TO A SEQUENCE LISTING</heading>
+    <div num="p-0004" class="description-paragraph">Not applicable.</div>
+    <heading>BACKGROUND OF THE INVENTION</heading>
+    <div num="p-0005" class="description-paragraph">The generation of images by variations in the size of graphical elements has been performed a number of ways in the past. For example, halftoning is the process where an image can be printed with only one color ink by placing many little dots of varying sizes to give the impression of intermediate tones. Also, in ASCII Art, an image or pattern is formed by laying out different characters in a pattern on a surface based on their size and ink coverage (e.g. the capital “M” is bigger, has more ink coverage, and therefore appears darker than a period “.”. While ASCII images make sense visually, their text is meaningless, for their arrangement and order is solely for the benefit of the image. Thus, in order to produce an image from text that will have meaning or legibility, this invention&#39;s technique is necessary.</div>
+    <heading>BRIEF SUMMARY OF THE INVENTION</heading>
+    <div num="p-0006" class="description-paragraph">This invention consists of processes that cause text that is placed on a surface to be selectively scaled and thickened or thinned to achieve the overall appearance of lightness or darkness, thereby forming the approximation of an image or pattern. A target image can be used whereby each character&#39;s modification in the text will be based on the grayscale value of the corresponding sections of the target image in order to best represent and approximate the target image.</div>
+    <div num="p-0007" class="description-paragraph">A novel technique for thickening or thinning graphical elements like text is a variable radius min/max operator. This custom image-processing operator is an improvement upon any min/max filter. It works by using the grayscale values of the target image to determine the radius of a weighted min/max filter to be applied to the text.</div>
+    <div num="p-0008" class="description-paragraph">This invention also contains a more advanced technique for thickening or thinning graphical elements like text. By mathematically comparing each area in the surface containing the graphical elements with the target image, it enables an accurate radius to be calculated whereby the graphical elements will be thickened or thinned to approximate the target image.</div>
+    
+    
+    <description-of-drawings>
+      <heading>BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+      <div num="p-0009" class="description-paragraph">This invention can be better understood via the following drawings and their descriptions:</div>
+      <div num="p-0010" class="description-paragraph"> <figref idrefs="DRAWINGS">FIG. 1</figref> illustrates a sample image approximated via Text.</div>
+      <div num="p-0011" class="description-paragraph"> <figref idrefs="DRAWINGS">FIG. 2</figref> illustrates a sample Target Image that Modified Text will be approximating.</div>
+      <div num="p-0012" class="description-paragraph"> <figref idrefs="DRAWINGS">FIG. 3</figref> illustrates the definitions of Work, Text, Background, Character, Character Unit, and Background Unit.</div>
+      <div num="p-0013" class="description-paragraph"> <figref idrefs="DRAWINGS">FIG. 4</figref> illustrates the approximation of <figref idrefs="DRAWINGS">FIG. 2</figref> via scaling the Characters.</div>
+      <div num="p-0014" class="description-paragraph"> <figref idrefs="DRAWINGS">FIG. 5</figref> illustrates the approximation of <figref idrefs="DRAWINGS">FIG. 2</figref> via Thickening or Thinning the Characters.</div>
+      <div num="p-0015" class="description-paragraph"> <figref idrefs="DRAWINGS">FIG. 6</figref> illustrates the approximation of <figref idrefs="DRAWINGS">FIG. 2</figref> via the additional lightening or darkening of the Background.</div>
+      <div num="p-0016" class="description-paragraph"> <figref idrefs="DRAWINGS">FIG. 7</figref> illustrates the approximation of <figref idrefs="DRAWINGS">FIG. 2</figref> via the additional lightening or darkening of the Text.</div>
+      <div num="p-0017" class="description-paragraph"> <figref idrefs="DRAWINGS">FIG. 8</figref> illustrates how a letter ‘E’ would be scaled, Thickened or Thinned to approximate Target Image subsections with different shades of gray.</div>
+      <div num="p-0018" class="description-paragraph"> <figref idrefs="DRAWINGS">FIG. 9</figref> is a flowchart of a Text image generation system where there is unlimited or repeated Text, and the Text is made of a fixed-width font with no automatic word wrap.</div>
+      <div num="p-0019" class="description-paragraph"> <figref idrefs="DRAWINGS">FIG. 10</figref> illustrates the creation of a Text image that is made from a Work that consists of fixed-width font and no automatic word wrap.</div>
+      <div num="p-0020" class="description-paragraph"> <figref idrefs="DRAWINGS">FIG. 11</figref> is a flow diagram illustrating the effects of the steps involved in Thickening or Thinning a Graphical Element to accurately approximate the grayscale value of a Target Image subsection.</div>
+      <div num="p-0021" class="description-paragraph"> <figref idrefs="DRAWINGS">FIG. 12</figref> illustrates how a radial max filter or increasing the stroke weight thickens a Character.</div>
+      <div num="p-0022" class="description-paragraph"> <figref idrefs="DRAWINGS">FIG. 13</figref> illustrates an example of sub-Character Thickening and Thinning.</div>
+      <div num="p-0023" class="description-paragraph"> <figref idrefs="DRAWINGS">FIG. 14</figref> is a flowchart of a Text image generation system where there is finite Text with proportional font and an automatic word wrap feature.</div>
+      <div num="p-0024" class="description-paragraph"> <figref idrefs="DRAWINGS">FIG. 15</figref> illustrates a Text image that is created from a Work that consists of proportional font and automatic word wrap, and left and right margin justification.</div>
+      <div num="p-0025" class="description-paragraph"> <figref idrefs="DRAWINGS">FIG. 16</figref> is a flowchart of the steps involved in Thickening or Thinning a Graphical Element via a variable radius min/max filter.</div>
+    </description-of-drawings>
+    
+    
+    <heading>DETAILED DESCRIPTION OF THE INVENTION</heading>
+    <div num="p-0026" class="description-paragraph">This invention consists of processes that cause Text (see definition) that is in a Work (see definition) or multiple layers of Works to be selectively Modified (see definition) to achieve the overall appearance of lightness or darkness or color, thereby forming the approximation of an image or pattern (e.g. <figref idrefs="DRAWINGS">FIG. 1</figref>). A Target Image (see definition and <figref idrefs="DRAWINGS">FIG. 2</figref>) can be used whereby each Character&#39;s (see definition) Modification will be corresponding to the grayscale and/or coloration of the corresponding section of the Target Image in order to best represent and approximate it. Such Modification of the Text to approximate an image can either be done manually (e.g. via visual evaluation of a Target Image and then placement of Modified Text through movable type, manual writing, etc. Or it can be done through the use of a computer, software, or automation.</div>
+    <div num="p-0027" class="description-paragraph">The following are definitions of terms that will be used in the specifications and claims:</div>
+    <div num="h-0008" class="description-paragraph">Text</div>
+    <div num="p-0028" class="description-paragraph">Text means any kind of graphemes or words in any language&#39;s alphabet or writing technique, in any font or writing style (<figref idrefs="DRAWINGS">FIG. 3</figref>, <b>20</b>). It can also be musical notations. Text can be in any media, including, but not limited to printing and writing on any surfaces or in computer software that is capable of representing such Text. For the purpose of this invention, Text excludes the Background around the Text. Thus, for instance, with black words on a white surface, Text refers only to the black words and not the Background white surface.</div>
+    <div num="h-0009" class="description-paragraph">Work</div>
+    <div num="p-0029" class="description-paragraph">A Work is any surface that contains Text (<figref idrefs="DRAWINGS">FIG. 3</figref>, <b>21</b>). It can either be a physical surface where Text is placed, including, but not limited to paper, plastic, metal, wood, etc. Or it can be abstract, such as a graphical surface in computer graphics, including but not limited to an image file, a graphics file, a text file, a surface in a word processing or image processing software, or any other software—where Text is placed. For example, the face of a paper with writing on it, or an image file with Text on it are both Works. The Text in a Work can either have an automatic word wrap features, where a word that cannot be completed before the end of the margin is carried to the next line, or not. In the former case, to make the Work look tidier, each line can then be made to left and right justify to the margins via either spacing the Characters or words further apart, and/or via horizontally scaling each line. In the latter case, the word will be cut off, and then its remainder, along with the rest of the Text, will be carried to the next line. Also, either all or only parts of the Work can be covered with Text.</div>
+    <heading>BACKGROUND</heading>
+    <div num="p-0030" class="description-paragraph">A Background is the area of the Work that excludes the Text (<figref idrefs="DRAWINGS">FIG. 3</figref>, <b>22</b>).</div>
+    <div num="h-0011" class="description-paragraph">Character</div>
+    <div num="p-0031" class="description-paragraph">A Character is one grapheme in any language&#39;s writing technique, in any font or writing style (<figref idrefs="DRAWINGS">FIG. 3</figref>, <b>23</b>). It can also be a symbol in musical notation. The above defined Text is comprised of multiple Characters.</div>
+    <div num="h-0012" class="description-paragraph">Background Unit</div>
+    <div num="p-0032" class="description-paragraph">A Background Unit is the area in the immediate vicinity of one Character that excludes the Character (<figref idrefs="DRAWINGS">FIG. 3</figref>, <b>24</b>). The Background is comprised of multiple Background Units.</div>
+    <div num="h-0013" class="description-paragraph">Character Unit</div>
+    <div num="p-0033" class="description-paragraph">A Character Unit consists of one Character and its Background Unit combined (<figref idrefs="DRAWINGS">FIG. 3</figref>, <b>25</b>). A Work is comprised of multiple Character Units.</div>
+    <div num="h-0014" class="description-paragraph">Modification</div>
+    <div num="p-0034" class="description-paragraph">Modification means scaling (<figref idrefs="DRAWINGS">FIG. 4</figref>, <figref idrefs="DRAWINGS">FIG. 8</figref>, <b>27</b>) and/or Thickening or Thinning (see definition and <figref idrefs="DRAWINGS">FIG. 5</figref>, <figref idrefs="DRAWINGS">FIG. 8</figref>, <b>26</b>) of a Character or Characters. Scaling Text is a common word or image processing procedure. Modification can also include the additional lightening or darkening or changing the color of the Background (<figref idrefs="DRAWINGS">FIG. 6</figref>), or the Text (<figref idrefs="DRAWINGS">FIG. 7</figref>). Each Character can be Modified in one or multiple of the above stated techniques. Thus, Modification does not mean changing the actual Text content, but rather its scale, thickness, or coloration. Modification can mean causing such changes to occur to a Character, replacing the Character with a Modified version of the Character, or placing a Modified version of the Character Unit over the starting Character or Character Unit.</div>
+    <div num="h-0015" class="description-paragraph">Thickening or Thinning</div>
+    <div num="p-0035" class="description-paragraph">Thickening or Thinning a Character causes it to become more boldfaced or thinner, thereby makes it become darker or lighter in appearance respectively (<figref idrefs="DRAWINGS">FIG. 8</figref>, <b>26</b>). Thickening or Thinning a Character can be achieved a number of different ways. It can be accomplished by applying any min/max operator to the Character. It can also be accomplished by changing the stroke weight of the Character and, for the case of Thinning the Character, changing the stroke to have the same color as the Background. It can also be accomplished by displacing the splines that make up the Character so as to cause there to be more or less thickness and area inside the Character.</div>
+    <div num="h-0016" class="description-paragraph">Graphical Element</div>
+    <div num="p-0036" class="description-paragraph">A Graphical Element is any shape that can be placed on a surface and Modified. Examples of Graphical Elements include, but are not limited to dots, geometric shapes, lines, symbols, and Characters.</div>
+    <div num="h-0017" class="description-paragraph">Graphical Elements Work</div>
+    <div num="p-0037" class="description-paragraph">Like a Work, a Graphical Elements Work is any surface that contains an array of multiple Graphical Element Units. As with a Work, a Graphical Elements Work can either be a physical surface or it can be abstract.</div>
+    <div num="h-0018" class="description-paragraph">Graphical Element Unit</div>
+    <div num="p-0038" class="description-paragraph">A Graphical Element Unit consists of the Graphical Element and the area immediately around the Graphical Element. A Graphical Elements Work is comprised of multiple Graphical Element Units.</div>
+    <div num="h-0019" class="description-paragraph">Target Image</div>
+    <div num="p-0039" class="description-paragraph">A Target Image is the image or pattern (<figref idrefs="DRAWINGS">FIG. 2</figref>, <figref idrefs="DRAWINGS">FIG. 17</figref>, <b>67</b>) that a Modified Work or Modified Graphical Elements Work will be approximating. Thus the Modification of every Graphical Element and Graphical Element Unit in a Graphical Elements Work will be performed to best approximate the grayscale and color value of the corresponding subsection of the Target Image. The Target Image may be used to Modify on part of a Graphical Elements Work, or it may be that a Graphical Elements Work is approximating only part of a Target Image. A Target Image can either be an existing image or pattern, such as an image file, a photograph, drawing, etc., or it can be a conceptual image or pattern that one has in mind as the goal image to be approximated when Modifying a Work. To eliminate noise and fine modulations in the Target Image that are too small to approximate via Characters or Graphical Elements, the Target Image can be blurred. Now it becomes clear that it is impossible to represent 100% pure white and 100% pure black via any Character, since the Character would have to be enlarged and Thickened to take up the entire surface of the Character Unit, or shrunk to non-existence, thereby becoming illegible. Thus, one finds that with legible Text, the gamut of gray that can be approximated is shorter. Instead of representing 0 to 100% values, one can, for example, only represent legibly values of gray from 10 to 60% (<figref idrefs="DRAWINGS">FIG. 17</figref>, <b>68</b>). This means that the Target Image&#39;s gamut must be adjusted to fall within the Work&#39;s achievable range. Henceforth, in all discussions of this invention, it will be assumed that this is being performed on all Target Images before starting the Text image creation process, unless if the Target Image&#39;s gamut already falls within the legibility gamut of the Work.</div>
+    <div num="h-0020" class="description-paragraph">Radius</div>
+    <div num="p-0040" class="description-paragraph">Radius in this invention will mean half the distance across any shape. Thus, when speaking of a Radius, unless explicitly stated, it will not imply a circular radius. Rather, the shape that the Radius refers to could include, but not be limited to a square, diamond, octagon, etc. The results of calculations however can only remain accurate if one does not switch from one shape to another while dealing with the same pixel.</div>
+    <div num="p-0041" class="description-paragraph">This invention is based on the principle that from a distance, each Character and its Background Unit optically blend together, and approximate a shade of gray. For instance, in the case of black Text over a white Background, if a Character is small and thin and there is a lot of Background Unit white space, then from a distance, that Character Unit will appear very light. On the other hand, if the Character is large and very thick, and there is little space between it and the Character next to it, then from a distance, that Character Unit will appear dark. The shade of gray that the Character and its Background Unit optically blend to approximate is simply determined by measuring how much of the Character Unit&#39;s area the Character occupies. For instance, in <figref idrefs="DRAWINGS">FIG. 3</figref>, if the Character “e” <b>23</b> is occupying 25% of the area of its <figure-callout id="25" label="Character Unit" filenames="US07659914-20100209-D00001.png" state="{{state}}">Character Unit</figure-callout> <b>25</b>, then from a distance, when the Character “e” and its <figure-callout id="24" label="Background Unit" filenames="US07659914-20100209-D00001.png" state="{{state}}">Background Unit</figure-callout> <b>24</b> optically blend together, it will approximate a shade of gray of 25%.</div>
+    <div num="p-0042" class="description-paragraph">The percentage shade of gray that a Character is approximating can be determined a number of ways. In its crudest way, it can be visually approximated. Or, an adequate number of pixels can be sampled in each Character Unit, and the average of their grayscale values can be calculated. Or all of the grayscale values of the Character Unit can be recorded, and their average calculated. One way of obtaining such an average value would be by blurring the Work adequately enough so as to cause the Characters and their Background Units to blend together, and then recording the resulting blurred value. Lastly, the percentage can be determined by calculating the area inside each Character&#39;s vector boundaries, relative to the total area of the Character Unit.</div>
+    <div num="p-0043" class="description-paragraph">In the case of white Text over a black Background, the reverse will logically apply. Thus, the fluctuations in shades of gray achieved by such Modified Text can be used to approximate an image.</div>
+    <heading>Fixed Width Embodiment</heading>
+    <div num="p-0044" class="description-paragraph"> <figref idrefs="DRAWINGS">FIG. 9</figref> is a flow diagram of one embodiment of this Text image generation system. The procedures that will now be outlined can be performed using a computer and software. The procedure can also be automated via computer software. This embodiment entails having an unlimited or repeated source of Text that consists of fixed-width font Characters and no automatic word wrap <figref idrefs="DRAWINGS">FIG. 10</figref>. The Target Image is loaded <b>28</b> along with the <figure-callout id="29" label="source Text" filenames="US07659914-20100209-D00003.png" state="{{state}}">source Text</figure-callout> <b>29</b>. The Character spacing, line spacing, font size range, and Thickness range are then specified <b>30</b>. Some consideration for these ranges should include:
+</div> <ul> <li id="ul0001-0001" num="0000"> <ul> <li id="ul0002-0001" num="0044">a. Having the font sizes go from being large enough so that the Text will be easily legible, to small enough so that the Characters do not overlap and become illegible. An example font size range can be having the Characters go from their starting size all the way to doubling in size, and everything in between.</li> <li id="ul0002-0002" num="0045">b. Having the Character Thickness range go from being thick enough so that the Characters are easily legible, to Thin enough so that the Characters retain their shape and do not swell into indiscernible blobs.</li> <li id="ul0002-0003" num="0046">c. Having the Character spacing be a distance that is not too far apart such that the words become hard to read, but not too close such that the largest Characters do not overlap and become illegible.</li> <li id="ul0002-0004" num="0047">d. Having the line spacing close enough such as to optimize the grayscale gamut approximation that is achievable via the Work. It is most favorable that the spacing should be such that the largest Characters almost touch the line above them.</li> <li id="ul0002-0005" num="0048">e. When there is an unlimited or repeated source of Text, the amount of Text should be based upon the complexity of the Target Image and thus, how much Text will be needed to achieve the desired detail in the resulting approximated image. For instance, a short sentence does not have enough Characters to effectively approximate a family portrait. Similarly, one does not need the Text of a full length book to approximate a plus sign.</li> </ul> </li> </ul>
+    <div num="p-0045" class="description-paragraph">Then, the Target Image should be subdivided to correspond to the above determined Character and <figure-callout id="31" label="line spacing" filenames="US07659914-20100209-D00003.png" state="{{state}}">line spacing</figure-callout> <b>31</b>. Thus, each subsection will correspond to one Character Unit. It is most effective that subsections be divided such that there remains no gaps in between them. In this embodiment, a grid achieves this goal (<figref idrefs="DRAWINGS">FIG. 10</figref>).</div>
+    <div num="p-0046" class="description-paragraph">Next, the average grayscale in each subsection in the Target Image should be calculated and recorded <b>32</b>. This can be done numerous ways. Either the grayscale value of all the pixels in a subsection can be recorded and then averaged, or one or multiple point samples can be taken from each subsection, and in the case of the multiple samples, their average recorded. Adequately blurring the Target Image and observing the resulting grayscale value at the center of the corresponding Character Unit also achieves this goal. If one were performing this embodiment without a computer, one could even visually approximate the grayscale values of each Target Image subsection, although this would have a lower accuracy.</div>
+    <div num="p-0047" class="description-paragraph">Then, each Character will be Modified based upon the average grayscale value measured in its corresponding <figure-callout id="33" label="Target Image subsection" filenames="US07659914-20100209-D00003.png" state="{{state}}">Target Image subsection</figure-callout> <b>33</b>. For instance, to best approximate white in the case of black Text over a white Background, if it is decided that Modification will be performed only with enlargement of Characters, it will thus be determined that no enlargement of the Characters in the white regions will be performed. On the other hand, in the black regions of the Target Image, a maximum amount of enlargement, say doubling, will be performed. And for intermediate gray shades, an intermediate amount of enlargement will be performed.</div>
+    <heading>Scaling</heading>
+    <div num="p-0048" class="description-paragraph">Now the exact or approximate amount by which the scaling and Thickening or Thinning will be performed can be calculated a number of ways. In the crudest sense, one can adjust the Characters&#39; scaling via trial and error until one arrives at the Modification that adequately optically approximates the Target Image subsection&#39;s grayscale value. A preferred method would be to mathematically calculate it. As stated before, the fraction of surface area that a Character occupies in its Character Unit determines the shade of gray that that Character Unit approximates. Thus, for instance, scaling a Character by the amount S actually means multiplying the surface area of that Character (C), and the shade of gray it approximates, by the square of S:
+<br/>
+Scaled surface area of a Character(<i>T</i>)=<i>CS</i> <sup>2 </sup>
+</div>
+    <div num="p-0049" class="description-paragraph">Thus, for example, if a Character in its Character Unit approximates a shade of gray of 8%, then doubling the size of the Character will yield the following shade of gray:
+<br/>
+Shade of gray of scaled Character=8×2<sup>2</sup>=32%
+</div>
+    <div num="p-0050" class="description-paragraph">By solving for S, one can calculate how much to scale a Character to approximate a Target Image subsection&#39;s shade of gray (T):</div>
+    <div num="p-0051" class="description-paragraph">
+      <maths id="MATH-US-00001" num="00001">
+        <math overflow="scroll">
+          <mrow>
+            <mi>S</mi>
+            <mo>=</mo>
+            <msqrt>
+              <mfrac>
+                <mi>T</mi>
+                <mi>C</mi>
+              </mfrac>
+            </msqrt>
+          </mrow>
+        </math>
+      </maths>
+    </div>
+    <heading>Accurate Thickening or Thinning</heading>
+    <div num="p-0052" class="description-paragraph">Via this invention, one can also mathematically determine how much a Graphical Element like a Character is to be Thickened or Thinned to approximate its corresponding Target Image subsection. For the purpose of simplicity in this explanation, we will assume that the Graphical Elements are Characters, although it should be noted that this invention applies to all other kinds of Graphical Elements. The procedures that will now be outlined can be performed using a computer and software. The procedure can also be automated via computer software. One can compute how much the Characters in a Work are to be Thickened or Thinned by performing the following mathematic comparison between the Character Units in the Work and the Target Image.</div>
+    <div num="p-0053" class="description-paragraph"> <figref idrefs="DRAWINGS">FIG. 11</figref> illustrates that, for each <figure-callout id="35" label="Character" filenames="US07659914-20100209-D00004.png" state="{{state}}">Character</figure-callout> <b>35</b>, through different calculations, one can compute a <figure-callout id="37" label="simplified shape" filenames="US07659914-20100209-D00004.png" state="{{state}}">simplified shape</figure-callout> <b>37</b> that has the same area (i.e. number of pixels) as the original Character, and that, when blurred with its Background Unit, yields the same shade of gray as the <figure-callout id="36" label="original Character" filenames="US07659914-20100209-D00004.png" state="{{state}}">original Character</figure-callout> <b>36</b>. For this explanation, the grayscale value will be represented as a fraction ranging from 0 to 1, where 0 is white and 1 is black.</div>
+    <div num="p-0054" class="description-paragraph">One way to arrive at such a simplified shape entails measuring how many pixels of each Character Unit (C) are comprised of the Character, thereby obtaining the area of the Character, and then simply representing that area as a simplified shape like a square <b>37</b>, circle, etc. Another preferred way to arrive at such a shape and its area would entail blurring the <figure-callout id="36" label="Work" filenames="US07659914-20100209-D00004.png" state="{{state}}">Work</figure-callout> <b>36</b> by a Radius (R), measuring anywhere between half to one full Character Unit width. Then, to calculate the shape&#39;s area (a), one would multiply the resulting blurred grayscale value (G) by the area of the blur Radius (A). <figref idrefs="DRAWINGS">FIG. 11</figref> assumes a square sampling technique, and the example following formulae assume a circular sampling being taken, but similar formulae can be made to accommodate any other shape:
+<br/>
+<i>a</i> <sub>C</sub> <i>=G×A</i> <sub>C</sub> <i>=GπR</i> <sup>2 </sup>
+</div>
+    <div num="p-0055" class="description-paragraph">The resulting figure (a<sub>C</sub>) would represent the area within the Character Unit (the Character Unit area being simulated by this blur Radius) that is comprised of the Character. This area could then again be represented as a simple shape such as a square <b>37</b>, circle, etc.</div>
+    <div num="p-0056" class="description-paragraph">Now a similar blurring calculation can also be done for the Target Image (T) <b>38</b>. Thus, blurring the <figure-callout id="39" label="Target Image" filenames="US07659914-20100209-D00004.png" state="{{state}}">Target Image</figure-callout> <b>39</b> by the same Radius as was used in the Work will yield at each corresponding subsection the area of a <figure-callout id="40" label="simple shape" filenames="US07659914-20100209-D00004.png" state="{{state}}">simple shape</figure-callout> <b>40</b> that when blurred with its contrasting background, yields the same shade of gray as the original blurred Target Image subsection had.
+<br/>
+<i>a</i> <sub>T</sub> <i>=G</i> <sub>T</sub> <i>×A=G</i> <sub>T</sub> <i>πR</i> <sup>2 </sup>
+</div>
+    <div num="p-0057" class="description-paragraph">One could compute the Radius of these simple shapes derived from each Character and Target Image subsection by solving for their Radii (r):</div>
+    <div num="p-0058" class="description-paragraph">
+      <maths id="MATH-US-00002" num="00002">
+        <math overflow="scroll">
+          <mtable>
+            <mtr>
+              <mtd>
+                <mrow>
+                  <msub>
+                    <mi>a</mi>
+                    <mi>C</mi>
+                  </msub>
+                  <mo>=</mo>
+                  <mrow>
+                    <mi>π</mi>
+                    <mo>⁢</mo>
+                    <mstyle>
+                      <mspace width="0.3em" height="0.3ex"> </mspace>
+                    </mstyle>
+                    <mo>⁢</mo>
+                    <msubsup>
+                      <mi>r</mi>
+                      <mi>C</mi>
+                      <mn>2</mn>
+                    </msubsup>
+                  </mrow>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi>so</mi>
+              </mtd>
+              <mtd>
+                <mrow>
+                  <msub>
+                    <mi>r</mi>
+                    <mi>C</mi>
+                  </msub>
+                  <mo>=</mo>
+                  <msqrt>
+                    <mfrac>
+                      <msub>
+                        <mi>a</mi>
+                        <mi>C</mi>
+                      </msub>
+                      <mi>π</mi>
+                    </mfrac>
+                  </msqrt>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mrow>
+                  <msub>
+                    <mi>a</mi>
+                    <mi>T</mi>
+                  </msub>
+                  <mo>=</mo>
+                  <mrow>
+                    <mi>π</mi>
+                    <mo>⁢</mo>
+                    <mstyle>
+                      <mspace width="0.3em" height="0.3ex"> </mspace>
+                    </mstyle>
+                    <mo>⁢</mo>
+                    <msubsup>
+                      <mi>r</mi>
+                      <mi>T</mi>
+                      <mn>2</mn>
+                    </msubsup>
+                  </mrow>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi>so</mi>
+              </mtd>
+              <mtd>
+                <mrow>
+                  <msub>
+                    <mi>r</mi>
+                    <mi>T</mi>
+                  </msub>
+                  <mo>=</mo>
+                  <msqrt>
+                    <mfrac>
+                      <msub>
+                        <mi>a</mi>
+                        <mi>T</mi>
+                      </msub>
+                      <mi>π</mi>
+                    </mfrac>
+                  </msqrt>
+                </mrow>
+              </mtd>
+            </mtr>
+          </mtable>
+        </math>
+      </maths>
+    </div>
+    <div num="p-0059" class="description-paragraph">The above two steps can be simplified by mathematical cancellation:</div>
+    <div num="p-0060" class="description-paragraph">
+      <maths id="MATH-US-00003" num="00003">
+        <math overflow="scroll">
+          <mrow>
+            <msub>
+              <mi>r</mi>
+              <mi>C</mi>
+            </msub>
+            <mo>=</mo>
+            <mrow>
+              <msqrt>
+                <mfrac>
+                  <mrow>
+                    <msub>
+                      <mi>G</mi>
+                      <mi>C</mi>
+                    </msub>
+                    <mo>⁢</mo>
+                    <msup>
+                      <mi>R</mi>
+                      <mn>2</mn>
+                    </msup>
+                    <mo>⁢</mo>
+                    <mi>π</mi>
+                  </mrow>
+                  <mi>π</mi>
+                </mfrac>
+              </msqrt>
+              <mo>=</mo>
+              <mrow>
+                <mi>R</mi>
+                <mo>×</mo>
+                <msqrt>
+                  <msub>
+                    <mi>G</mi>
+                    <mi>C</mi>
+                  </msub>
+                </msqrt>
+              </mrow>
+            </mrow>
+          </mrow>
+        </math>
+      </maths>
+      <maths id="MATH-US-00003-2" num="00003.2">
+        <math overflow="scroll">
+          <mrow>
+            <msub>
+              <mi>r</mi>
+              <mi>T</mi>
+            </msub>
+            <mo>=</mo>
+            <mrow>
+              <msqrt>
+                <mfrac>
+                  <mrow>
+                    <msub>
+                      <mi>G</mi>
+                      <mi>T</mi>
+                    </msub>
+                    <mo>⁢</mo>
+                    <msup>
+                      <mi>R</mi>
+                      <mn>2</mn>
+                    </msup>
+                    <mo>⁢</mo>
+                    <mi>π</mi>
+                  </mrow>
+                  <mi>π</mi>
+                </mfrac>
+              </msqrt>
+              <mo>=</mo>
+              <mrow>
+                <mi>R</mi>
+                <mo>×</mo>
+                <msqrt>
+                  <msub>
+                    <mi>G</mi>
+                    <mi>T</mi>
+                  </msub>
+                </msqrt>
+              </mrow>
+            </mrow>
+          </mrow>
+        </math>
+      </maths>
+    </div>
+    <div num="p-0061" class="description-paragraph">The absolute value difference between the resulting Character shape Radius (r<sub>C</sub>) and the Target Image shape Radius (r<sub>T</sub>) is the Radius by which the simplified Character shape would need to be Thickened or Thinned to approximate the Target Image subsection&#39;s grayscale value:
+<br/>
+Preliminary Radius=|r<sub>T</sub> <i>−r</i> <sub>C</sub>|
+</div>
+    <div num="p-0062" class="description-paragraph">That is, if the above Target Image Radius is greater than the above simplified Character Radius, then the simplified Character shape would be thickened. If the above Target Image Radius is less than the above simplified Character Radius, then the simplified Character shape would be thinned. However, the perimeter of the original Character is different (usually greater) than the perimeter of the simplified Character shape (in this circular example, it would simply be its circumference 2πr<sub>C</sub>). It thus becomes necessary to adjust the preliminary Radius by a multiplier in order to accurately simulate the target shade of gray.</div>
+    <div num="p-0063" class="description-paragraph">One way to do so entails performing a ‘find edges’ filter on both the <figure-callout id="41" label="original Character" filenames="US07659914-20100209-D00004.png" state="{{state}}">original Character</figure-callout> <b>41</b> and the <figure-callout id="42" label="simplified Character shape" filenames="US07659914-20100209-D00004.png" state="{{state}}">simplified Character shape</figure-callout> <b>42</b>. There are several different ‘find edges’ image processing codes, and many of them can be found in popular image processing software. Then, one would divide the area of the resulting edge pixels of the simplified Character shape by the resulting area of the edge pixels of the original Character. This fraction, will then be multiplied by the preliminary Radius obtained above to yield the final Radius by which the Character is to be Thickened or Thinned <b>43</b>:</div>
+    <div num="p-0064" class="description-paragraph">
+      <maths id="MATH-US-00004" num="00004">
+        <math overflow="scroll">
+          <mrow>
+            <mrow>
+              <mi>Final</mi>
+              <mo>⁢</mo>
+              <mstyle>
+                <mspace width="0.8em" height="0.8ex"> </mspace>
+              </mstyle>
+              <mo>⁢</mo>
+              <mi>Radius</mi>
+            </mrow>
+            <mo>=</mo>
+            <mrow>
+              <mi>Preliminary</mi>
+              <mo>⁢</mo>
+              <mstyle>
+                <mspace width="0.8em" height="0.8ex"> </mspace>
+              </mstyle>
+              <mo>⁢</mo>
+              <mi>Radius</mi>
+              <mo>⁢</mo>
+              <mstyle>
+                <mspace width="0.8em" height="0.8ex"> </mspace>
+              </mstyle>
+              <mo>×</mo>
+              <mfrac>
+                <mrow>
+                  <mi>Area</mi>
+                  <mo>⁢</mo>
+                  <mstyle>
+                    <mspace width="0.8em" height="0.8ex"> </mspace>
+                  </mstyle>
+                  <mo>⁢</mo>
+                  <mi>of</mi>
+                  <mo>⁢</mo>
+                  <mstyle>
+                    <mspace width="0.8em" height="0.8ex"> </mspace>
+                  </mstyle>
+                  <mo>⁢</mo>
+                  <mi>edges</mi>
+                  <mo>⁢</mo>
+                  <mstyle>
+                    <mspace width="0.8em" height="0.8ex"> </mspace>
+                  </mstyle>
+                  <mo>⁢</mo>
+                  <mi>of</mi>
+                  <mo>⁢</mo>
+                  <mstyle>
+                    <mspace width="0.8em" height="0.8ex"> </mspace>
+                  </mstyle>
+                  <mo>⁢</mo>
+                  <mi>simplified</mi>
+                  <mo>⁢</mo>
+                  <mstyle>
+                    <mspace width="0.8em" height="0.8ex"> </mspace>
+                  </mstyle>
+                  <mo>⁢</mo>
+                  <mi>Character</mi>
+                </mrow>
+                <mrow>
+                  <mi>Area</mi>
+                  <mo>⁢</mo>
+                  <mstyle>
+                    <mspace width="0.8em" height="0.8ex"> </mspace>
+                  </mstyle>
+                  <mo>⁢</mo>
+                  <mi>of</mi>
+                  <mo>⁢</mo>
+                  <mstyle>
+                    <mspace width="0.8em" height="0.8ex"> </mspace>
+                  </mstyle>
+                  <mo>⁢</mo>
+                  <mi>edges</mi>
+                  <mo>⁢</mo>
+                  <mstyle>
+                    <mspace width="0.8em" height="0.8ex"> </mspace>
+                  </mstyle>
+                  <mo>⁢</mo>
+                  <mi>of</mi>
+                  <mo>⁢</mo>
+                  <mstyle>
+                    <mspace width="0.8em" height="0.8ex"> </mspace>
+                  </mstyle>
+                  <mo>⁢</mo>
+                  <mi>original</mi>
+                  <mo>⁢</mo>
+                  <mstyle>
+                    <mspace width="0.8em" height="0.8ex"> </mspace>
+                  </mstyle>
+                  <mo>⁢</mo>
+                  <mi>Character</mi>
+                </mrow>
+              </mfrac>
+            </mrow>
+          </mrow>
+        </math>
+      </maths>
+    </div>
+    <div num="p-0065" class="description-paragraph">Such a Thickening or Thinning Radius can be applied uniformly to each Character via performing any min/max filter on the Character <figref idrefs="DRAWINGS">FIG. 12</figref>, <b>44</b>, or it can be applied by giving the Character a stroke weight of this Radius <figref idrefs="DRAWINGS">FIG. 12</figref>, <b>45</b>, as discussed above <figref idrefs="DRAWINGS">FIG. 11</figref>. Alternatively, a different min/max Radius can be computed for each pixel in the Work. This can make it possible to approximate grayscale modulation that occurs within a Target Image subsection <figref idrefs="DRAWINGS">FIG. 13</figref>. Thus, part of a Graphical Element will be Modified differently than another part. If one is using a sampling technique that starts its sampling radius from the center of each pixel, not it&#39;s edges, then the value of half a pixel&#39;s length must be added in calculating the preliminary Radius:
+<br/>
+Preliminary Radius=|<i>r</i> <sub>T</sub> <i>−r</i> <sub>C</sub>|+0.5
+</div>
+    <div num="p-0066" class="description-paragraph">To achieve smooth anti-aliasing, none of the values calculated above should be rounded off to the nearest number. When a Radius is not a whole number, the value of the pixels that fall on the edge of the Radius should be modified according to the fraction of the pixel that falls within the Radius.</div>
+    <div num="p-0067" class="description-paragraph">This Thickening and Thinning operator could be applied by itself to a Work, or in conjunction with other types of Modification like scaling. In the latter case, the Radius for Thickening or Thinning would logically be calculated off of the scaled Character. Thus, the total area of a Character is the sum of the Character&#39;s scaled area and how much it is Thickened or Thinned. And so to calculate how much to scale a Character, or how much to Thicken or Thin it, one solves for S or the Final Radius in the formulae above.</div>
+    <div num="p-0068" class="description-paragraph">From the above two techniques for calculating the scaling and Thickening or Thinning, it becomes apparent that to a certain extent, the same shade of gray can be approximated by a Character many different ways. It can either be approximated only via scaling, only via Thickening or Thinning, or any fractional mixture of the two. The goal of best legibility can be used to decide which combination to use.</div>
+    <div num="p-0069" class="description-paragraph">In addition, in order to keep the Characters legible, a maximum Radius for Thickening and a maximum Radius for Thinning can be determined, and multipliers used to keep all Thickening and Thinning that is performed within these Radii. Alternatively, as indicated earlier, a reduction in the Target Image&#39;s gamut can be performed to similarly limit the amount of Thickening and Thinning.</div>
+    <div num="p-0070" class="description-paragraph">When there is color in the Target Image, and one wishes to simulate that color via the Character Units, the following are some preferred techniques. The Target Image can be converted into black and white and the same invention can be applied to the Text. When the Text image is generated, all areas of the Target Image that have color in them can cause the corresponding Text and/or Background regions to be tinted accordingly.</div>
+    <div num="p-0071" class="description-paragraph">When all the Characters in the Work have thus been Modified, the resulting Text image can be stored in a computer storage medium saved into an image file (<figref idrefs="DRAWINGS">FIG. 9</figref>, <b>34</b>) or printed.</div>
+    <heading>Proportional Font Embodiment</heading>
+    <div num="p-0072" class="description-paragraph"> <figref idrefs="DRAWINGS">FIG. 14</figref> presents an alternative Text image generation system where there is finite Text with proportional font and an automatic word wrap feature. This refers to the fact that, with most modern fonts, the space that each Character takes up is variable. Thus, for example, a capital Character “W” is taking up a wider area of space than a period “.” This has an important consequence on the Text image generation process. It means that unlike the fixed-width embodiment <figref idrefs="DRAWINGS">FIG. 9</figref>, the Target Image cannot be subdivided into a simple grid to create Character Units for each Character, since the Characters are not equidistant apart <figref idrefs="DRAWINGS">FIG. 15</figref>. The ineffectiveness of a grid would also result if it were desirable that the carriage return should only occur at the end of words, or some other designated Character. Automated word wrap codes are now found in almost every word processing software. In that case, each line of Text would need to be scaled to left and right justify to the left and right boundaries of the Target Image <figref idrefs="DRAWINGS">FIG. 15</figref>. Thus, the Character Units would again have different widths from line to line.</div>
+    <div num="p-0073" class="description-paragraph">Therefore, the technique in <figref idrefs="DRAWINGS">FIG. 14</figref> is required: The Target Image is first loaded <b>46</b>. The source Text is also loaded with an automated <figure-callout id="47" label="word wrap feature" filenames="US07659914-20100209-D00006.png" state="{{state}}">word wrap feature</figure-callout> <b>47</b>. At this point, the finite body of Text may overflow the surface area corresponding to the Target Image, or it may only fill a fraction of it. Thus, it is next necessary to scale the Character spacing, and line spacing to properly fill the Target Image surface area with <figure-callout id="48" label="Text" filenames="US07659914-20100209-D00006.png" state="{{state}}">Text</figure-callout> <b>48</b>. Then each line will be horizontally scaled to left and right justify the Target <figure-callout id="49" label="Image surface area" filenames="US07659914-20100209-D00006.png" state="{{state}}">Image surface area</figure-callout> <b>49</b>. Such Text scaling codes are also now found in most word processing software. As with the first embodiment (<figref idrefs="DRAWINGS">FIG. 9</figref>), one next specifies the font size range and Thickness range for the <figure-callout id="50" label="Characters" filenames="US07659914-20100209-D00006.png" state="{{state}}">Characters</figure-callout> <b>50</b>.</div>
+    <div num="p-0074" class="description-paragraph">Then, one subdivides the Target Image according to each <figure-callout id="51" label="Character" filenames="US07659914-20100209-D00006.png" state="{{state}}">Character</figure-callout> <b>51</b>. One of many ways to do this is by creating a bounding box around each Character and having that Character Unit correspond to a subsection in the Target Image. To be specific, the left and right borders of the bounding box can be the midpoint between this Character and its adjacent Character. The top border can be where the line above begins, and the bottom border can be where this line begins (<figref idrefs="DRAWINGS">FIG. 15</figref>).</div>
+    <div num="p-0075" class="description-paragraph">Alternatively, instead of creating a bounding box around each Character, one can create any other shape around the immediate vicinity of each Character, and measure the average grayscale value in the corresponding region of the Target Image. To be most effective, the Radius should be around half or a full distance between the center of one Character and its adjacent Character. From this point on, the remaining steps in <figref idrefs="DRAWINGS">FIG. 14</figref> for generating the Text image are the same as was done in the first embodiment <figref idrefs="DRAWINGS">FIG. 9</figref>.</div>
+    <heading>Simplified Thickening and Thinning</heading>
+    <div num="p-0076" class="description-paragraph"> <figref idrefs="DRAWINGS">FIG. 16</figref> demonstrates one novel but simpler technique of Thickening or Thinning Graphical Elements than was outlined earlier in <figref idrefs="DRAWINGS">FIG. 11</figref>. This custom image processing operator is a variable Radius min/max filter. It works by using the grayscale values of the Target Image to determine the Radius of a weighted min/max filter to be applied to the Graphical Elements and the surface they are on. Thus, it differs from <figref idrefs="DRAWINGS">FIG. 11</figref> in that it does not cause the Graphical Elements to achieve an accurate mathematical approximation of the Target Image subsection&#39;s grayscale value. However, when properly calibrated, it can come close to doing so, and it can significantly increase the gamut that the Graphical Elements can approximate. As before, for the purpose of simplicity in this explanation, we will assume that the Graphical Elements are Characters, although it should be noted that this invention applies to all other kinds of Graphical Elements.</div>
+    <div num="p-0077" class="description-paragraph">First, the Target Image is loaded into the <figure-callout id="70" label="computer" filenames="US07659914-20100209-D00000.png,US07659914-20100209-D00007.png" state="{{state}}">computer</figure-callout> <b>70</b>. It is preferred in this embodiment that the Target Image be blurred as well <b>71</b>, roughly by the Radius of half a Character Unit&#39;s width. Then the Work is loaded into the computer and scaled <b>72</b> as was done in the earlier embodiment <b>48</b>-<b>50</b>. At this Text&#39;s scaling and layout, one then determines what shade of gray the Work is approximating. This can be done, as before, by simply averaging an adequate sampling of the Work&#39;s pixels. This shade of gray will serve as the threshold where one will switch from a minimum to a <figure-callout id="73" label="maximum filter" filenames="US07659914-20100209-D00000.png,US07659914-20100209-D00007.png" state="{{state}}">maximum filter</figure-callout> <b>73</b>. Thus, any pixel in the Target Image with a shade of gray that is lighter than the threshold gray will invoke the corresponding pixel in the Work to undergo a max filter, and any pixel in the Target Image with a shade of gray that is darker than the threshold gray will invoke the corresponding pixel in the Work to undergo a min filter.</div>
+    <div num="p-0078" class="description-paragraph">Then, one specifies the min/max <figure-callout id="74" label="operator Radius range" filenames="US07659914-20100209-D00000.png" state="{{state}}">operator Radius range</figure-callout> <b>74</b>. In doing so, one indicates up to how many pixels the Characters are to be Thickened and up to how many pixels they are to be Thinned. For instance, in the case of black Text over a white Background, and if the Target Image&#39;s pixel value is completely black, then one can set the min filter&#39;s maximum kernel Radius to be five pixels to find the lowest shade of gray. This min filter&#39;s maximum Radius should be set such that it does not cause the Characters to become so thick that they become illegible blobs that overlap. If the Target Image&#39;s pixel value is the same shade of gray as the threshold, then the Radius will be zero, and that pixel in the source Work will not be altered. And if the Target Image&#39;s pixel value is pure white, then one can set the maximum kernel Radius to be three pixels to find the highest shade of gray within that Radius. This max filter&#39;s maximum Radius should be set such that it does not cause the Characters to become so thin that they disappear. All other in-between shades of gray in the Target Image can be calculated to have the appropriate corresponding kernel Radiuses applied <figref idrefs="DRAWINGS">FIG. 8</figref>, <b>26</b>.</div>
+    <div num="p-0079" class="description-paragraph">Then, for each pixel in the Target Image, its grayscale value is determined and recorded <b>75</b>. Based upon this value, one computes the Radius of the kernel to be sampled around the corresponding pixel in the Work <b>76</b>.</div>
+    <div num="p-0080" class="description-paragraph">So at the corresponding pixel in the <figure-callout id="77" label="Work" filenames="US07659914-20100209-D00000.png,US07659914-20100209-D00007.png" state="{{state}}">Work</figure-callout> <b>77</b>, one takes a weighted sample within this <figure-callout id="78" label="Radius" filenames="US07659914-20100209-D00000.png,US07659914-20100209-D00007.png" state="{{state}}">Radius</figure-callout> <b>78</b> and sorts these sample values <b>79</b>. Weighted in this invention means that, when the edge of the sampling Radius falls across a pixel, then the value of that pixel will be multiplied by what percentage of the pixel fell inside the area sampled. Having a weighted sampling being taken ensures that a smooth anti-aliasing will result in the Thickened and Thinned Text.</div>
+    <div num="p-0081" class="description-paragraph">If the Target Image pixel value was greater than the threshold value, then the highest value found in the sorting will replace the <figure-callout id="80" label="original Work pixel" filenames="US07659914-20100209-D00000.png,US07659914-20100209-D00007.png" state="{{state}}">original Work pixel</figure-callout> <b>80</b>. If the Target Image pixel value was lower than the threshold value, then the lowest value found in the sorting will replace the <figure-callout id="81" label="original Work pixel" filenames="US07659914-20100209-D00000.png,US07659914-20100209-D00007.png" state="{{state}}">original Work pixel</figure-callout> <b>81</b>. When all the Work&#39;s pixels have thus undergone the min/max operation, the resulting file is then saved <b>82</b>.</div>
+    <div num="p-0082" class="description-paragraph">An alternative embodiment of this technique would involve only having a min filter being applied, or a max filter being applied, not both. In that case, there would be no need to calculate the threshold where to switch from a min to a max filter.</div>
+    
+  </div>
+  </div>
+  </section>
+
+  <section itemprop="claims" itemscope>
+    <h2>Claims (<span itemprop="count">3</span>)</h2>
+    
+    <div itemprop="content" html><div mxw-id="PCLM29073238" lang="EN" load-source="patent-office" class="claims">
+    <div class="claim"> <div id="CLM-00001" num="00001" class="claim">
+      <div class="claim-text">1. A method for generating an image from Graphical Elements with an appearance that approximates a Target Image, using a computer and a computer readable medium that contains software which cause a computer to perform the steps of:
+<div class="claim-text">Loading a Target Image into the computer;</div>
+<div class="claim-text">Loading or generating a Graphical Elements Work in the computer;</div>
+<div class="claim-text">Creating a relationship between the Graphical Elements Work and the Target Image such that at least part of the Graphical Elements Work will be made to relate to at least part of the Target Image;</div>
+<div class="claim-text">Measuring what shade of gray value the Graphical Elements Work averages to represent, and assigning that value as the min/max threshold value;</div>
+<div class="claim-text">Specifying the min/max filter Radius range that is to be later applied to the Graphical Elements Work;</div>
+<div class="claim-text">For each pixel in the Target image that relates to the Graphical Elements Work, measuring and recording a grayscale value;</div>
+<div class="claim-text">Based on that grayscale value, computing the Radius of the kernel to be sampled around the corresponding pixel in the Graphical Elements Work;</div>
+<div class="claim-text">At that corresponding pixel in the Graphical Elements Work, taking a weighted sample within this computed Radius;</div>
+<div class="claim-text">When the Target Image&#39;s pixel value is darker than the threshold value, then the corresponding pixel in the Graphical Elements Work will be replaced with the darkest value sampled in the Graphical Elements Work;</div>
+<div class="claim-text">When the Target Image&#39;s pixel value is lighter than the threshold value, then the corresponding pixel in the Graphical Elements Work will be replaced with the lightest value sampled in the Graphical Elements Work; and</div>
+<div class="claim-text">When all the pixels of the Graphical Elements Work which have been made to relate to the Target Image have thus been modified, without scaling the Graphical Element, the resulting modified Graphical Elements Work will now be an image which approximates the Target Image, and this new Graphical Elements Work image will be saved on a computer readable medium as an image file and visually displayed.</div>
+</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="CLM-00002" num="00002" class="claim">
+      <div class="claim-text">2. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref> including the further step of blurring the Target Image after loading the Target Image into the computer and prior to performing any calculations that relate to the Target Image.</div>
+    </div>
+    </div> <div class="claim"> <div id="CLM-00003" num="00003" class="claim">
+      <div class="claim-text">3. A method for generating an image from Graphical Elements with an appearance that approximates a Target Image, using a computer and a computer readable medium that contains software which cause a computer to perform the steps of:
+<div class="claim-text">Loading a Target Image into a computer;</div>
+<div class="claim-text">Loading or generating a Graphical Elements Work in the computer;</div>
+<div class="claim-text">Creating a relationship between the Graphical Elements Work and the Target Image such that at least part of the Graphical Elements Work will be made to relate to at least part of the Target Image;</div>
+<div class="claim-text">Then for each Graphical Element Unit in the part of the Graphical Elements Work that relates to the Target Image;</div>
+<div class="claim-text">Measuring the area that each Graphical Element occupies;</div>
+<div class="claim-text">Then from this area, calculating algebraically what Radius a simple shape would have if it had the same area;</div>
+<div class="claim-text">Then for the subsection area in the Target Image that corresponds to this Graphical Element Unit, calculating the Target Image subsection&#39;s area, which is the same as the area of the Graphical Element Unit, calculating the Target Image subsection area&#39;s average shade of gray, and multiplying this area and this shade of gray together to obtain the area that a simple shape would need to have to achieve this shade of gray if the simple shape were to blend or average with the simple shape&#39;s contrasting immediate background;</div>
+<div class="claim-text">Then from this simple shape&#39;s area, calculating algebraically what Radius a simple shape would have if the simple shape had the same area;</div>
+<div class="claim-text">Then calculating the Radius by which the simple shape derived from the Graphical Element would need to be Thickened or Thinned in order to visually blend with the simple shape&#39;s background to approximate the shade of gray of the corresponding subsection of the Target Image by, calculating the absolute value difference between the Radius of the simple shape derived from the Target Image subsection and the Radius of the simple shape derived from the Graphical Element;</div>
+<div class="claim-text">Then adjusting the above calculated Radius of Thickening or Thinning by a multiplier derived by performing a ‘find edges’ filter on both the simple shape having the same area as the Graphical Element and the original Graphical Element, and then calculating the quotient of the former divided by the latter, this quotient thus being the multiplier;</div>
+<div class="claim-text">Then accordingly Thickening or Thinning the Graphical Element by this adjusted Radius of Thickening or Thinning without scaling the Graphical Element; and</div>
+<div class="claim-text">When all the pixels of the Graphical Elements Work which have been made to relate to the Target Image have thus been modified, the resulting modified Graphical Elements Work will now be an image which approximates the Target Image, and this new Graphical Elements Work image will be saved on a computer readable medium as an image file and visually displayed. </div>
+</div>
+    </div>
+  </div> </div>
+  </div>
+  </section>
+
+  <section itemprop="application" itemscope>
+
+    <section itemprop="metadata" itemscope>
+      <span itemprop="applicationNumber">US11/451,072</span>
+      <span itemprop="priorityDate">2005-06-14</span>
+      <span itemprop="filingDate">2006-06-12</span>
+      <span itemprop="title">Generation of an image from text 
+       </span>
+      <span itemprop="ifiStatus">Expired - Fee Related</span>
+      
+      <a href="/patent/US7659914B1/en">
+        <span itemprop="representativePublication">US7659914B1</span>
+        (<span itemprop="primaryLanguage">en</span>)
+      </a>
+    </section>
+
+    <h2>Priority Applications (1)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Application Number</th>
+          <th>Priority Date</th>
+          <th>Filing Date</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="priorityApps" itemscope repeat>
+          <td>
+            <span itemprop="applicationNumber">US11/451,072</span>
+            
+            <a href="/patent/US7659914B1/en">
+              <span itemprop="representativePublication">US7659914B1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+            </a>
+          </td>
+          <td itemprop="priorityDate">2005-06-14</td>
+          <td itemprop="filingDate">2006-06-12</td>
+          <td itemprop="title">Generation of an image from text 
+       </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Applications Claiming Priority (2)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Application Number</th>
+          <th>Priority Date</th>
+          <th>Filing Date</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="appsClaimingPriority" itemscope repeat>
+          <td>
+            <span itemprop="applicationNumber">US69055005P</span>
+            
+          </td>
+          <td itemprop="priorityDate">2005-06-14</td>
+          <td itemprop="filingDate">2005-06-14</td>
+          <td itemprop="title"></td>
+        </tr>
+        <tr itemprop="appsClaimingPriority" itemscope repeat>
+          <td>
+            <span itemprop="applicationNumber">US11/451,072</span>
+            <a href="/patent/US7659914B1/en">
+              <span itemprop="representativePublication">US7659914B1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+            </a>
+          </td>
+          <td itemprop="priorityDate">2005-06-14</td>
+          <td itemprop="filingDate">2006-06-12</td>
+          <td itemprop="title">Generation of an image from text 
+       </td>
+        </tr>
+      </tbody>
+    </table>
+
+    
+
+    
+
+    <h2>Publications (1)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Publication Number</th>
+          <th>Publication Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="pubs" itemscope repeat>
+          <td>
+            <span itemprop="publicationNumber">US7659914B1</span>
+            
+            <span itemprop="thisPatent">true</span>
+            <a href="/patent/US7659914B1/en">
+              US7659914B1
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+          </td>
+          <td itemprop="publicationDate">2010-02-09</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </section>
+
+  <section itemprop="family" itemscope>
+    <h1>Family</h1>
+    <h2>ID=41646455</h2>
+
+    <h2>Family Applications (1)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Application Number</th>
+          <th>Title</th>
+          <th>Priority Date</th>
+          <th>Filing Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="applications" itemscope repeat>
+          <td>
+            <span itemprop="applicationNumber">US11/451,072</span>
+            <span itemprop="ifiStatus">Expired - Fee Related</span>
+            
+            <a href="/patent/US7659914B1/en">
+              <span itemprop="representativePublication">US7659914B1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+            </a>
+          </td>
+          <td itemprop="priorityDate">2005-06-14</td>
+          <td itemprop="filingDate">2006-06-12</td>
+          <td itemprop="title">Generation of an image from text 
+       </td>
+        </tr>
+      </tbody>
+    </table>
+
+    
+
+    
+
+    <h2>Country Status (1)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Country</th>
+          <th>Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="countryStatus" itemscope repeat>
+          <td>
+            <span itemprop="countryCode">US</span>
+            (<span itemprop="num">1</span>)
+            <meta itemprop="thisCountry" content="true">
+          </td>
+          <td>
+            <a href="/patent/US7659914B1/en">
+              <span itemprop="representativePublication">US7659914B1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Cited By (6)</h2>
+    <table>
+      <caption>* Cited by examiner, † Cited by third party</caption>
+      <thead>
+        <tr>
+          <th>Publication number</th>
+          <th>Priority date</th>
+          <th>Publication date</th>
+          <th>Assignee</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="forwardReferencesOrig" itemscope repeat>
+          <td>
+            <a href="/patent/US20100194760A1/en">
+              <span itemprop="publicationNumber">US20100194760A1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2007-08-01</td>
+          <td itemprop="publicationDate">2010-08-05</td>
+          <td><span itemprop="assigneeOriginal">Hak-Soo Kim</span></td>
+          <td itemprop="title">Method and Apparatus Producing Text Patterning Data Correspondence To Image Data and Reconstructing Image Data Using the Text Patterning Data 
+       </td>
+        </tr>
+        <tr itemprop="forwardReferencesOrig" itemscope repeat>
+          <td>
+            <a href="/patent/US8331681B1/en">
+              <span itemprop="publicationNumber">US8331681B1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2008-10-24</td>
+          <td itemprop="publicationDate">2012-12-11</td>
+          <td><span itemprop="assigneeOriginal">Adobe Systems Incorporated</span></td>
+          <td itemprop="title">Generating typefaces through image analysis 
+       </td>
+        </tr>
+        <tr itemprop="forwardReferencesOrig" itemscope repeat>
+          <td>
+            <a href="/patent/CN103177709A/en">
+              <span itemprop="publicationNumber">CN103177709A</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2011-12-20</td>
+          <td itemprop="publicationDate">2013-06-26</td>
+          <td><span itemprop="assigneeOriginal">北大方正集团有限公司</span></td>
+          <td itemprop="title">Method and device for displaying characters 
+       </td>
+        </tr>
+        <tr itemprop="forwardReferencesOrig" itemscope repeat>
+          <td>
+            <a href="/patent/FR2989932A1/en">
+              <span itemprop="publicationNumber">FR2989932A1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2012-04-27</td>
+          <td itemprop="publicationDate">2013-11-01</td>
+          <td><span itemprop="assigneeOriginal">Arjowiggins Security</span></td>
+          <td itemprop="title">
+  SECURITY ELEMENT AND DOCUMENT INCORPORATING SUCH A MEMBER
+ 
+       </td>
+        </tr>
+        <tr itemprop="forwardReferencesOrig" itemscope repeat>
+          <td>
+            <a href="/patent/US9355485B2/en">
+              <span itemprop="publicationNumber">US9355485B2</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2014-03-11</td>
+          <td itemprop="publicationDate">2016-05-31</td>
+          <td><span itemprop="assigneeOriginal">Korn Ferry International</span></td>
+          <td itemprop="title">Visualization interface for word cloud 
+       </td>
+        </tr>
+        <tr itemprop="forwardReferencesOrig" itemscope repeat>
+          <td>
+            <a href="/patent/US20230134226A1/en">
+              <span itemprop="publicationNumber">US20230134226A1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2021-11-03</td>
+          <td itemprop="publicationDate">2023-05-04</td>
+          <td><span itemprop="assigneeOriginal">Accenture Global Solutions Limited</span></td>
+          <td itemprop="title">Disability-oriented font generator 
+       </td>
+        </tr>
+      </tbody>
+    </table>
+
+    
+
+    <h2>Citations (5)</h2>
+    <table>
+      <caption>* Cited by examiner, † Cited by third party</caption>
+      <thead>
+        <tr>
+          <th>Publication number</th>
+          <th>Priority date</th>
+          <th>Publication date</th>
+          <th>Assignee</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="backwardReferencesOrig" itemscope repeat>
+          <td>
+            <a href="/patent/US6298154B1/en">
+              <span itemprop="publicationNumber">US6298154B1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">1999-03-29</td>
+          <td itemprop="publicationDate">2001-10-02</td>
+          <td>
+            <span itemprop="assigneeOriginal">Eastman Kodak Company</span>
+          </td>
+          <td itemprop="title">Method for rendering improved personal handwriting 
+       </td>
+        </tr>
+        <tr itemprop="backwardReferencesOrig" itemscope repeat>
+          <td>
+            <a href="/patent/WO2002056289A1/en">
+              <span itemprop="publicationNumber">WO2002056289A1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2001-01-09</td>
+          <td itemprop="publicationDate">2002-07-18</td>
+          <td>
+            <span itemprop="assigneeOriginal">Yitzchak Irving Twersky</span>
+          </td>
+          <td itemprop="title">Improved apparatus and methods for replacing decorative images with text and/or graphical patterns 
+       </td>
+        </tr>
+        <tr itemprop="backwardReferencesOrig" itemscope repeat>
+          <td>
+            <a href="/patent/US20030106943A1/en">
+              <span itemprop="publicationNumber">US20030106943A1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2001-12-11</td>
+          <td itemprop="publicationDate">2003-06-12</td>
+          <td>
+            <span itemprop="assigneeOriginal">Harry Schofield</span>
+          </td>
+          <td itemprop="title">Grayscale security microprinting for identification cards 
+       </td>
+        </tr>
+        <tr itemprop="backwardReferencesOrig" itemscope repeat>
+          <td>
+            <a href="/patent/US7181081B2/en">
+              <span itemprop="publicationNumber">US7181081B2</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2001-05-04</td>
+          <td itemprop="publicationDate">2007-02-20</td>
+          <td>
+            <span itemprop="assigneeOriginal">Legend Films Inc.</span>
+          </td>
+          <td itemprop="title">Image sequence enhancement system and method 
+       </td>
+        </tr>
+        <tr itemprop="backwardReferencesOrig" itemscope repeat>
+          <td>
+            <a href="/patent/US7197162B2/en">
+              <span itemprop="publicationNumber">US7197162B2</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2002-06-28</td>
+          <td itemprop="publicationDate">2007-03-27</td>
+          <td>
+            <span itemprop="assigneeOriginal">Canon Kabushiki Kaisha</span>
+          </td>
+          <td itemprop="title">Image processing apparatus and method, computer program, and computer-readable storage medium 
+       </td>
+        </tr>
+      </tbody>
+    </table>
+
+    
+
+    <ul>
+      <li itemprop="applicationsByYear" itemscope repeat>
+        <span itemprop="year">2006</span>
+        <ul>
+          <li itemprop="application" itemscope repeat>
+            <span itemprop="filingDate">2006-06-12</span>
+            <span itemprop="countryCode">US</span>
+            <span itemprop="applicationNumber">US11/451,072</span>
+            <a href="/patent/US7659914B1/en"><span itemprop="documentId">patent/US7659914B1/en</span></a>
+            <span itemprop="legalStatusCat">not_active</span>
+            <span itemprop="legalStatus">Expired - Fee Related</span>
+            <span itemprop="thisApp" content="true" bool></span>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    </section>
+
+  <section>
+    <h2>Patent Citations (7)</h2>
+    <table>
+      <caption>* Cited by examiner, † Cited by third party</caption>
+      <thead>
+        <tr>
+          <th>Publication number</th>
+          <th>Priority date</th>
+          <th>Publication date</th>
+          <th>Assignee</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="backwardReferences" itemscope repeat>
+          <td>
+            <a href="/patent/US6298154B1/en">
+              <span itemprop="publicationNumber">US6298154B1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">1999-03-29</td>
+          <td itemprop="publicationDate">2001-10-02</td>
+          <td><span itemprop="assigneeOriginal">Eastman Kodak Company</span></td>
+          <td itemprop="title">Method for rendering improved personal handwriting 
+       </td>
+        </tr>
+        <tr itemprop="backwardReferences" itemscope repeat>
+          <td>
+            <a href="/patent/WO2002056289A1/en">
+              <span itemprop="publicationNumber">WO2002056289A1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2001-01-09</td>
+          <td itemprop="publicationDate">2002-07-18</td>
+          <td><span itemprop="assigneeOriginal">Yitzchak Irving Twersky</span></td>
+          <td itemprop="title">Improved apparatus and methods for replacing decorative images with text and/or graphical patterns 
+       </td>
+        </tr>
+        <tr itemprop="backwardReferences" itemscope repeat>
+          <td>
+            <a href="/patent/US20040145592A1/en">
+              <span itemprop="publicationNumber">US20040145592A1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2001-01-09</td>
+          <td itemprop="publicationDate">2004-07-29</td>
+          <td><span itemprop="assigneeOriginal">Twersky Irving Yitzchak</span></td>
+          <td itemprop="title">Apparatus and methods for replacing decorative images with text and/or graphical patterns 
+       </td>
+        </tr>
+        <tr itemprop="backwardReferences" itemscope repeat>
+          <td>
+            <a href="/patent/US7181081B2/en">
+              <span itemprop="publicationNumber">US7181081B2</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2001-05-04</td>
+          <td itemprop="publicationDate">2007-02-20</td>
+          <td><span itemprop="assigneeOriginal">Legend Films Inc.</span></td>
+          <td itemprop="title">Image sequence enhancement system and method 
+       </td>
+        </tr>
+        <tr itemprop="backwardReferences" itemscope repeat>
+          <td>
+            <a href="/patent/US20030106943A1/en">
+              <span itemprop="publicationNumber">US20030106943A1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2001-12-11</td>
+          <td itemprop="publicationDate">2003-06-12</td>
+          <td><span itemprop="assigneeOriginal">Harry Schofield</span></td>
+          <td itemprop="title">Grayscale security microprinting for identification cards 
+       </td>
+        </tr>
+        <tr itemprop="backwardReferences" itemscope repeat>
+          <td>
+            <a href="/patent/US6988665B2/en">
+              <span itemprop="publicationNumber">US6988665B2</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2001-12-11</td>
+          <td itemprop="publicationDate">2006-01-24</td>
+          <td><span itemprop="assigneeOriginal">Zebra Atlantek, Inc.</span></td>
+          <td itemprop="title">Grayscale security microprinting for identification cards 
+       </td>
+        </tr>
+        <tr itemprop="backwardReferences" itemscope repeat>
+          <td>
+            <a href="/patent/US7197162B2/en">
+              <span itemprop="publicationNumber">US7197162B2</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2002-06-28</td>
+          <td itemprop="publicationDate">2007-03-27</td>
+          <td><span itemprop="assigneeOriginal">Canon Kabushiki Kaisha</span></td>
+          <td itemprop="title">Image processing apparatus and method, computer program, and computer-readable storage medium 
+       </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Non-Patent Citations (5)</h2>
+    <table>
+      <caption>* Cited by examiner, † Cited by third party</caption>
+      <thead>
+        <tr>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="detailedNonPatentLiterature" itemscope repeat>
+          <td>
+            <span itemprop="title">Dippin' Dots Inc. v. Mosey, 81 USPQ2d 1633 (Fed. Cir. 2007).</span>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+        </tr>
+        <tr itemprop="detailedNonPatentLiterature" itemscope repeat>
+          <td>
+            <span itemprop="title">In re Abele and Marshall, 214 USPQ 682 (C.C.P.A. 1982).</span>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+        </tr>
+        <tr itemprop="detailedNonPatentLiterature" itemscope repeat>
+          <td>
+            <span itemprop="title">In re Bilski, 88 USPQ2d 1385 (Fed. Cir. 2008).</span>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+        </tr>
+        <tr itemprop="detailedNonPatentLiterature" itemscope repeat>
+          <td>
+            <span itemprop="title">In Re Comiskey [revised], (Fed. Cir. 2008), http://www.cafc.uscourts.gov/opinions/06-1286r.pdf.</span>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+        </tr>
+        <tr itemprop="detailedNonPatentLiterature" itemscope repeat>
+          <td>
+            <span itemprop="title">Internet Archive Wayback website printout on Feb. 10, 2009 for http://www.infinite-image.net/ at http://web.archive.org/web/*/http://www.infinite-image.net/, pp. 1-8.</span>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <h2>Cited By (12)</h2>
+  <table>
+    <caption>* Cited by examiner, † Cited by third party</caption>
+    <thead>
+      <tr>
+        <th>Publication number</th>
+        <th>Priority date</th>
+        <th>Publication date</th>
+        <th>Assignee</th>
+        <th>Title</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr itemprop="forwardReferences" itemscope repeat>
+        <td>
+          <a href="/patent/US20100194760A1/en">
+            <span itemprop="publicationNumber">US20100194760A1</span>
+            (<span itemprop="primaryLanguage">en</span>)
+          </a>
+          <span itemprop="examinerCited">*</span>
+          
+        </td>
+        <td itemprop="priorityDate">2007-08-01</td>
+        <td itemprop="publicationDate">2010-08-05</td>
+        <td><span itemprop="assigneeOriginal">Hak-Soo Kim</span></td>
+        <td itemprop="title">Method and Apparatus Producing Text Patterning Data Correspondence To Image Data and Reconstructing Image Data Using the Text Patterning Data 
+       </td>
+      </tr>
+      <tr itemprop="forwardReferences" itemscope repeat>
+        <td>
+          <a href="/patent/US8331681B1/en">
+            <span itemprop="publicationNumber">US8331681B1</span>
+            (<span itemprop="primaryLanguage">en</span>)
+          </a>
+          <span itemprop="examinerCited">*</span>
+          
+        </td>
+        <td itemprop="priorityDate">2008-10-24</td>
+        <td itemprop="publicationDate">2012-12-11</td>
+        <td><span itemprop="assigneeOriginal">Adobe Systems Incorporated</span></td>
+        <td itemprop="title">Generating typefaces through image analysis 
+       </td>
+      </tr>
+      <tr itemprop="forwardReferences" itemscope repeat>
+        <td>
+          <a href="/patent/CN103177709A/en">
+            <span itemprop="publicationNumber">CN103177709A</span>
+            (<span itemprop="primaryLanguage">en</span>)
+          </a>
+          <span itemprop="examinerCited">*</span>
+          
+        </td>
+        <td itemprop="priorityDate">2011-12-20</td>
+        <td itemprop="publicationDate">2013-06-26</td>
+        <td><span itemprop="assigneeOriginal">北大方正集团有限公司</span></td>
+        <td itemprop="title">Method and device for displaying characters 
+       </td>
+      </tr>
+      <tr itemprop="forwardReferences" itemscope repeat>
+        <td>
+          <a href="/patent/WO2013091559A1/en">
+            <span itemprop="publicationNumber">WO2013091559A1</span>
+            (<span itemprop="primaryLanguage">en</span>)
+          </a>
+          
+          
+        </td>
+        <td itemprop="priorityDate">2011-12-20</td>
+        <td itemprop="publicationDate">2013-06-27</td>
+        <td><span itemprop="assigneeOriginal">Peking University Founder Group Co., Ltd.</span></td>
+        <td itemprop="title">Character display method and device 
+       </td>
+      </tr>
+      <tr itemprop="forwardReferences" itemscope repeat>
+        <td>
+          <a href="/patent/JP2014519057A/en">
+            <span itemprop="publicationNumber">JP2014519057A</span>
+            (<span itemprop="primaryLanguage">en</span>)
+          </a>
+          <span itemprop="examinerCited">*</span>
+          
+        </td>
+        <td itemprop="priorityDate">2011-12-20</td>
+        <td itemprop="publicationDate">2014-08-07</td>
+        <td><span itemprop="assigneeOriginal">北大方正集▲団▼有限公司</span></td>
+        <td itemprop="title">
+        Character display method and character display device
+       
+       </td>
+      </tr>
+      <tr itemprop="forwardReferences" itemscope repeat>
+        <td>
+          <a href="/patent/KR101454572B1/en">
+            <span itemprop="publicationNumber">KR101454572B1</span>
+            (<span itemprop="primaryLanguage">en</span>)
+          </a>
+          <span itemprop="examinerCited">*</span>
+          
+        </td>
+        <td itemprop="priorityDate">2011-12-20</td>
+        <td itemprop="publicationDate">2014-10-23</td>
+        <td><span itemprop="assigneeOriginal">피킹 유니버시티 파운더 그룹 컴퍼니, 리미티드</span></td>
+        <td itemprop="title">Character display method and device 
+       </td>
+      </tr>
+      <tr itemprop="forwardReferences" itemscope repeat>
+        <td>
+          <a href="/patent/CN103177709B/en">
+            <span itemprop="publicationNumber">CN103177709B</span>
+            (<span itemprop="primaryLanguage">en</span>)
+          </a>
+          <span itemprop="examinerCited">*</span>
+          
+        </td>
+        <td itemprop="priorityDate">2011-12-20</td>
+        <td itemprop="publicationDate">2015-03-11</td>
+        <td><span itemprop="assigneeOriginal">北大方正集团有限公司</span></td>
+        <td itemprop="title">Method and device for displaying characters 
+       </td>
+      </tr>
+      <tr itemprop="forwardReferences" itemscope repeat>
+        <td>
+          <a href="/patent/FR2989932A1/en">
+            <span itemprop="publicationNumber">FR2989932A1</span>
+            (<span itemprop="primaryLanguage">en</span>)
+          </a>
+          <span itemprop="examinerCited">*</span>
+          
+        </td>
+        <td itemprop="priorityDate">2012-04-27</td>
+        <td itemprop="publicationDate">2013-11-01</td>
+        <td><span itemprop="assigneeOriginal">Arjowiggins Security</span></td>
+        <td itemprop="title">
+  SECURITY ELEMENT AND DOCUMENT INCORPORATING SUCH A MEMBER
+ 
+       </td>
+      </tr>
+      <tr itemprop="forwardReferences" itemscope repeat>
+        <td>
+          <a href="/patent/WO2013160880A3/en">
+            <span itemprop="publicationNumber">WO2013160880A3</span>
+            (<span itemprop="primaryLanguage">en</span>)
+          </a>
+          <span itemprop="examinerCited">*</span>
+          
+        </td>
+        <td itemprop="priorityDate">2012-04-27</td>
+        <td itemprop="publicationDate">2014-04-24</td>
+        <td><span itemprop="assigneeOriginal">Arjowiggins Security</span></td>
+        <td itemprop="title">Security element and document including such an element 
+       </td>
+      </tr>
+      <tr itemprop="forwardReferences" itemscope repeat>
+        <td>
+          <a href="/patent/US9355485B2/en">
+            <span itemprop="publicationNumber">US9355485B2</span>
+            (<span itemprop="primaryLanguage">en</span>)
+          </a>
+          <span itemprop="examinerCited">*</span>
+          
+        </td>
+        <td itemprop="priorityDate">2014-03-11</td>
+        <td itemprop="publicationDate">2016-05-31</td>
+        <td><span itemprop="assigneeOriginal">Korn Ferry International</span></td>
+        <td itemprop="title">Visualization interface for word cloud 
+       </td>
+      </tr>
+      <tr itemprop="forwardReferences" itemscope repeat>
+        <td>
+          <a href="/patent/US20230134226A1/en">
+            <span itemprop="publicationNumber">US20230134226A1</span>
+            (<span itemprop="primaryLanguage">en</span>)
+          </a>
+          <span itemprop="examinerCited">*</span>
+          
+        </td>
+        <td itemprop="priorityDate">2021-11-03</td>
+        <td itemprop="publicationDate">2023-05-04</td>
+        <td><span itemprop="assigneeOriginal">Accenture Global Solutions Limited</span></td>
+        <td itemprop="title">Disability-oriented font generator 
+       </td>
+      </tr>
+      <tr itemprop="forwardReferences" itemscope repeat>
+        <td>
+          <a href="/patent/US12333235B2/en">
+            <span itemprop="publicationNumber">US12333235B2</span>
+            (<span itemprop="primaryLanguage">en</span>)
+          </a>
+          <span itemprop="examinerCited">*</span>
+          
+        </td>
+        <td itemprop="priorityDate">2021-11-03</td>
+        <td itemprop="publicationDate">2025-06-17</td>
+        <td><span itemprop="assigneeOriginal">Accenture Global Solutions Limited</span></td>
+        <td itemprop="title">Disability-oriented font generator 
+       </td>
+      </tr>
+    </tbody>
+  </table>
+
+  
+
+  <section>
+    <h2>Similar Documents</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Publication</th>
+          <th>Publication Date</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/US5929866A/en">
+                <span itemprop="publicationNumber">US5929866A</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="1999-07-27">1999-07-27</time>
+            
+            
+          </td>
+          <td itemprop="title">Adjusting contrast in anti-aliasing 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/EP1449152B1/en">
+                <span itemprop="publicationNumber">EP1449152B1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2013-10-23">2013-10-23</time>
+            
+            
+          </td>
+          <td itemprop="title">User definable image reference points 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/EP0693740B1/en">
+                <span itemprop="publicationNumber">EP0693740B1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="1999-02-24">1999-02-24</time>
+            
+            
+          </td>
+          <td itemprop="title">Method of font rendering employing greyscale processing of grid-fitted fonts 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/US20150332607A1/en">
+                <span itemprop="publicationNumber">US20150332607A1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2015-11-19">2015-11-19</time>
+            
+            
+          </td>
+          <td itemprop="title">System for Producing Tactile Images 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/US4833627A/en">
+                <span itemprop="publicationNumber">US4833627A</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="1989-05-23">1989-05-23</time>
+            
+            
+          </td>
+          <td itemprop="title">Computerized typesetting correction system 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/US7333110B2/en">
+                <span itemprop="publicationNumber">US7333110B2</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2008-02-19">2008-02-19</time>
+            
+            
+          </td>
+          <td itemprop="title">Adjusted stroke rendering 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/JP5759621B2/en">
+                <span itemprop="publicationNumber">JP5759621B2</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2015-08-05">2015-08-05</time>
+            
+            
+          </td>
+          <td itemprop="title">
+        Character display method and character display device
+       
+     </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/US5579030A/en">
+                <span itemprop="publicationNumber">US5579030A</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="1996-11-26">1996-11-26</time>
+            
+            
+          </td>
+          <td itemprop="title">Method and apparatus for display of text on screens 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/US7899265B1/en">
+                <span itemprop="publicationNumber">US7899265B1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2011-03-01">2011-03-01</time>
+            
+            
+          </td>
+          <td itemprop="title">Generating an image by averaging the colors of text with its background 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/US7602390B2/en">
+                <span itemprop="publicationNumber">US7602390B2</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2009-10-13">2009-10-13</time>
+            
+            
+          </td>
+          <td itemprop="title">Edge detection based stroke adjustment 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/US4613945A/en">
+                <span itemprop="publicationNumber">US4613945A</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="1986-09-23">1986-09-23</time>
+            
+            
+          </td>
+          <td itemprop="title">Method and apparatus for creating fonts for an electronic character generator 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/JPH06208370A/en">
+                <span itemprop="publicationNumber">JPH06208370A</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="1994-07-26">1994-07-26</time>
+            
+            
+          </td>
+          <td itemprop="title">Method for character display by raster by coupling aliasing suppression to lattice adaptation 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/US9311896B2/en">
+                <span itemprop="publicationNumber">US9311896B2</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2016-04-12">2016-04-12</time>
+            
+            
+          </td>
+          <td itemprop="title">Glyph rendering 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/EP1600896B1/en">
+                <span itemprop="publicationNumber">EP1600896B1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2010-12-22">2010-12-22</time>
+            
+            
+          </td>
+          <td itemprop="title">Character image generation 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/EP0624300B1/en">
+                <span itemprop="publicationNumber">EP0624300B1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="1998-09-23">1998-09-23</time>
+            
+            
+          </td>
+          <td itemprop="title">Resolution enhancement system for binary images 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/JP4162670B2/en">
+                <span itemprop="publicationNumber">JP4162670B2</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2008-10-08">2008-10-08</time>
+            
+            
+          </td>
+          <td itemprop="title">
+        How to generate a silhouetted gray font
+       
+     </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/US7355757B2/en">
+                <span itemprop="publicationNumber">US7355757B2</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2008-04-08">2008-04-08</time>
+            
+            
+          </td>
+          <td itemprop="title">Fast edge reconstruction with upscaling for pulse width modulation rendering 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/KR101887929B1/en">
+                <span itemprop="publicationNumber">KR101887929B1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2018-08-13">2018-08-13</time>
+            
+            
+          </td>
+          <td itemprop="title">Image Processing Apparatus, Image Processing Method, Computer Readable Recording Medium and Image Forming Apparatus 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            
+            <meta itemprop="isScholar" content="true">
+              <meta itemprop="scholarID" content="10167851614619554457">
+              <a href="/scholar/10167851614619554457"><span itemprop="scholarAuthors">Пономаренко</span></a>
+            
+          </td>
+          <td>
+            
+            <time itemprop="publicationDate" datetime="2007">2007</time>
+            
+          </td>
+          <td itemprop="title">Adobe Photoshop CS2</td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/US6486902B1/en">
+                <span itemprop="publicationNumber">US6486902B1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2002-11-26">2002-11-26</time>
+            
+            
+          </td>
+          <td itemprop="title">Two-color thermal printing process 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/JP2008294609A/en">
+                <span itemprop="publicationNumber">JP2008294609A</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2008-12-04">2008-12-04</time>
+            
+            
+          </td>
+          <td itemprop="title">Image output device, image output method, and image output program 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/US20060044346A1/en">
+                <span itemprop="publicationNumber">US20060044346A1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2006-03-02">2006-03-02</time>
+            
+            
+          </td>
+          <td itemprop="title">Image processing apparatus, image processing method, and image processing program product 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/JPH03243370A/en">
+                <span itemprop="publicationNumber">JPH03243370A</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="1991-10-30">1991-10-30</time>
+            
+            
+          </td>
+          <td itemprop="title">Method and apparatus for creating variable density character data 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            
+            <meta itemprop="isScholar" content="true">
+              <meta itemprop="scholarID" content="12056928710010269037">
+              <a href="/scholar/12056928710010269037"><span itemprop="scholarAuthors">Gatter</span></a>
+            
+          </td>
+          <td>
+            
+            <time itemprop="publicationDate" datetime="2006">2006</time>
+            
+          </td>
+          <td itemprop="title">Software Essentials for Graphic Designers: Photoshop, Illustrator, InDesign, QuarkXPress, Dreamweaver, Flash and Acrobat</td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/KR20180119869A/en">
+                <span itemprop="publicationNumber">KR20180119869A</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2018-11-05">2018-11-05</time>
+            
+            
+          </td>
+          <td itemprop="title">Image edit method of Image forming apparatus 
+       </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Legal Events</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Code</th>
+          <th>Title</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="legalEvents" itemscope repeat>
+          <td><time itemprop="date" datetime="2012-12-09">2012-12-09</time></td>
+          <td itemprop="code">FEPP</td>
+          <td itemprop="title">Fee payment procedure</td>
+          <td>
+            <p itemprop="attributes" itemscope repeat>
+              <strong itemprop="label">Free format text</strong>:
+              <span itemprop="value">PATENT HOLDER CLAIMS MICRO ENTITY STATUS, ENTITY STATUS SET TO MICRO (ORIGINAL EVENT CODE: STOM); ENTITY STATUS OF PATENT OWNER: MICROENTITY</span>
+            </p>
+          </td>
+        </tr>
+        <tr itemprop="legalEvents" itemscope repeat>
+          <td><time itemprop="date" datetime="2013-09-06">2013-09-06</time></td>
+          <td itemprop="code">FPAY</td>
+          <td itemprop="title">Fee payment</td>
+          <td>
+            <p itemprop="attributes" itemscope repeat>
+              <strong itemprop="label">Year of fee payment</strong>:
+              <span itemprop="value">4</span>
+            </p>
+          </td>
+        </tr>
+        <tr itemprop="legalEvents" itemscope repeat>
+          <td><time itemprop="date" datetime="2013-09-06">2013-09-06</time></td>
+          <td itemprop="code">SULP</td>
+          <td itemprop="title">Surcharge for late payment</td>
+          <td>
+          </td>
+        </tr>
+        <tr itemprop="legalEvents" itemscope repeat>
+          <td><time itemprop="date" datetime="2017-09-25">2017-09-25</time></td>
+          <td itemprop="code">FEPP</td>
+          <td itemprop="title">Fee payment procedure</td>
+          <td>
+            <p itemprop="attributes" itemscope repeat>
+              <strong itemprop="label">Free format text</strong>:
+              <span itemprop="value">MAINTENANCE FEE REMINDER MAILED (ORIGINAL EVENT CODE: REM.)</span>
+            </p>
+          </td>
+        </tr>
+        <tr itemprop="legalEvents" itemscope repeat>
+          <td><time itemprop="date" datetime="2018-03-12">2018-03-12</time></td>
+          <td itemprop="code">LAPS</td>
+          <td itemprop="title">Lapse for failure to pay maintenance fees</td>
+          <td>
+            <p itemprop="attributes" itemscope repeat>
+              <strong itemprop="label">Free format text</strong>:
+              <span itemprop="value">PATENT EXPIRED FOR FAILURE TO PAY MAINTENANCE FEES (ORIGINAL EVENT CODE: EXP.)</span>
+            </p>
+          </td>
+        </tr>
+        <tr itemprop="legalEvents" itemscope repeat>
+          <td><time itemprop="date" datetime="2018-03-12">2018-03-12</time></td>
+          <td itemprop="code">STCH</td>
+          <td itemprop="title">Information on status: patent discontinuation</td>
+          <td>
+            <p itemprop="attributes" itemscope repeat>
+              <strong itemprop="label">Free format text</strong>:
+              <span itemprop="value">PATENT EXPIRED DUE TO NONPAYMENT OF MAINTENANCE FEES UNDER 37 CFR 1.362</span>
+            </p>
+          </td>
+        </tr>
+        <tr itemprop="legalEvents" itemscope repeat>
+          <td><time itemprop="date" datetime="2018-04-03">2018-04-03</time></td>
+          <td itemprop="code">FP</td>
+          <td itemprop="title">Lapsed due to failure to pay maintenance fee</td>
+          <td>
+            <p itemprop="attributes" itemscope repeat>
+              <strong itemprop="label">Effective date</strong>:
+              <span itemprop="value">20180209</span>
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+</article>
+
+    </search-app>
+    
+    <script></script>
+    <script type="text/javascript" src="//www.gstatic.com/feedback/api.js"></script>
+    <script type="text/javascript" src="//www.gstatic.com/feedback/js/help/prod/service/lazy.min.js"></script>
+    <script type="text/javascript">
+      if (window.help && window.help.service) {
+        helpApi = window.help.service.Lazy.create(0, {apiKey: 'AIzaSyDTEI_0tLX4varJ7bwK8aT-eOI5qr3BmyI', locale: 'en-US'});
+        window.requestedSurveys = new Set();
+        window.requestSurvey = function(triggerId) {
+          if (window.requestedSurveys.has(triggerId)) {
+            return;
+          }
+          window.requestedSurveys.add(triggerId);
+          helpApi.requestSurvey({
+            triggerId: triggerId,
+            enableTestingMode: false,
+            callback: (requestSurveyCallbackParam) => {
+              if (!requestSurveyCallbackParam.surveyData) {
+                return;
+              }
+              helpApi.presentSurvey({
+                productData: {
+                  productVersion: window.version,
+                  customData: {
+                    "experiments": "",
+                  },
+                },
+                surveyData: requestSurveyCallbackParam.surveyData,
+                colorScheme: 1,
+                customZIndex: 10000,
+              });
+            }
+          });
+        };
+
+        window.requestSurvey('YXTwAsvoW0kedxbuTdH0RArc9VhT');
+      }
+    </script>
+    <script src="/sw/null_loader.js"></script>
+  </body>
+</html>
